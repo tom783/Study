@@ -1,0 +1,86 @@
+
+*{padding:0px;margin:0px;box-sizing:border-box;}
+ol,ul,li{list-style:none;}
+
+#warp{width:100%;height:100%;position:absolute;}
+#warp > header{width:100%;height:217px;border:1px solid red;}
+#warp > header > div{width:1080px;margin:0 auto;}
+
+#warp > header > .top{height:170px;}
+#warp > header > .top > div{border:1px solid black;height:100%;float:left;}
+#warp > header > .top > .logo{width:200px;}
+#warp > header > .top > .search{width:600px;}
+#warp > header > .top > .gnb{width:280px;}
+
+#warp > header > .bottom{height:46px;}
+#warp > header > .bottom > div{border:1px solid black;height:100%;float:left;}
+#warp > header > .bottom > .menu{width:800px;}
+#warp > header > .bottom > .menu > .list{width:100%;height:100%;}
+#warp > header > .bottom > .menu > .list > .items{float:left;width:25%;text-align:center;	line-height:44px;color:#ffffff;background:lightblue;border:1px solid gray;}
+#warp > header > .bottom > .menu > .list > .items:hover{font-weight:bold;background:blue;}
+#warp > header > .bottom > .menu > .list > .items > ul{display:none;}
+#warp > header > .bottom > .menu > .list > .items:hover > ul{display:block;}
+#warp > header > .bottom > .menu > .list > .items > ul > .items_sub{color:#ffffff;background:yellow;}
+#warp > header > .bottom > .menu > .list > .items > ul > .items_sub:hover{color:yellow;background:red;}
+#warp > header > .bottom > .realtimeword{width:280px;}
+
+/* Contents */
+#warp #contents{width:1080px;height:1458px;margin:0 auto;}
+#warp #contents > div{width:1080px;}
+#warp #contents > div > div{text-align:center;border:1px solid gray;margin:5px;}
+
+.d_01{width: 100%; height: 150px;}
+.d_01 > .left{float:left;width:790px; height: 150px;}
+.d_01 > .right{float:right;width:270px; height: 150px;}
+
+.d_02{width: 100%; border: 0;}
+.d_02 > .left{float: left`; width: 790px; height: 300px;}
+.d_02 > .left > .top{
+  width: 100%;
+  height: 40%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.d_02 > .left > .bottom{
+  width: 100%;
+  height:60%;
+  border: 1px solid black;
+}
+
+
+.d_02 > .right{float: left; width: 270px; height: 300px;border:0;}
+.d_02 > .right > .top{
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.d_02 > .right > .bottom{
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+.d_03 {
+  width: 100%;
+}
+
+.d_03 > .left{
+  float: left;
+  width: 790px;
+  height: 150px;
+}
+
+
+.d_03 > .right{
+  float: left;
+  width: 270px;
+  height: 150px;
+}
+
+
+
+
+#warp footer{width:100%;height:313px;border:1px solid green;}
