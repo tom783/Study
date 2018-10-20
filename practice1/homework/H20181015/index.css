@@ -1,5 +1,5 @@
 body{
-  min-width: 1106px;
+  min-width: 1160px;
 }
 .wrap{
   width: 100%;
@@ -26,8 +26,8 @@ ul li a{
 
 /* header */
 header{
-  margin: 0 auto;
-  width: 96%;
+  /* margin: 0 auto;
+  width: 96%; */
   height: 130px;
   text-align: center;
   font-size: 11px;
@@ -37,6 +37,10 @@ header{
   header .side_Nav{
     width: 100%;
     height: 30%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   header .side_Nav .left_nav{
@@ -110,6 +114,9 @@ header{
     clear: both;
     position: relative;
     height: 70%;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 0 20px;
   }
 
   nav .logo{
@@ -123,6 +130,10 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  nav .nav ul li a{
+    font-size: 20px;
   }
 
   nav .nav ul li:not(:last-child){
@@ -408,6 +419,20 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+      }
+
+      .total_calc .total_sum::before{
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 69px;
+        background-color: #dfdfdf;
+        position: absolute;
+        left: 0;
       }
 
       /* 1-3-3 third */
@@ -417,15 +442,298 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+      }
+
+      .total_calc .order_btn::before{
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 69px;
+        background-color: #dfdfdf;
+        position: absolute;
+        left: 0;
+      }
+
+      .total_calc .order_btn button{
+        color: white;
+        background-color: #4400aa;
+        border-color: transparent;
+        width: 130px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+
+      .total_calc .order_btn button:hover{
+        background: radial-gradient(circle at 10% 10%, blue, skyblue);
+      }
+
+      .total_calc .order_btn a{
+        background: url('http://www.cjhello.com/front/web/images/common/ico-share.png') no-repeat 45% center;
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        border: 1px solid #dfdfdf;
+        border-radius: 50%;
       }
 
 /* benefit section */
+.benefit .benefit_position{
+  padding: 90px 0;
+}
+
+.benefit_position > p{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.benefit_position .d-day{
+  width: 310px;
+  height: 45px;
+  font-size: 20px;
+  background: url('http://www.cjhello.com/front/web/images/main/bg-d-day.png') no-repeat;
+}
+
+.benefit_position .d-day strong{
+  color: white;
+  line-height: 45px;
+  margin-left: 6px;
+}
+
+.d-day .time{
+  width: 80%;
+  text-align: center;
+}
+
+.d-day .time span{
+  visibility: hidden;
+  margin: 0 13px;
+}
+
+.benefit_position .benefit_list{
+  margin-top: 60px;
+}
+
+.benefit_position .benefit_list ul{
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.benefit_position .benefit_list ul li{
+  padding: 0 15px;
+  width: 280px;
+}
+
+.benefit_position .benefit_list ul li img{
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.benefit_position .benefit_list ul li strong{
+  display: block;
+  text-align: center;
+  margin: 15px 0 5px;
+}
+
+.benefit_position .benefit_list ul li p{
+  text-align: center;
+}
 
 /* search_region section */
+.search_region{
+  background:url('http://www.cjhello.com/front/web/images/common/bg-wide-gradation.png') no-repeat;
+  color: white;
+  overflow: hidden;
+  height: 85px;
+}
+
+.region_title{
+  float: left;
+  font-size: 24px;
+  margin-left: 20px;
+  width: 35%;
+  line-height: 85px;
+}
+
+.region_title .region_icon{
+  background: url('http://www.cjhello.com/front/web/images/common/ico-location-lg-white.png') no-repeat center center;
+  width: 23px;
+  height: 30px;
+}
+
+.search_bar{
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 85px;
+  margin-left: 40px;
+}
+
+.search_bar input{
+  width: 500px;
+  height: 48px;
+  padding-right: 50px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  font-size: 30px;
+  color: white;
+}
+
+.search_bar button{
+  background: url('http://www.cjhello.com/front/web/images/common/ico-zoom-lg-white.png') no-repeat;
+  background-position: center center;
+  width: 47px;
+  height: 47px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  margin-left: -50px;
+}
 
 /* best products section */
+.best_products{
+  overflow: hidden;
+}
   /* 1 header */
+  .products_header{
+    float: left;
+    width: 34%;
+    text-align: center;
+    margin-top: 225px;
+  }
+
+  .products_header a{
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .products_header a:last-child{
+    background: url('http://www.cjhello.com/front/web/images/common/ico-more.png') no-repeat right center;
+    font-weight: bold;
+    width: 52%;
+    margin: 0 auto;
+  }
+
+  .products_header p{
+    margin-bottom: 50px;
+  }
+
   /* 2 slide_item */
+  .products_slide{
+    float: left;
+    width: 66%;
+  }
+
+  /* item common */
+  .item{
+    float: left;
+    height: 650px;
+    width: 40%;
+    margin: 0 5%;
+    position: relative;
+  }
+
+  .item .item_position{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item .item_position .item_top{
+    height: 250px;
+  }
+
+  .item_top p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .item_top .more_intro{
+    margin-top: 10px;
+  }
+
+  .item_top .more_intro a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: transparent;
+    padding: 5px;
+  }
+
+  .item_top .more_intro a::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('http://www.cjhello.com/front/web/images/common/ico-zoom-white-xs.png') no-repeat;
+    margin: 0 5px;
+  }
+
+  .item_top .more_intro span{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+  }
+
+  .item .item_position .item_bottom{
+    padding-top: 50px;
+    border-top: 1px solid #dfdfdf;
+  }
+
+  .item_bottom > p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .item_bottom > p:nth-child(2){
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .item_bottom strong{
+    color: blue;
+  }
+
+  .item_bottom .item_comment{
+    padding: 50px 0 50px;
+  }
+
+  .item_bottom .item_comment p{
+    font-size: 15px;
+  }
+
+  .item_bottom .btn_group{
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+
+  .item_bottom .btn_group a{
+    display: block;
+    background-color: rgb(52, 19, 98);
+    color: white;
+    border-radius: 40px;
+    min-width: 130px;
+    text-decoration: none;
+    padding: 0 30px;
+    line-height: 48px;
+  }
+
+  .item_bottom .btn_group a:hover{
+    background: radial-gradient(circle at 10% 10%, skyblue,blue );
+  }
+
+  .recommend{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
     /* 2-1 item 1 */
       /* 2-1-1 item_top */
       /* 2-1-2 item_bottom */
@@ -434,17 +742,252 @@ header{
       /* 2-2-1 item_top */
       /* 2-2-2 item_bottom */
 
+
+
 /* recommend section */
+.recommend_section{
+  background-color: #f2f3f6;
+}
+
+.recommend_section .content{
+
+}
+
+.recommend_section .content .recommend_title{
+  /* height: 100px; */
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 39px;
+}
+
+.recommend_section .content .recommend_title h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recommend_section .content .recommend_title p{
+  font-size: 18px;
+}
+
+.recommend_content{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
   /* 1 web left position */
+  .recommend_content .recommend_info_1{
+    width: 570px;
+    float: left;
+    background-color: rgb(17, 75, 75);
+    text-align: center;
+    height: 650px;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap{
+    width: 580px;
+    padding: 75px 75px 20px;
+    height: 580px;
+    margin: 0 auto;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap h3{
+    color: white;
+    font-size: 26px;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap .hashTag{
+    font-size: 1.6rem;
+    padding-top: 76px;
+    height: 390px;
+    width: 430px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #hash1{
+    position: absolute;
+    left: 152px;
+    top: 172px;
+  }
+
+  #hash2{
+    position: absolute;
+    left: 211px;
+    top: 114px;
+  }
+
+  #hash3{
+    position: absolute;
+    left: 72px;
+    top: 233px;
+  }
+
+  #hash4{
+    position: absolute;
+    left: 30px;
+    top: 90px;
+  }
+
+  #hash5{
+    position: absolute;
+    left: 175px;
+    bottom: 30px;
+  }
+
+  #hash6{
+    position: absolute;
+    left: 256px;
+    top: 72px;
+  }
+
+  #hash7{
+    position: absolute;
+    left: 67px;
+    top: 143px;
+  }
+
+  #hash8{
+    position: absolute;
+    left: 276px;
+    top: 227px;
+  }
+
+  #hash9{
+    position: absolute;
+    left: 283px;
+    top: 198px;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap .hashTag .hash a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap .hashTag .hash a:hover{
+    text-decoration: underline;
+  }
+
+  .recommend_content .recommend_info_1 .content_wrap .hashTag .hash a:before{
+    content: '#';
+    color: white;
+  }
+
   /* 2 web right position */
+  .recommend_content .recommend_info_2{
+    width: 570px;
+    float: left;
+    background-color: #fff;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap{
+    text-align: center;
+    padding: 75px;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap h3{
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap .content_img a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap .content_img h3{
+    font-size: 1.1rem;
+    padding-top: 30px;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap span{
+    color: rgb(217, 157, 191);
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap .more_view{
+    padding-top: 20px;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap .more_view a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: url('http://www.cjhello.com/front/web/images/common/ico-more.png') no-repeat right center;
+    padding-right: 29px;
+  }
+
+  .recommend_content .recommend_info_2 .content_wrap .more_view a:hover{
+    color: blue;
+  }
 
 
 /* helloShop_benefit section */
+.helloShop_benefit{
+  background-color: white;
+}
+
+.helloShop_benefit .helloShop_wrap{
+  padding: 60px 75px;
+}
+
   /* 1 helloShop_header */
+  .helloShop_benefit .helloShop_wrap .helloShop_header{
+    width: 100%;
+    overflow: hidden;
+  }
+
     /* 1-1 title */
+    .helloShop_header .helloShop_title{
+      width: 20%;
+      float: left;
+    }
+
+    .helloShop_header .helloShop_title a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .helloShop_header .helloShop_title a h3{
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .helloShop_header .helloShop_title a:nth-child(2){
+      background: url('http://www.cjhello.com/front/web/images/common/ico-more.png') no-repeat right center;
+
+    }
+
+    .helloShop_header .helloShop_title a:nth-child(2):hover{
+      color: blue;
+    }
+
     /* 1-2 content */
+    .helloShop_header a{
+      display: inline-block;
+      width: 80%;
+    }
+
+    .helloShop_header a .content{
+      width: 25%;
+      float: left;
+      color: black;
+    }
+
+    .helloShop_header a .content h4{
+      font-size: 1.2rem;
+      padding-bottom: 10px;
+    }
+
+    .helloShop_header a .content p{
+      color: rgb(143, 66, 107);
+    }
 
   /* 2 helloShop_bottom */
+  .helloShop_bottom{
+    padding-top: 40px;
+    background-color: #f8f8f8;
+  }
+
   .call_icon{
     background-image: url('http://www.cjhello.com/front/web/images/common/ico-phone-call.png');
     background-repeat: no-repeat;
@@ -452,20 +995,178 @@ header{
     width: 45px;
     height: 45px;
   }
+
+  .helloShop_bottom span h5, .helloShop_bottom span strong{
+    font-size: 16px;
+  }
+
+  .helloShop_bottom span strong{
+    color: rgb(31, 34, 152);
+  }
+
+  .helloShop_bottom span:nth-child(3){
+    padding-left: 40px;
+  }
+
+  .helloShop_bottom span:nth-child(3) p{
+    font-size: 12px;
+  }
+
+  .helloShop_bottom span:nth-child(4){
+    padding-left: 40px;
+  }
+
+  .helloShop_bottom span:nth-child(4) input{
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    width: 180px;
+    height: 36px;
+  }
+
+  .helloShop_bottom span:nth-child(4) button{
+    background-color: black;
+    color: white;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    min-width: 80px;
+    border-radius: 3px;
+  }
+
+  .helloShop_bottom span:nth-child(4) button:hover{
+    cursor: pointer;
+    background: radial-gradient(circle at 50% 50%, rgb(30, 64, 142), blue);
+  }
+
+
 /* CJ_Hello servic intro section */
+.service_slide{
+  position: relative;
+}
 .service_Intro .img{
   background-image: url('http://www.cjhello.com/CJH_Files/KOR_NEW/DISPLAY_CONTROL/Main_%ED%95%98%EB%8B%A8_banner_02_1920X240.png');
   background-position: center;
   background-repeat: no-repeat;
   height: 240px;
 }
+
   /* 1 button */
+  .click_button{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+  }
+
+  .click_button ul li{
+    width: 18px;
+    height: 18px;
+  }
+
+  .click_button ul li button{
+    border-radius: 70%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+  }
 
 /* csCenter section */
+.csCenter{
+  background-color: black;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.csCenter .csCenter_content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.csCenter .csCenter_content .cs_Content_left{
+  margin-left: 20px;
+}
+
+.csCenter .csCenter_content .li_font li{
+  padding: 0 15px;
+}
+
+.font{
+  color: white;
+}
+
+.csCenter .csCenter_content .li_font li:hover a{
+  color: white;
+}
+
+.csCenter .csCenter_content .li_font li a{
+  font-size: 16px;
+  color: #aaa;
+}
+
+.csCenter .csCenter_content .cs_Content_left li:nth-child(3) a::after,.csCenter .csCenter_content .cs_Content_left li:nth-child(3) a::before{
+  content: '';
+  width: 1px;
+  display: inline-block;
+  height: 16px;
+  background-color: #aaa;
+  margin-right: 20px;
+}
+
+  .csCenter .csCenter_content .cs_Content_left li:nth-child(3) a::after{
+    margin-left: 20px;
+  }
+
+  .csCenter .csCenter_content .cs_Content_right{
+    margin-right: 20px;
+  }
+
+  .csCenter .csCenter_content .cs_Content_right .date{
+    color: #aaa;
+  }
+
 
 /* footer */
+footer{
+  background-color: #1d1f20;
+}
+
+footer .footer_warp{
+  margin: 0 20px;
+}
+
+.footer_header{
+  height: 100px;
+}
+
+.footer_header ul{
+  display: inline-block;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.footer_header ul li a{
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+.footer_warp span{
+  margin-left: 30px;
+}
+
+.footer_warp span button{
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
 .footer_warp span .ico{
   background: url('http://www.cjhello.com/front/web/images/common/ico-plus-sm-white.png') no-repeat center;
   height: 10px;
   width: 10px;
+  margin-left: -2px;
 }
