@@ -1,6 +1,7 @@
 body{
   min-width: 1160px;
 }
+
 .wrap{
   width: 100%;
   height: 100%;
@@ -166,8 +167,18 @@ header{
 
 /* slide_Section */
 .slide_Section{
-  height: 100%;
+  /* height: 100%; */
+  height: 590px;
   position: relative;
+  overflow: hidden;
+}
+
+.slide_item{
+  display: none;
+}
+
+.slide_item_active{
+  display: block;
 }
 
 .slide_item a{
