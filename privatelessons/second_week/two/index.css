@@ -1,0 +1,419 @@
+header{
+  height: 120px;
+}
+
+.header_side{
+  background-color: rgb(40, 73, 153);
+}
+
+.side_nav{
+  width: 1200px;
+  height: 30px;
+  line-height: 30px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.side_nav > ul{
+  float: right;
+}
+
+.side_nav > ul > li{
+  float: left;
+  width: 71px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+nav{
+  width: 1200px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 auto;
+}
+
+.logo{
+  float: left;
+  height: 100%;
+}
+
+.logo > a > img{
+  vertical-align: middle;
+}
+
+.navbar{
+  float: right;
+}
+
+.navbar > li{
+  float: left;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar > li + li{
+  margin-left: 67px;
+}
+
+.mainBG{
+  position: relative;
+  height: 500px;
+}
+
+.fadeBG > ul{
+  height: 100%;
+}
+
+.fadeBG > li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.fadeBG > li:nth-child(1) > p{
+  background: url('./img/main_bg.jpg') no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.fadeBG > li:nth-child(2) > p{
+  background: url('./img/main_bg.jpg') no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.fadeBG > li:nth-child(3) > p{
+  background: url('./img/main_bg.jpg') no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.more_nav{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+}
+
+.more_nav > dl{
+  width: 100%;
+}
+
+.more_nav > dl > dt{
+  float: left;
+  height: 90px;
+  width: 239px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.more_nav > dl > dt img{
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.more_nav > dl > dt p{
+  color: white;
+}
+
+.more_nav > dl > dt + dt{
+  margin-left: 1px;
+}
+
+.contents{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.left_content{
+  float: left;
+}
+
+.news{
+  width: 380px;
+  height: 489px;
+  border: 1px solid #ddd;
+}
+
+.news_title{
+  background-color: rgb(37,80,107);
+}
+
+.title{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+.title > h1{
+  color: white;
+  font-weight: bold;
+  float: left;
+}
+
+.more_btn{
+  float: right;
+}
+
+.more_btn img{
+  vertical-align: middle;
+}
+
+.news_cont{
+  position: relative;
+  height: 439px;
+  padding: 0 29px;
+}
+/* Q. 슬라이드 부분 구조를 못잡겠음.. */
+.slide{
+  /* position: absolute; */
+  padding-top: 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.slide > li{
+  /* position: absolute;
+  display: block;
+  left: 0%; */
+  /* margin-left: -180px; */
+  /* float: left; */
+  text-align: center;
+}
+
+.slide > li > dl{
+  margin-top: 15px;
+}
+
+.slider_btn{
+  position: absolute;
+  height: 31px;
+  bottom: 13px;
+  right: 35px;
+}
+
+.count{
+  height: 100%;
+  float: left;
+  margin-right: 12px;
+  text-align: center;
+  background-color: rgb(109, 113, 145);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 1;
+}
+
+.count_btn{
+  float: left;
+}
+
+.count_btn > span{
+  cursor: pointer;
+}
+
+.prev{
+  background: url('./img/prev.jpg') no-repeat;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px;
+}
+
+.next{
+  background: url('./img/next.jpg') no-repeat;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px;
+}
+
+.stop{
+  background: url('./img/stop.jpg') no-repeat;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px;
+}
+
+.right_content{
+  float: left;
+  width: 790px;
+  height: 489px;
+  margin-left: 10px;
+}
+
+.right_top_content{
+  height: 280px;
+  margin-bottom: 30px;
+}
+
+.notice, .member{
+  height: 100%;
+  width: 380px;
+  float: left;
+  border: 1px solid #ddd;
+}
+
+.notice_title{
+  background-color: rgb(181, 142, 71);
+}
+
+.top_content{
+  padding: 0 29px;
+  padding-bottom: 13px;
+}
+
+.top{
+  height: 141px;
+  position: relative;
+  padding-top: 35px;
+}
+
+.bottom{
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.bottom > li{
+  list-style: circle;
+  margin-left: 10px;
+}
+
+.date{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #eb9273;
+  text-align: center;
+  padding-top: 27px;
+  float: left;
+}
+
+.date > strong{
+  color: white;
+  font-weight: bold;
+  line-height: 22px;
+  display: block;
+  font-size: 22px;
+}
+
+.date > span{
+  color: white;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.con{
+  float: left;
+  margin-left: 15px;
+}
+
+
+.member_title{
+  background-color: rgb(37, 51, 126);
+}
+
+.right_bottom_content{
+  height: 180px;
+}
+
+.mem{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+}
+
+.plan, .recruit{
+  width: 380px;
+  height: 100%;
+  border: 1px solid #ddd;
+  float: left;
+}
+
+.plan_title{
+  background-color: rgb(66, 141, 209);
+}
+
+.recruit > a{
+  display: block;
+  background: url('./img/recruitment.jpg') no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.recruit > a > h2{
+  height: 180px;
+  padding: 24px 29px;
+  color: white;
+  font-weight: bold;
+}
+
+.clear{
+  clear: both;
+}
+
+footer{
+  height: 150px;
+  background-color: rgb(128, 130, 133);
+}
+
+.footer_con{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0;
+  position: relative;
+}
+
+.footer_logo{
+  position: absolute;
+  top: 31px;
+  right: 0;
+}
+
+.footer_ > a{
+  color: white;
+  padding: 0 10px;
+}
+
+.footer_ > a:first-child{
+  padding-left: 0;
+}
+
+.footer_ > a:last-child{
+  border-left: 1px solid #ddd;
+}
+
+/* .footer_ > a:nth-child(1){
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  content: '';
+  background-color: white;
+} */
+
+address{
+  padding-top: 14px;
+  color: white;
+}
+
+.copyright{
+  color: white;
+  font-size: 13px;
+}
+
+
+/*  */

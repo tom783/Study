@@ -1,0 +1,230 @@
+header{
+  height: 750px;
+  position: relative;
+  text-transform: uppercase;
+  min-width: 1200px;
+}
+
+.fadeBG{
+  height: 100%;
+  width: 100%;
+}
+
+.fadeBG > li{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.fadeBG_btn{
+  position: absolute;
+  top: 329px;
+  left: 50%;
+  margin-left: 555px;
+  width: 45px;
+}
+
+.fadeBG_btn > li{
+  color: white;
+  width: 100%;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.fadeBG_btn > li > span{
+  /* display: none; */
+}
+
+nav{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -600px;
+  width: 250px;
+  padding-top: 35px;
+  text-transform: uppercase;
+}
+
+.logo{
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.navbar{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.navbar > li + li{
+  margin-top: 35px;
+}
+
+.navbar > li a{
+  color: yellow;
+  font-weight: bold;
+}
+
+.sns_bar{
+  height: 35px;
+}
+
+.sns_btn{
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  border: 1px solid yellow;
+  text-align: center;
+}
+
+.sns_btn > a{
+  color: yellow;
+  line-height: 35px;
+}
+
+.sns_btn + .sns_btn{
+  margin-left: 10px;
+}
+
+.contents{
+  width: 100%;
+  height: 320px;
+}
+
+.content{
+  margin: 0 auto;
+  padding-top: 55px;
+  height: 100%;
+  width: 1200px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.content > dt{
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+}
+
+.content > dt > h3{
+  margin-top: 39px;
+  margin-bottom: 7px;
+  font-size: 1.17rem;
+}
+
+.content > dt > p{
+  font-size: 1.03rem;
+}
+
+.contactus{
+  background: url("http://www.alices-garden.co.kr/images/main/section2.jpg") no-repeat center top;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.contactus > .content{
+  padding-top: 88px;
+}
+
+.contactus_left{
+  float: left;
+  height: 349px;
+  width: 600px;
+}
+
+.contactus_left{
+  font-size: 1rem;
+  color: greenyellow;
+}
+
+.contactus h1{
+  text-transform: uppercase;
+}
+
+.contactus_left > p{
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+.how{
+  margin-top: 7px;
+}
+
+.how > dt{
+  line-height: 1;
+}
+
+.how > dt{
+  margin-bottom: 7px;
+}
+
+.icon > img{
+  margin-right: 5px;
+}
+
+.contactus_right{
+  float: right;
+  height: 296px;
+  width: 600px;
+  padding-left: 57px;
+  font-size: 1rem;
+  color: greenyellow;
+}
+
+.contactus_right > p{
+  margin-top: 66px;
+  margin-bottom: 86px;
+}
+
+
+.more_btn{
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: url('http://www.alices-garden.co.kr/images/main/more.png') no-repeat;
+}
+
+.more_btn > a{
+  color: greenyellow;
+}
+
+footer{
+  min-width: 1200px;
+}
+
+.footer_content{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.copylight{
+  line-height: 98px;
+  color: rgb(90, 88, 116);
+}
+
+.footer_logo{
+  line-height: 98px;
+  float: right;
+}
+
+.footer_logo > a > img{
+  vertical-align: middle;
+}
+
+.footer_btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('http://www.alices-garden.co.kr/images/main/top_btn.jpg') no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+/*  */

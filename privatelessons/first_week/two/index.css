@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+}
+
+.positionMargin{
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid black;
+}
+
+.sideNav{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+.sideNav_position{
+  height: 100%;
+}
+
+.sideNav_position ul{
+  float: right;
+  height: 100%;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+/* Q.li들 사이에 여백은 무엇인가? */
+.sideNav_position ul li{
+  height: 100%;
+  text-align: center;
+  padding: 7px;
+}
+
+.sideNav_position ul li:not(:first-child){
+  border-left: 1px solid gray;
+}
+
+.sideNav_position ul li a{
+  color: gray;
+}
+
+nav{
+  height: 90px;
+}
+
+/* Q.여기서 img이외의 태그에 버티컬이 안먹히는 이유?? */
+.nav_position{
+  height: 100%;
+  overflow: hidden;
+  line-height: 90px;
+}
+
+.logo{
+  float: left;
+}
+
+.logo img{
+  vertical-align: middle;
+}
+
+.navbar_position{
+  float: right;
+}
+
+.nav{
+  clear: both;
+  text-align: right;
+}
+
+.nav li{
+  padding-left: 30px;
+}
+
+.nav li:hover a{
+  color: blue;
+  font-weight: bold;
+}
+
+/* main */
+/* slide */
+.slide{
+  position: relative;
+  height: 424px;
+  width: 100%;
+}
+
+/* Q.absolute일떄 크기를 가지게 하고 마진을 먹게? (부모에 고정 높이주는 방법 말고) */
+.slider li{
+  position: absolute;
+  width: 100%;
+}
+
+.slider li img{
+  width: 100%;
+}
+
+/* contents */
+.contents{
+
+}
+.program{
+  background: url('http://www.gmcc.or.kr/images/main/icon_q01.png') 149px 97px no-repeat;
+}
+
+.course{
+  background: url("http://www.gmcc.or.kr/images/main/icon_q02.png") 164px 101px no-repeat;
+}
+
+.rent{
+  background: url("http://www.gmcc.or.kr/images/main/icon_q03.png") 149px 105px no-repeat;
+}
+
+.come{
+  background: url("http://www.gmcc.or.kr/images/main/icon_q04.png") 166px 101px no-repeat;
+}

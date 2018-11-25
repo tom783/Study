@@ -1,0 +1,37 @@
+header img
+
+http://kiup.gamgakdesign.com/images/main/header_bg.jpg
+
+logo
+
+http://kiup.gamgakdesign.com/images/main/logo.jpg
+
+인삿말 라인 이미지
+
+http://kiup.gamgakdesign.com/images/main/quick01.png
+
+http://kiup.gamgakdesign.com/images/main/quick02.png
+
+http://kiup.gamgakdesign.com/images/main/quick03.png
+
+http://kiup.gamgakdesign.com/images/main/quick04.png
+
+http://kiup.gamgakdesign.com/images/main/quick05.png
+
++버튼
+
+http://kiup.gamgakdesign.com/images/main/more01.jpg
+
+
+협회소식 이미지
+
+http://kiup.gamgakdesign.com/skin/bbs/gallery_basic/images/no_img.gif
+
+구인게시판 배경
+
+http://kiup.gamgakdesign.com/images/main/recruitment.jpg
+
+footer 이미지
+
+http://kiup.gamgakdesign.com/images/main/footer_logo.jpg
+

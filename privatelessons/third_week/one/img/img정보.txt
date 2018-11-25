@@ -1,0 +1,54 @@
+logo 
+
+http://www.evertrust.co.kr/images/main/logo.png
+
+banner background
+
+http://www.evertrust.co.kr/images/main/visual4.jpg
+
+solution img background
+
+http://www.evertrust.co.kr/images/main/bg_section1.jpg
+
+solution img
+
+http://www.evertrust.co.kr/images/main/icon_solution_01.png
+
+http://www.evertrust.co.kr/images/main/icon_solution_02.png
+
+http://www.evertrust.co.kr/images/main/icon_solution_03.png
+
+http://www.evertrust.co.kr/images/main/icon_solution_04.png
+
+http://www.evertrust.co.kr/images/main/icon_solution_05.png
+
+
+about us background
+
+http://www.evertrust.co.kr/images/main/bg_section2.jpg
+
+business img
+
+http://www.evertrust.co.kr/images/main/business_01.jpg
+
+http://www.evertrust.co.kr/images/main/business_02.jpg
+
+http://www.evertrust.co.kr/images/main/business_03.jpg
+
+http://www.evertrust.co.kr/images/main/business_04.jpg
+
+
+prev img
+
+http://www.evertrust.co.kr/images/main/btn_prev1.png
+
+next img
+
+http://www.evertrust.co.kr/images/main/btn_next1.png
+
+
+recruit background
+
+http://www.evertrust.co.kr/images/main/bg_section4.jpg
+
+

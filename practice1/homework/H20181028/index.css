@@ -1,0 +1,256 @@
+/* class name :
+ex) metatag_function
+ex) metatag_ */
+
+/* common tag Style */
+html{
+  font-size: 2.3rem;
+  font-family: montserrat;
+}
+
+ul li a, dl dt a, .header_logo a{
+  text-decoration: none;
+  color: black;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.display_None{
+  display: none;
+}
+
+.dropDownNav{
+  transition: all 0.7s ease-out;
+}
+
+.upNav{
+  transition: all 2s ease-in;
+}
+
+/* header */
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+  /* header_wrap */
+  .header_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid gray;
+  }
+    /* logo */
+    .header_logo{
+      height: 48px;
+      line-height: 48px;
+      flex: 8;
+      padding-left: 0.9rem;
+      font-size: 2rem;
+    }
+    /* mobile_menu_icon */
+    .header_menu_icon{
+      flex:auto;
+    }
+
+    .header_menu_icon_list{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header_menu_icon_1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  /* nav */
+  nav{
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+
+    .nav_navbar{
+      /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; */
+      list-style: none;
+      display: none;
+    }
+
+    .nav_navbar li{
+      text-align: center;
+    }
+
+/* section */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+  /* article */
+  article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #article_SelfIntro{
+    background: url('./img/codingIMG.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+    /* article_Self_content */
+    .bubble{
+      display: none;
+      margin: 7px 0;
+      max-width: 460px;
+    }
+
+    .BubbleActive{
+      display: inline-block;
+    }
+
+    .question_bubble{
+      background-color: white;
+      border-radius: 14px 14px 14px 0;
+      padding: 7px 15px 7px 15px;
+      float: left;
+      clear: both;
+    }
+
+    .answer_bubble{
+      background-color: white;
+      border-radius: 14px 14px 0 14px;
+      padding: 7px 15px 7px 15px;
+      float: right;
+      clear: both;
+    }
+
+    .article_Self_content{
+      width: 86%;
+      height: 85%;
+      border: 2px solid white;
+      border-radius: 20px;
+    }
+
+    .ariticle_Self_content_head{
+      text-align: center;
+    }
+
+    .ariticle_Self_content_head img{
+      width: 6vh;
+      height: 6vh;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .ariticle_Self_content_head h2{
+      color: white;
+      font-size: 1.7rem;
+      margin-top: 1vh;
+      margin-bottom: 0.5vh;
+      text-align: center;
+    }
+
+    .ariticle_Self_content_body{
+      /* display: flex;
+      flex-direction: column; */
+      color: black;
+      font-size: 1.0rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+
+  #article_portfolio{
+    background: url('./img/PortfolioBG.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+  }
+
+    /* article_portfolio_items */
+    .article_portfolio_items{
+      list-style: none;
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+      /* item */
+      .portfolio_item{
+        margin: 1.5rem 3rem;
+        border: 1px solid #2f2f2f;
+        border-radius: 30px;
+        text-align: center;
+      }
+
+        .item_content a{
+          text-decoration: none;
+        }
+
+        .item_content a img{
+          width: 80%;
+          height: 5rem;
+        }
+
+
+  #article_Contact{
+    background-attachment: fixed;
+  }
+
+    /* article_Contact_content */
+    .article_Contact_content{
+      width: 86%;
+      height: 85%;
+      border: 1px solid white;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact_list{
+      text-align: center;
+    }
+
+    .contact_list dt{
+      border-bottom: 1px solid gray;
+      margin-bottom: 8vh;
+    }
+
+    .contact_list h2{
+      margin-bottom: 2vh;
+    }
+
+    .contact_list p{
+      font-size: 2rem;
+    }
+
+    .contact_list dt a{
+      display: block;
+    }

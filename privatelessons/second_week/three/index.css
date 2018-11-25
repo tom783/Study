@@ -1,0 +1,233 @@
+.wrapper{
+  width: 100%;
+  background: url('./img/bg.jpg') no-repeat;
+  padding-bottom: 20px;
+}
+
+.pd20{
+  padding: 20px;
+}
+
+.center{
+  width: 62%;
+  /* 1200/1920 */
+  margin: 0 auto;
+}
+
+.cont_row{
+  width: 75%;
+  float: left;
+}
+
+.cont_row2{
+  width: 25%;
+  float: left;
+}
+
+.inner_row{
+  width: 75%;
+  float: left;
+}
+
+.inner_row2{
+  width: 25%;
+  float: left;
+}
+
+.content{
+  position: relative;
+}
+
+.text_btn{
+  color: white;
+  background-color: rgba(55, 92, 98, 0.87);
+  text-align: center;
+  height: 30px;
+  width: 96px;
+  line-height: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* header */
+header.center{
+  height: 125px;
+  position: relative;
+}
+
+.logo{
+  line-height: 125px;
+}
+
+.logo > a > img{
+  vertical-align: middle;
+}
+
+.global_btn{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.global_btn > a + a {
+  margin-left: 7px;
+}
+
+/* nav */
+nav.center{
+  height: 50px;
+}
+
+.navbar{
+  width: 100%;
+  height: 100%;
+}
+
+.navbar > li{
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+  font-size: 1.04vw;
+  font-weight: bold;
+  width: 16%;
+}
+
+.navbar > li + li{
+  margin-left: 2px;
+}
+
+/* main */
+.slider{
+  float: left;
+  width: 75%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider > ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0;
+  height: 100%;
+  width: 400%;
+}
+
+.slider > ul > li{
+  display: inline-block;
+  height: 100%;
+  width: 25%;
+}
+
+.slider > ul > li img{
+  height: 100%;
+  width: 100%;
+}
+
+.prev_btn, .next_btn{
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.prev_btn{
+  background: url('./img/prev.png') no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next_btn{
+  background: url('./img/next.png') no-repeat;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide_toggle{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide_toggle > span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.slide_toggle > span + span{
+  margin-left: 7px;
+}
+
+
+.intro{
+  float: left;
+  width: 25%;
+  height: 450px;
+  background: url('./img/bj_introduce.png') no-repeat 0 0;
+  background-color: #f3f3f3;
+  background-size: cover;
+  position: relative;
+}
+
+.intro > .text_btn{
+  bottom: 18px;
+  right: 18px;
+}
+
+
+.notice, .news{
+  height: 252px;
+}
+
+.content > h1{
+  font-weight: bold;
+}
+
+.content > h1 > span{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.more_btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.content > ul{
+  padding-top: 12px;
+  padding-left: 5px;
+}
+
+.content > ul > li + li{
+  margin-top: 12px;
+}
+
+.content > ul > li span{
+  display: block;
+}
+
+.news h1{
+  color: white;
+  font-weight: bold;
+}
+/*  */
+
+/*  */

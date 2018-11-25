@@ -1,0 +1,50 @@
+nav{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  width: 1400px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.logo{
+  display: inline-block;
+  width: 292px;
+  height: 34px;
+  background: url('http://www.evertrust.co.kr/images/main/logo.png') no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navbar{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navbar > li{
+  float: left;
+  margin-left: 56px;
+}
+
+.navbar > li > a{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header{
+  height: 840px;
+  background: url('http://www.evertrust.co.kr/images/main/visual4.jpg') no-repeat center top;
+  
+}
+
+
+.logo{
+
+}
+
+/*  */
