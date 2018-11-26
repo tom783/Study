@@ -36,15 +36,530 @@ nav{
   font-size: 20px;
 }
 
+.quick_menu{
+  position: fixed;
+  width: 100px;
+  top: 160px;
+  left: 50%;
+  margin-left: 600px;
+  z-index: 9999;
+}
+
+.quick_menu > h1{
+  background-color: #3a7499;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.quick_menu > ul{
+  background-color: #6fc5d9;
+}
+
+.quick_menu > ul > li{
+  border-bottom: 1px solid #64b9cd;
+}
+
+.quick_menu > ul > li > a{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+}
+
 header{
   height: 840px;
   background: url('http://www.evertrust.co.kr/images/main/visual4.jpg') no-repeat center top;
-  
+  /* background-size: cover; */
+}
+
+.solution{
+  height: 597px;
+  background: url('http://www.evertrust.co.kr/images/main/bg_section1.jpg') no-repeat center top;
+  position: relative;
+}
+
+.solution > .content > h1{
+  color: black;
+}
+
+.solution > .content > p{
+  color: #666666;
+}
+
+.solution_cont{
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.solution_cont > dt{
+  background-color: white;
+  float: left;
+  width: 272px;
+}
+
+.solution_cont > dt + dt{
+  margin-left: 10px;
+}
+
+.solution_cont > dt > a:hover{
+  border: 1px solid blue;
+}
+
+.solution_cont > dt > a{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 270px;
+  height: 270px;
+}
+
+.solution_cont > dt > a > span{
+  display: inline-block;
+}
+
+.solution_cont > dt > a > h2{
+  font-size: 19px;
+  color: black;
+}
+
+.solution_cont > dt > a > p{
+  font-size: 14px;
+  width: 200px;
+  margin: 0 auto;
+  color: #666666;
+}
+
+.about_us{
+  background: url('http://www.evertrust.co.kr/images/main/bg_section2.jpg') no-repeat center top;
+  height: 540px;
+  position: relative;
+}
+
+.about_us > .content > h1{
+  color: white;
+}
+
+.about_us > .content > p{
+  color: white;
+}
+
+.business{
+  background-color: rgb(217, 230, 230);
+  height: 740px;
+  position: relative;
+}
+
+.business > .content > h1{
+  color: black;
+}
+
+.business > .content > p{
+  color: #666666;
+}
+
+.business_cont{
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.business_cont > dt{
+  float: left;
+  background-color: white;
+  font-size: 0;
+  height: 430px;
+}
+
+.business_cont > dt + dt{
+  margin-left: 20px;
+}
+
+.business_cont > dt > a:first-child > span{
+  display: inline-block;
+  width: 335px;
+  overflow: hidden;
+}
+
+.business_cont > dt > a.cont_btn{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 334px;
+  padding-top: 40px;
+}
+
+.business_cont > dt > a.cont_btn > h2{
+  color: black;
+  font-size: 19px;
+  margin-bottom: 23px;
+}
+
+.business_cont > dt > a.cont_btn > p{
+  color: #666666;
+  font-size: 14px;
+}
+
+.business_cont > dt > a.view_btn{
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+  color: black;
+  font-size: 12px;
+}
+
+.recruit{
+  height: 540px;
+  position: relative;
+  background: url('http://www.evertrust.co.kr/images/main/bg_section4.jpg') no-repeat center top;
+}
+
+.recruit > .content > h1{
+  color: white;
+}
+
+.recruit > .content > p{
+  color: white;
+}
+
+.article{
+  height: 435px;
+  position: relative;
+}
+
+.article_01{
+  width: 548px;
+  height: 260px;
+  border: 1px solid #dddddd;
+  padding: 0 25px;
+  float: left;
+}
+
+.article_01_title{
+  height: 61px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.article_01_title > li{
+  float: left;
+  width: 25%;
+}
+
+.article_01_title > li > a{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  height: 61px;
+  line-height: 61px;
+  color: black;
+  position: relative;
+}
+
+.article_01_title > li + li > a::after{
+  display: inline-block;
+  width: 1px;
+  height: 17px;
+  content: '';
+  background-color: #dddddd;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.article_01_title > li.on > a{
+  color: #0097e0;
+  border-bottom: 3px solid #0097e0;
+}
+
+.article_01_cont{
+  height: 195px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.date{
+  display: table-cell;
+  width: 85px;
+  height: 85px;
+  vertical-align: middle;
+  background-color: #0097e0;
+  padding-top: 5px;
+}
+
+.date > span{
+  text-align: center;
+  display: block;
+  line-height: 1;
+}
+
+.date > span:nth-child(1){
+  color: white;
+  font-size: 14px;
+}
+
+.date > span:nth-child(2){
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.article_01_cont > ul{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 385px;
+}
+
+.article_01_cont > ul > li > a{
+  color: #4c4c4c;
+  display: block;
+  font-size: 0;
+}
+
+.article_01_cont > ul > li > a > span.cont{
+  display: inline-block;
+  width: 304px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  color: #4c4c4c;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.article_01_cont > ul > li > a > span.day{
+  display: inline-block;
+  font-size: 12px;
+  color: #888888;
+  margin-left: 10px;
+}
+
+.article_02{
+  width: 386px;
+  height: 260px;
+  float: left;
+  background: url('http://www.evertrust.co.kr/images/main/bg_section5_2.jpg') no-repeat top center;
+  display: table;
+}
+
+.article_02 > ul{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.article_02 > ul > li{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.article_02 > ul > li > a{
+  display: block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 15px;
+  color: white;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.article_02 > ul > li > a::after{
+  display: inline-block;
+  position: absolute;
+  left: 92%;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 20px;
+  height: 10px;
+  background: url('http://www.evertrust.co.kr/images/main/icon_arrow.png') no-repeat;
+}
+
+.article_02 > ul > li + li{
+  margin-top: 10px;
+}
+
+.article_02 > ul > li:nth-child(1){
+  background: url('http://www.evertrust.co.kr/images/main/icon_quick_01.png') no-repeat 18px center;
+  background-size: 19px;
+}
+
+.article_02 > ul > li:nth-child(2){
+  background: url('http://www.evertrust.co.kr/images/main/icon_quick_02.png') no-repeat 18px center;
+  background-size: 19px;
+}
+
+.article_02 > ul > li:nth-child(3){
+  background: url('http://www.evertrust.co.kr/images/main/icon_quick_03.png') no-repeat 18px center;
+  background-size: 19px;
+}
+
+.article_02 > ul > li:nth-child(4){
+  background: url('http://www.evertrust.co.kr/images/main/icon_quick_04.png') no-repeat 18px center;
+  background-size: 19px;
+}
+
+.article_03{
+  width: 386px;
+  height: 260px;
+  float: left;
+}
+
+.article_03 > iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.customer{
+  height: 44px;
+  margin-top: 30px;
+  position: relative;
+  float: left;
+  width: 1400px;
+}
+
+.customer_cont{
+  width: 1400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.customer_cont > h2{
+  font-size: 17px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.customer_cont > iframe{
+  float: right;
 }
 
 
-.logo{
-
+footer{
+  min-height: 135px;
+  background-color: #384259;
+  padding: 30px 0;
 }
+
+.footer_cont{
+  width: 1400px;
+  height: 87px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer_cont > dl{
+  overflow: hidden;
+}
+
+.footer_cont > dl > dt{
+  float: left;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.footer_cont > dl > dt + dt{
+  margin-left: 25px;
+}
+
+.footer_cont > dl > dt > a{
+  color: #dddddd;
+}
+
+address{
+  position: absolute;
+  top: 0;
+  left: 325px;
+}
+
+address > span, address > .tel > a{
+  font-size: 13px;
+  color: white;
+  line-height: 24px;
+}
+
+address > .fax{
+  margin-left: 20px;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0;
+  left: 325px;
+  font-size: 13px;
+  color: white;
+  margin-top: 15px;
+}
+
+.footer_logo{
+  display: block;
+  background: url('http://www.evertrust.co.kr/images/main/footer_logo.png') no-repeat;
+  position: absolute;
+  width: 175px;
+  height: 75px;
+  right: 0;
+  top: 0;
+}
+
+/* article common */
+.article > .content > div + div:not(:last-child){
+  margin-left: 40px;
+}
+
+
+/* section common */
+.content{
+  position: absolute;
+  width: 1400px;
+  left: 50%;
+  top: 50%;
+  margin-left: -700px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content > h1{
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.content > p{
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+a.btn{
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 170px;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+
+
+
 
 /*  */

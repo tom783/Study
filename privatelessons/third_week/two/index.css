@@ -1,0 +1,233 @@
+.more_nav{
+  background-color: rgb(73, 41, 63);
+  height: 30px;
+}
+
+.more_navbar{
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.more_navbar > ul{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.more_navbar > ul > li{
+  float: left;
+  padding: 0 10px;
+  position: relative;
+}
+
+.more_navbar > ul > li + li::before{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 1px;
+  height: 11px;
+  background-color: #acacac;
+}
+
+.more_navbar > ul > li > a{
+  display: block;
+  color: #acacac;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+nav{
+  height: 90px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+}
+
+.logo{
+  display: inline-block;
+}
+
+.navbar{
+  float: right;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+.navbar > li{
+  float: left;
+}
+
+.navbar > li + li{
+  margin-left: 90px;
+}
+
+.navbar > li > a{
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  font-size: 17px;
+  color: black;
+}
+
+.visual{
+  height: 575px;
+  position: relative;
+}
+
+.visual_wrap{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual_cont{
+  width: 515%;
+}
+
+.visual_cont > dt{
+  float: left;
+  width: 1663px;
+}
+
+.visual_cont > dt > span{
+  display: block;
+  height: 575px;
+  background: url('http://glovane.com/images/main/visual01.jpg') no-repeat center;
+}
+
+.prev_btn{
+  position: absolute;
+  display: block;
+  width: 53px;
+  height: 53px;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 600px;
+  cursor: pointer;
+  background: url('http://glovane.com/images/main/btn_prev.png') no-repeat;
+}
+
+.next_btn{
+  position: absolute;
+  display: block;
+  width: 53px;
+  height: 53px;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 600px;
+  cursor: pointer;
+  background: url('http://glovane.com/images/main/btn_next.png') no-repeat;
+}
+
+.toggle{
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -250px;
+  text-align: center;
+}
+
+.toggle > span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 3px;
+  background: url('http://glovane.com/images/main/off.png') no-repeat;
+  cursor: pointer;
+}
+
+.toggle > span.on{
+  background: url('http://glovane.com/images/main/on.png') no-repeat;
+}
+
+.intro{
+  overflow: hidden;
+}
+
+.about_us{
+  float: left;
+  width: 50%;
+  height: 219px;
+  background-color: #29a6e8;
+}
+
+.about_cont{
+  float: right;
+  width: 500px;
+  position: relative;
+  background: url('http://glovane.com/images/main/about_bg.jpg') no-repeat;
+  background-position: 350px center;
+}
+
+.about_cont > h3{
+  color: white;
+}
+
+.about_cont > p{
+  color: white;
+}
+
+.about_cont > .view_btn{
+  background: url('http://glovane.com/images/main/btn_view01.gif') no-repeat;
+}
+
+.contact_us{
+  float: left;
+  width: 50%;
+  height: 219px;
+  background-color: white;
+}
+
+.contact_cont{
+  float: left;
+  width: 500px;
+  padding-left: 35px;
+  position: relative;
+  background: url('http://glovane.com/images/main/contact_bg.jpg') no-repeat;
+  background-position: right center;
+}
+
+.contact_cont > .view_btn{
+  background: url('http://glovane.com/images/main/btn_view02.gif') no-repeat;
+}
+
+
+/* intro common */
+.intro_title{
+  font-size: 25px;
+  margin-top: 20px;
+  color: black;
+  font-weight: normal;
+}
+
+.view_btn{
+  display: block;
+  width: 95px;
+  height: 26px;
+  overflow: hidden;
+  text-indent: -99999px;
+  margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
