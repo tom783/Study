@@ -1,0 +1,161 @@
+header{
+  height: 105px;
+}
+
+.header_cont{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo{
+  display: inline-block;
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.logo > img{
+  vertical-align: middle;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  right: 132px;
+}
+
+.navbar > li{
+  height: 105px;
+  line-height: 105px;
+  float: left;
+  margin-left: 48px;
+}
+
+.navbar > li > a{
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+.lang_btn{
+  position: absolute;
+  top: 38px;
+  right: 0;
+  height: 33px;
+  width: 98px;
+  background: url('http://capstoneam.co.kr/images/sub/lang_off.png') no-repeat left top;
+  border-radius: 50px;
+  border: 1px solid #949494;
+  overflow: hidden;
+}
+
+.lang_btn > dt{
+  line-height: 34px;
+}
+
+.lang_btn > dt > a{
+  font-size: 14px;
+  color: #9f1818;
+  padding-left: 3px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+
+.visual{
+  height: 695px;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual_cont{
+  position: absolute;
+  width: 1900px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 695px;
+}
+
+.visual_cont > li{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.visual_cont > li > span{
+  display: block;
+  height: 100%;
+  background: url('http://capstoneam.co.kr/rolling_banner/item/921d52d7f0.jpg') no-repeat;
+}
+
+.slide_count{
+  position: absolute;
+  top: 179px;
+  left: 50%;
+  width: 120px;
+  margin-left: -60px;
+  text-align: center;
+}
+
+.slide_count > strong{
+  font-size: 23px;
+  color: white;
+  text-shadow: 0 3px 5px black;
+  font-weight: 500;
+}
+
+.slide_text{
+  position: absolute;
+  width: 921px;
+  height: 378px;
+  left: 50%;
+  top:179px;
+  margin-left: -449px;
+  background: url('http://capstoneam.co.kr/images/main/visual_text.png') no-repeat;
+}
+
+.slide_scroll{
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide_scroll > a > span{
+  color: white;
+  font-size: 16px;
+  display: black;
+  font-weight: 500;
+  text-shadow: 0 2px 3px black;
+}
+
+.mouse{
+  background: url('http://capstoneam.co.kr/images/main/mouse-icon.png') no-repeat;
+  width: 35px;
+  height: 63px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
