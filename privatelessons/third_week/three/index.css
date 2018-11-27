@@ -142,20 +142,278 @@ header{
   margin-top: 10px;
 }
 
+.intro{
+  padding-bottom: 90px;
+}
+
+.intro_cont{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro_cont > h2{
+  margin-top: 75px;
+  margin-bottom: 46px;
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+}
+
+.intro_cont_list{
+  overflow: hidden;
+}
+
+.intro_cont_list > li{
+  width: 300px;
+  height: 400px;
+  float: left;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.intro_cont_list > li:hover{
+  transform: scale(1.1);
+}
+
+.intro_cont_list > li:nth-child(1){
+  background: url('http://capstoneam.co.kr/images/main/sec1_con01.jpg') no-repeat;
+  background-size: cover;
+}
+
+.intro_cont_list > li:nth-child(2){
+  background: url('http://capstoneam.co.kr/images/main/sec1_con02.jpg') no-repeat;
+  background-size: cover;
+}
+
+.intro_cont_list > li:nth-child(3){
+  background: url('http://capstoneam.co.kr/images/main/sec1_con03.jpg') no-repeat;
+  background-size: cover;
+}
+
+.intro_cont_list > li:nth-child(4){
+  background: url('http://capstoneam.co.kr/images/main/sec1_con04.jpg') no-repeat;
+  background-size: cover;
+}
 
 
 
 
+.intro_cont_list > li > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 150px; */
+  text-align: center;
+}
+
+.intro_cont_list > li > a::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.intro_cont_list > li:hover > a::before{
+  display: none;
+}
+
+/* .intro_cont_list > li > a > h3{
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 0 0 8px black;
+}
+
+.intro_cont_list > li > a > span{
+  display: block;
+  width: 63px;
+  height: 63px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: url('http://capstoneam.co.kr/images/main/sec1_more.png') no-repeat;
+} */
+
+.intro_cont_list > li > a > h3{
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 0 0 8px black;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+
+.intro_cont_list > li > a > span{
+  width: 64px;
+  height: 63px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 204px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: url('http://capstoneam.co.kr/images/main/sec1_more.png') no-repeat;
+}
+
+.intro_cont_list > li:hover > a > span{
+  background: url('http://capstoneam.co.kr/images/main/sec1_more_on.png') no-repeat;
+}
 
 
+.article{
+  padding-top: 50px;
+  padding-bottom: 68px;
+  background-color: #f7f7f7;
+}
 
+.article_cont{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.article_cont_right, .article_cont_left{
+  height: 332px;
+  width: 585px;
+  padding: 0 30px;
+  position: relative;
+  background-color: white;
+}
 
+.article_cont_left{
+  float: left;
+}
 
+.article_cont_right{
+  float: right;
+}
 
+.article_cont_left > h1{
+  border-bottom: 1px solid #dddddd;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  height: 74px;
+  color: black;
+}
 
+.article_cont_common{
+  height: 201px;
+}
 
+.article_cont_common > ul{
+  overflow: hidden;
+}
 
+.article_cont_common > ul > li{
+  float: left;
+  width: 100%;
+}
+
+.article_cont_common > ul > li:nth-child(1){
+
+}
+
+.article_cont_common > ul > li > a{
+  display: block;
+}
+
+.article_cont_common > ul > li > a > span{
+  display: inline-block;
+  height: 201px;
+  width: 180px;
+  background: url('http://capstoneam.co.kr/product/data/item/1540357726/1540357726_l1.jpg') no-repeat;
+  transition: all 0.4s;
+}
+
+.article_cont_common > ul > li:hover > a > span{
+  transform: scale(1.1);
+}
+
+.article_sub_cont{
+  width: 315px;
+  float: right;
+}
+
+.article_sub_cont > h2{
+  font: 18px;
+  color: black;
+  font-weight: 500;
+  margin-top: -1px;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article_sub_cont > ul{
+  padding-top: 25px;
+}
+
+.article_sub_cont > ul > li{
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  padding-left: 17px;
+  position: relative;
+}
+
+.article_sub_cont > ul > li::before{
+  position: absolute;
+  top: 15px;
+  left: 1px;
+  width: 3px;
+  height: 3px;
+  background-repeat: 50%;
+  background-color: #9f1818;
+}
+
+.article_sub_cont > ul > li > strong{
+  display: inline-block;
+  width: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+
+.article_sub_cont > ul > li > span{
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 205px;
+  display: inline-block;
+}
+
+.prev{
+  right: 82px;
+  background: url('http://capstoneam.co.kr/images/main/prev.jpg') no-repeat;
+}
+
+.stop{
+  right: 56px;
+  background: url('http://capstoneam.co.kr/images/main/stop.jpg') no-repeat;
+}
+
+.next{
+  right: 30px;
+  background: url('http://capstoneam.co.kr/images/main/next.jpg') no-repeat;
+}
+
+/* article common */
+.article_cont_common{
+  overflow: hidden;
+}
+
+.article_btn{
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 30px;
+}
 
 
 /*  */
