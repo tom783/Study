@@ -1,0 +1,135 @@
+header, main, footer{
+  min-width: 1200px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner{
+  position: relative;
+  height: 110px;
+  overflow: hidden;
+}
+
+.banner > a{
+  display: block;
+  height: 120px;
+  background: url('http://ktmarket.co.kr/rolling_banner/item/cd32dd8177.jpg') center top no-repeat;
+}
+
+.header{
+  height: 105px;
+  background: url('http://ktmarket.co.kr/images/main/header_bg.jpg') no-repeat;
+}
+
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header_logo{
+  position: absolute;
+  top:18px;
+  left: 0;
+}
+
+.header_topMenu{
+  float: right;
+}
+
+.header_topMenu > li{
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 18px;
+}
+
+.header_topMenu > li > a{
+  font-size: 13px;
+  display: block;
+  color: white;
+}
+
+.header_menu{
+  position: absolute;
+  top: 35px;
+  right: 330px;
+}
+
+.header_menu > li{
+  position: relative;
+  float: left;
+  margin-left: 76px;
+  height: 70px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.header_menu > li > a{
+  font-size: 17px;
+  color: black;
+  display: block;
+}
+
+.search{
+  position: absolute;
+  top: 50px;
+  right: 51px;
+  width: 250px;
+  height: 40px;
+  font-size: 0;
+}
+
+.search_form > input{
+  width: 209px;
+  height: 40px;
+  border: 1px solid #3b3a40;
+  border-right: 0;
+  outline: 0;
+  font-size: 14px;
+  color: #777;
+  padding-left: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.search_button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  width: 41px;
+  height: 40px;
+  background: url('http://ktmarket.co.kr/images/main/search_btn.jpg') no-repeat;
+  cursor: pointer;
+}
+
+.menuButton{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50px;
+  right: 1px;
+  cursor: pointer;
+  background: url('http://ktmarket.co.kr/images/main/btn_off.jpg') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
