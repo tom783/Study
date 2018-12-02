@@ -1,4 +1,4 @@
-header, main, footer{
+header, section, main, footer{
   min-width: 1200px;
   max-width: 1920px;
   margin: 0 auto;
@@ -16,6 +16,17 @@ header, main, footer{
   display: block;
   height: 120px;
   background: url('http://ktmarket.co.kr/rolling_banner/item/cd32dd8177.jpg') center top no-repeat;
+}
+
+.banner > span{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: 585px;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background: url('http://ktmarket.co.kr/images/main/hb_close.png') no-repeat;
 }
 
 .header{
@@ -119,8 +130,36 @@ header, main, footer{
 }
 
 
+.visual{
+  height: 600px;
+  position: relative;
+}
 
+.visual > ul {
+  position: relative;
+}
 
+.visual > ul > li{
+  position: absolute;
+  width: 100%;
+}
+
+.visual > ul > li > a{
+  display: block;
+  height: 600px;
+}
+
+.visual > ul > li > a:nth-child(1){
+  background: url('http://ktmarket.co.kr/rolling_banner/item/2b658a9899.jpg') no-repeat center top;
+}
+
+.visual > ul > li > a:nth-child(2){
+
+}
+
+.visual > ul > li > a:nth-child(3){
+
+}
 
 
 
