@@ -1,0 +1,35 @@
+# Study for html5, css3 & Clone Web Site
+
+Clone target site
+{
+http://www.baduksin.com/
+http://www.gmcc.or.kr/
+http://kiup.gamgakdesign.com/main.php
+http://www.cpch.or.kr/
+http://www.alices-garden.co.kr/
+http://www.glovane.com/
+http://www.capstoneam.co.kr/
+http://www.evertrust.co.kr/
+
+}
+
+#didn't use javascript;
+
+#privatelessons structure tree
+
+->
+/privatelessons ->first_week  ->one
+                              ->two
+                
+                ->second_week ->one
+                              ->two
+                              ->three
+                              
+                ->third_week  ->one
+                              ->two
+                              ->three
+                              
+                ->fourth_week ->one
+                              ->two
+                              ->three
+                              
