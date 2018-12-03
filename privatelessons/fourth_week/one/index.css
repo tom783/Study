@@ -161,8 +161,311 @@ header, section, main, footer{
 
 }
 
+.visual_pager{
+  position: absolute;
+  top: 519px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.visual_pager > a{
+  display: inline-block;
+  width: 25px;
+  height: 31px;
+  background: url('http://ktmarket.co.kr/images/main/bx_off.png') no-repeat;
+}
+
+.visual_pager > a.over{
+  width: 31px;
+  background: url('http://ktmarket.co.kr/images/main/bx_on.png') no-repeat;
+}
+
+.quick{
+  position: absolute;
+  top: 875px;
+  left: 50%;
+  margin-left: 630px;
+  width: 100px;
+  z-index: 999;
+}
+
+.quick > ul > li{
+  width: 100%;
+  height: 101px;
+  border: 1px solid white;
+  background-color: #3b3a40;
+  overflow: hidden;
+}
+
+.quick > ul > li > a{
+  display: table-cell;
+  height: 98px;
+  width: 98px;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+.quick > ul > li > a > span{
+  display: block;
+  width: 100%;
+}
+
+#top_btn{
+  background-color: white;
+  height: auto;
+}
+
+#top_btn > a{
+  height: auto;
+}
+
+.event{
+  height: 605px;
+  padding-top: 60px;
+}
+
+.event > div > ul{
+  overflow: hidden;
+}
+
+.event > div > ul > li{
+  float: left;
+  width: 390px;
+  height: 230px;
+  overflow: hidden;
+}
+
+.event > div > ul > li + li{
+  margin-left: 15px;
+}
+
+.event > div > ul > li:nth-child(1){
+  width: 390px;
+  height: 475px;
+}
+
+.event > div > ul > li:nth-child(2), .event > div > ul > li:nth-child(3){
+  margin-bottom: 15px;
+}
+
+.event > div > ul > li > a{
+  display: block;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.event > div > ul > li:hover > a{
+  transform: scale(1.1);
+}
+
+.event > div > ul > li:nth-child(1) > a{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/24a57b449e.jpg') no-repeat center top;
+}
+
+.event > div > ul > li:nth-child(2) > a{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/20560c08df.jpg') no-repeat center top;
+}
+
+.event > div > ul > li:nth-child(3) > a{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/a5343f509c.jpg') no-repeat center top;
+}
+
+.event > div > ul > li:nth-child(4) > a{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/906328c48c.jpg') no-repeat center top;
+}
+
+.event > div > ul > li:nth-child(5) > a{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/a6e3746651.jpg') no-repeat center top;
+}
 
 
+.product{
+  height: 1296px;
+  background-color: #dfdfdf;
+  text-align: center;
+  padding-top: 54px;
+}
+
+.product > div > h2{
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 11px;
+}
+
+.product > div > p{
+  color: #333;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 45px;
+}
+
+a.moreBtn{
+  position: absolute;
+  font-size: 12px;
+  top: 25px;
+  right: 0;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid black;
+  letter-spacing: 0.2px;
+  color: black;
+}
+
+.product_list{
+  overflow: hidden;
+}
+
+.product_best{
+  width: 895px;
+  float: left;
+}
+
+.box{
+  position: relative;
+  float: left;
+  width: 285px;
+  height: 502px;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 23px;
+  background-color: white;
+}
+
+.box + .box{
+  margin-left: 20px;
+}
+
+.box:nth-child(3n-2){
+  margin-left: 0;
+}
+
+.box:nth-child(-n+3){
+  margin-bottom: 20px;
+}
+
+.box:hover{
+  border: 1px solid orange;
+}
+
+.box > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 88;
+}
+
+.box > h2{
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.box > p{
+  font-size: 15px;
+  color: black;
+}
+
+.phoneImg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 283px;
+  height: 280px;
+}
+
+.phoneImg > img{
+  width: 283px;
+  height: 280px;
+}
+
+.box > dl{
+  padding: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.box > dl > dt{
+  font-size: 20px;
+  color: #ff6116;
+}
+
+.box > dl > dd{
+  font-size: 15px;
+  color: black;
+  margin-top: 7px;
+}
+
+.status{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+}
+
+.new{
+  background-color: #663399;
+}
+
+.hit{
+  background-color: #fd665f;
+}
+
+.md{
+  background-color: #4fd2ca;
+}
+
+.cover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 283px;
+  height: 280px;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.2s;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.box:hover .cover{
+  opacity: 1;
+}
+
+a.cover_btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #ff6116;
+  color: white;
+  font-size: 15px;
+  margin: auto;
+  z-index: 99;
+}
 
 
 
