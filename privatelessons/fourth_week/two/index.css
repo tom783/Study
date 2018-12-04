@@ -130,10 +130,9 @@ main{
   position: absolute;
   left: 5%;
   top: 10%;
-  width: 29%;
-  height: 60px;
+  width: 30.82%;
+  height: 90px;
   background: url('http://daerimworld.com/e_images/main/v_txt1.png') no-repeat;
-  background-size: cover;
 }
 
 .visual_cont{

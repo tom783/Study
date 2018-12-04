@@ -40,6 +40,37 @@ header, section, main, footer{
   position: relative;
 }
 
+.inner > ul{
+  overflow: hidden;
+}
+
+.inner > h2{
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 11px;
+}
+
+.inner >  p{
+  color: #333;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 45px;
+}
+
+a.moreBtn{
+  position: absolute;
+  font-size: 12px;
+  top: 25px;
+  right: 0;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid black;
+  letter-spacing: 0.2px;
+  color: black;
+}
+
 .header_logo{
   position: absolute;
   top:18px;
@@ -288,32 +319,6 @@ header, section, main, footer{
   padding-top: 54px;
 }
 
-.product > div > h2{
-  color: #333;
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 11px;
-}
-
-.product > div > p{
-  color: #333;
-  font-size: 16px;
-  color: black;
-  margin-bottom: 45px;
-}
-
-a.moreBtn{
-  position: absolute;
-  font-size: 12px;
-  top: 25px;
-  right: 0;
-  width: 80px;
-  height: 35px;
-  line-height: 35px;
-  border: 1px solid black;
-  letter-spacing: 0.2px;
-  color: black;
-}
 
 .product_list{
   overflow: hidden;
@@ -467,11 +472,384 @@ a.cover_btn{
   z-index: 99;
 }
 
+.product_banner{
+  float: left;
+  width: 305px;
+}
+
+.product_banner >.box{
+  margin-left: 20px;
+}
+
+.product_banner > li:nth-child(1) > .banner_img{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/4a83fae5c5.jpg') no-repeat;
+}
+
+.product_banner > li:nth-child(2) > .banner_img{
+  background: url('http://ktmarket.co.kr/rolling_banner/item/3079cbb54a.jpg') no-repeat;
+}
+
+.newProduct{
+  background-color: white;
+  height: 774px;
+  text-align: center;
+  padding-top: 54px;
+}
+
+.benefit{
+  height: 560px;
+  padding-top: 54px;
+  text-align: center;
+  background: url('http://ktmarket.co.kr/images/main/section4_bg.jpg') no-repeat center top;
+}
+
+.benefit_list{
+  float: left;
+  width: 285px;
+  height: 285px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit_list + .benefit_list{
+  margin-left: 20px;
+}
+
+.benefit_list:hover > a{
+  transform: scale(1.2);
+}
+
+.benefit_list > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.benefit_list > a:nth-child(1){
+  background: url('http://ktmarket.co.kr/rolling_banner/item/e5f3fa3328.png') no-repeat;
+}
+
+.benefit_list > a:nth-child(2){
+  background: url('http://ktmarket.co.kr/rolling_banner/item/b9947fb466.png') no-repeat;
+}
+
+.benefit_list > a:nth-child(3){
+  background: url('http://ktmarket.co.kr/rolling_banner/item/ddf1a675b1.png') no-repeat;
+}
+
+.benefit_list > a:nth-child(4){
+  background: url('http://ktmarket.co.kr/rolling_banner/item/0b70ebb872.png') no-repeat;
+}
+
+.community{
+  height: 721px;
+  text-align: center;
+  padding-top: 54px;
+  background: url('http://ktmarket.co.kr/images/main/section5_bg.jpg') no-repeat center top;
+}
+
+.community > .inner > h2, .community > .inner > p{
+  color: white;
+}
+
+.community_top{
+  overflow: hidden;
+}
+
+.review{
+  float: left;
+  width: 285px;
+  height: 306px;
+  border: 1px solid white;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.community_title{
+  font-size: 20px;
+  color: white;
+  height: 59px;
+  line-height: 59px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+
+.review_cont{
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  width: 500%;
+}
+
+.review_cont > li{
+  float: left;
+  width: 243px;
+  margin-right: 23px;
+  padding-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.review_cont > li > h3{
+  padding-right: 10px;
+  margin-bottom: 18px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.review_cont > li > p{
+  height: 104px;
+  line-height: 25px;
+  overflow: hidden;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+.date{
+  display: block;
+  float: left;
+  margin-top: 23px;
+  color: white;
+  font-size: 15px;
+  width: 145px;
+}
+
+.star{
+  float: left;
+  margin-top: 23px;
+}
+
+.star > img{
+  vertical-align: -6px;
+}
+
+.review_cont > li > a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.prevBtn{
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  top: 30px;
+  right: 28px;
+  background: url('http://ktmarket.co.kr/images/main/re_prev.png') no-repeat;
+  z-index: 66;
+  cursor: pointer;
+}
+
+.nextBtn{
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  top: 30px;
+  right: 5px;
+  background: url('http://ktmarket.co.kr/images/main/re_next.png') no-repeat;
+  z-index: 66;
+  cursor: pointer;
+}
 
 
+.realTime{
+  float: left;
+  width: 590px;
+  margin-left: 20px;
+}
+
+.realTime > .community_title{
+  border: 1px solid white;
+  margin-bottom: 16px;
+}
+
+.realTime_box{
+  height: 225px;
+  overflow: hidden;
+}
+
+.realTime_cont{
+
+}
 
 
+.customer{
+  float: right;
+  width: 285px;
+  height: 306px;
+  border: 1px solid white;
+  padding-top: 14px;
+}
+
+.customer > h2{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.customer > strong{
+  display: block;
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.customer > span{
+  display: block;
+  width: 176px;
+  height: 27px;
+  line-height: 27px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 auto 9px;
+}
+
+.customer > p{
+  font-size: 15px;
+  color: white;
+}
+
+.customer > span.account{
+  margin-top: 24px;
+}
+
+.community_bottom{
+  margin-top: 30px;
+}
 
 
+.community_bottom > li{
+  float: left;
+}
 
+.community_bottom > li > a{
+  display: table-cell;
+  width: 162px;
+  height: 110px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid white;
+}
+
+.community_bottom span{
+  display: inline-block;
+  width: 51px;
+  height: 45px;
+}
+
+.community_bottom > li:nth-child(1) span{
+  background: url('http://ktmarket.co.kr/images/main/icon01.png') center center no-repeat;
+
+}
+
+.community_bottom > li:nth-child(2) span{
+  background: url('http://ktmarket.co.kr/images/main/icon02.png') center center no-repeat;
+}
+
+.community_bottom > li:nth-child(3) span{
+  background: url('http://ktmarket.co.kr/images/main/icon03.png') center center no-repeat;
+}
+
+.community_bottom > li:nth-child(4) span{
+  background: url('http://ktmarket.co.kr/images/main/icon04.png') center center no-repeat;
+}
+
+.community_bottom > li:nth-child(5) span{
+  background: url('http://ktmarket.co.kr/images/main/icon05.png') center center no-repeat;
+}
+
+.community_bottom > li:nth-child(6) span{
+  background: url('http://ktmarket.co.kr/images/main/icon06.png') center center no-repeat;
+}
+
+.community_bottom > li:nth-child(7) span{
+  background: url('http://ktmarket.co.kr/images/main/icon07.png') center center no-repeat;
+}
+
+
+.community_bottom p{
+  color: white;
+  font-size: 15px;
+}
+
+.community_bottom > li + li{
+  margin-left: 11px;
+}
+
+
+.bottom_banner{
+  height: 210px;
+  padding-bottom: 10px;
+}
+
+.bottom_banner > a{
+  display: block;
+  height: 100%;
+  background: url('http://ktmarket.co.kr/rolling_banner/item/1a8aecfce4.jpg') no-repeat;
+}
+
+footer{
+  height: 187px;
+  background-color: #333;
+}
+
+.footer_inner{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-top: 36px;
+}
+
+.footer_logo{
+  position: absolute;
+  top: 39px;
+  left: 0;
+}
+
+.footer_logo_kt{
+  position: absolute;
+  top: 39px;
+  left: 90px;
+}
+
+.footer_logo_kt img{
+  width: 80px;
+  height: 80px;
+}
+
+.footer_menu{
+  margin-bottom: 20px;
+}
+
+.footer_menu > span > a{
+  color: white;
+  font-size: 13px;
+}
+
+.footer_menu > span:nth-child(1)::after{
+  content: '.';
+  display: inline-block;
+  color: white;
+  padding: 0 4px;
+}
+
+address{
+  font-size: 13px;
+  color: #bbb;
+  line-height: 26px;
+}
+address > p > span{
+  margin-right: 14px;
+}
 /*  */
