@@ -1,0 +1,256 @@
+/* header */
+
+header{
+  height: 65px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.header__logo{
+  text-align: center;
+}
+
+.header__logo a{
+  display: inline-block;
+  height: 37.5px;
+}
+
+.header__logo a img{
+  height: 37.5px;
+}
+
+#menuBar{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  height: 28px;
+  margin: auto 0;
+}
+
+#menuBar img{
+  height: 28px;
+}
+
+/* visual */
+
+.visual a{
+  display: block;
+  padding-top: 68.7%;
+  background: url('http://barunhae.com/mobile/images/main/visual1.jpg') center no-repeat;
+  background-size: cover;
+}
+
+
+/* quickMenu */
+
+.quickMenu{
+  /* height: 125px; */
+  overflow: hidden;
+}
+
+.quickMenu li{
+  float: left;
+  display: table;
+  width: 50%;
+}
+
+.quickMenu li a{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 125px;
+  font-size: 2.333rem;
+}
+
+.quickMenu li a p{
+  color: white;
+}
+
+.quickMenu li:nth-child(1){
+  background-color: #fcc11e;
+}
+
+.quickMenu li:nth-child(1) span{
+  display: inline-block;
+  background: url('http://barunhae.com/mobile/images/main/main_quick1.png') no-repeat;
+  background-size: cover;
+  width: 73px;
+  height: 54px;
+  margin-bottom: 10px;
+}
+
+.quickMenu li:nth-child(2){
+  background-color: #604f4f;
+}
+
+.quickMenu li:nth-child(2) span{
+  display: inline-block;
+  background: url('http://barunhae.com/mobile/images/main/main_quick2.png') no-repeat;
+  background-size: cover;
+  width: 73px;
+  height: 54px;
+  margin-bottom: 10px;
+}
+
+/* article */
+
+.article{
+  position: relative;
+  padding: 20px 80px;
+}
+
+.article__title{
+  font-size: 19px;
+  color: black;
+}
+
+.article__moreBtn{
+  position: absolute;
+  right: 80px;
+  top: 20px;
+}
+
+.article__moreBtn img{
+  height: 30px;
+  width: 30px;
+}
+
+.article__cont{
+  margin-top: 12px;
+}
+
+.article__cont > li{
+  padding-left: 10px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.article__cont > li::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background: url('http://barunhae.com/mobile/images/main/dot.jpg') no-repeat;
+}
+
+.article__cont > li a{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: black;
+}
+
+/* intro */
+
+.intro{
+  height: 200px;
+  background: url('http://barunhae.com/mobile/images/main/bg_main_bottom_quick.jpg') center top no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.intro__title{
+  font-size: 1.25vw;
+  color: black;
+  font-weight: 700;
+}
+
+.intro > p{
+  font-size: 0.972vw;
+  margin-top: 5px;
+  color: black;
+}
+
+.intro__menu{
+  overflow: hidden;
+  margin-top: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro__menu li{
+  float: left;
+}
+
+.intro__menu li + li{
+  margin-left: 17px;
+}
+
+.intro__menu li a{
+  display: inline-block;
+  padding-top: 20px;
+  color: white;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+.intro__menu li:nth-child(1) a{
+  background-color: #7ea529;
+}
+
+.intro__menu li:nth-child(2) a{
+  background-color: #4ca4cd;
+}
+
+.intro__menu li:nth-child(3) a{
+  background-color: #82679a;
+}
+
+/* tel */
+
+.tel{
+  height: 95px;
+  background-color: #478cd1;
+  padding-top: 17px;
+  text-align: center;
+  position: relative;
+}
+
+.tel__img{
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  margin-left: -130px;
+  width: 54px;
+  height: 54px;
+  background: url('http://barunhae.com/mobile/images/main/tel.png') no-repeat;
+  background-size: cover;
+}
+
+.tel__title{
+  color: white;
+  font-size: 1.11vw;
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+.tel > a{
+  color: yellow;
+  font-size: 1.875vw;
+  margin-left: 60px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+
+/* footer */
+
+footer{
+  padding: 15px 0;
+  background-color: #444444;
+  text-align: center;
+}
+
+footer > p{
+  color: white;
+  font-weight: 500;
+}
+
+/*  */
