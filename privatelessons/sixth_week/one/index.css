@@ -1,0 +1,98 @@
+/* common */
+.inner{
+  width: 78.94%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+/* header */
+header{
+  height: 110px;
+  padding-top: 40px;
+}
+
+.logo{
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.logo > a{
+  display: block;
+  width: 160px;
+  height: 40px;
+  background: url('http://www.inplanners.com/images/main/logo.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.nav{
+  float: right;
+}
+
+.nav > li{
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.nav > li + li{
+  margin-left: 58px;
+}
+
+.nav > li > a{
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav__second{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  padding-top: 30px;
+  display: none;
+}
+
+.nav > li:hover > .nav__second{
+  display: block;
+}
+
+.nav__second > li{
+  height: 51px;
+  line-height: 50px;
+  border: 1px solid #ddd;
+}
+
+.nav__second > li + li{
+  border-top: none;
+}
+
+
+.nav__second > li:hover a{
+  background-color: #c3252c;
+  color: white;
+}
+
+.nav__second > li > a{
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
