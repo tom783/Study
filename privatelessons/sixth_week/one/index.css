@@ -1,6 +1,7 @@
 /* common */
 .inner{
-  width: 78.94%;
+  width: 1200px;
+  /* 1520px기준 1200px 퍼센트 */
   margin: 0 auto;
   position: relative;
 }
@@ -28,7 +29,10 @@ header{
 }
 
 .nav{
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 96.96px;
+  z-index: 999;
 }
 
 .nav > li{
@@ -64,6 +68,7 @@ header{
   height: 51px;
   line-height: 50px;
   border: 1px solid #ddd;
+  background-color: white;
 }
 
 .nav__second > li + li{
@@ -82,17 +87,1313 @@ header{
   font-size: 15px;
 }
 
+.social_btn{
+  position: absolute;
+  top: -11px;
+  right: 0;
+  height: 47px;
+  width: 47px;
+  background: url('http://www.inplanners.com/images/main/blog.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.mobile_navBtn{
+  display: none;
+}
+
+
+/* visual */
+.visual{
+  /* height: 650px; */
+  position: relative;
+}
+
+.visual > ul{
+  overflow: hidden;
+}
+
+.visual > ul > li{
+  height: 650px;
+}
+
+.visual > ul > li:nth-child(1){
+  background: url('http://www.inplanners.com/images/main/visual.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.visual__text{
+  position: absolute;
+  top:151.97px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.visual__text > span{
+  color: black;
+  font-size: 22px;
+}
+
+.visual__text > span > img{
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.visual__text > h2{
+  color: black;
+  font-size: 46px;
+  margin-top: 37px;
+}
+
+.visual__text > h2 > span{
+  font-weight: normal;
+}
 
 
 
+/* info */
+.info{
+  height: 504px;
+  padding-top: 60px;
+}
+
+.info__cont{
+  overflow: hidden;
+}
+
+.info__cont > li{
+  float: left;
+  width: 32%
+}
+
+.info__cont > li + li{
+  margin-left: 2%;
+}
+
+.info__cont > li > span > img{
+  width: 100%;
+}
+
+.info__cont > li > dl{
+  padding-top: 19px;
+}
+
+.info__cont > li > dl > dt{
+  font-size: 22px;
+  color: black;
+  font-weight: 700;
+}
+
+.info__cont > li > dl > dd{
+  font-size: 15px;
+  color: black;
+  margin-top: 7px;
+  line-height: 26px;
+}
+
+
+/* planning */
+.planning{
+  height: 429px;
+  background-color: #eee;
+}
+
+.planning__title{
+  text-align: center;
+  padding-top: 44px;
+  height: 145px;
+  position: relative;
+  font-size: 35px;
+  color: black;
+  font-weight: 700;
+}
+
+.planning__title::before{
+  position: absolute;
+  top: 67px;
+  left: 425px;
+  content: '';
+  width: 65px;
+  height: 45px;
+  background: url('http://www.inplanners.com/images/main/sec2_tit.png') no-repeat;
+}
+
+.planning__process{
+  overflow: hidden;
+}
+
+.planning__process > li{
+  float: left;
+  width: 224px;
+  height: 224px;
+  position: relative;
+  padding-top: 147px;
+  text-align: center;
+}
+
+.planning__process > li + li{
+  margin-left: 20px;
+}
+
+.planning__process > li:nth-child(1){
+  background: url('http://www.inplanners.com/images/main/sec2_01.jpg') no-repeat;
+}
+
+.planning__process > li:nth-child(2){
+  background: url('http://www.inplanners.com/images/main/sec2_02.jpg') no-repeat;
+}
+
+.planning__process > li:nth-child(3){
+  background: url('http://www.inplanners.com/images/main/sec2_03.jpg') no-repeat;
+}
+
+.planning__process > li:nth-child(4){
+  background: url('http://www.inplanners.com/images/main/sec2_04.jpg') no-repeat;
+}
+
+.planning__process > li:nth-child(5){
+  background: url('http://www.inplanners.com/images/main/sec2_05.jpg') no-repeat;
+}
+
+.planning__process > li > span{
+  font-size: 15px;
+  color: #999;
+}
+
+.planning__process > li > h3{
+  font-size: 18px;
+  color: black;
+  margin-top: 3px;
+}
+
+.planning__process > li > a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.planning__process > li:hover > a{
+  border: 2px solid #c4141b;
+}
+
+
+/* article */
+.article{
+  height: 411px;
+  padding-top: 60px;
+}
+
+.article__cont{
+  float: left;
+  width: 440px;
+  height: 290px;
+  padding: 0 30px;
+  border: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.margin_{
+  margin-left: 20px;
+}
+
+.article__cont > h2{
+  padding-top: 22px;
+  height: 66px;
+  border-bottom: 1px solid #ddd;
+  font-size: 22px;
+  color: black;
+}
+
+.article__cont > a.more_btn{
+  position: absolute;
+  top: 33px;
+  right: 30px;
+}
+
+.article__cont__sideService{
+  position: relative;
+  padding-top: 14px;
+}
+
+.article__cont__sideService > dt{
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article__cont__sideService > dd{
+  font-size: 14px;
+  color: #999;
+  margin-top: 9px;
+  height: 50px;
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article__cont__sideService > a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.article__cont__notice{
+  padding-top: 15px;
+}
+
+.article__cont__notice > li{
+  position: relative;
+  padding-left: 10px;
+  height: 25px;
+  line-height: 28px;
+}
+
+.article__cont__notice > li::before{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background-color: #c4141b;
+  content: '';
+}
+
+.article__cont__notice > li > a{
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+
+.article__cont__media{
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.article__cont__media > li{
+  float: left;
+  position: relative;
+  width: 181px;
+}
+
+.article__cont__media > li + li{
+  margin-left: 16px;
+}
+
+.article__cont__media__img{
+  display: block;
+  height: 112px;
+}
+
+.article__cont__media__img > img{
+  height: 100%;
+  width: 100%;
+}
+
+.article__cont__media > li > h3{
+  padding-top: 15px;
+  font-size: 14px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.article__cont__media__writer{
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-top: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article__cont__media > li > a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.article__sideMenu{
+  float: right;
+  width: 280px;
+  margin-left: 20px;
+}
+
+.article__sideMenu__menu{
+  padding: 14px 19px;
+  position: relative;
+  height: 84px;
+}
+
+.article__sideMenu__menu > h3{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.article__sideMenu__menu > strong{
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.article__sideMenu__menu > p{
+  font-size: 14px;
+  color: white;
+  margin-top: 3px;
+}
+
+.sideMenu__menu1{
+  background: #b23b40 url('http://www.inplanners.com/images/main/sec3_box01.png') no-repeat center top;
+}
+
+.sideMenu__menu2{
+  background: #a97173 url('http://www.inplanners.com/images/main/sec3_box02.png') no-repeat center top;
+  margin-top: 19px;
+}
+
+.sideMenu__menu3{
+  background: #a29595 url('http://www.inplanners.com/images/main/sec3_box03.png') no-repeat center top;
+  margin-top: 19px;
+}
+
+
+/* footer */
+footer{
+  background-color: #373737;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+address{
+  font-size: 13px;
+  color: white;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+address > strong{
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.footer__address{
+  display: inline-block;
+}
+
+.footer__businessNumber{
+  margin-right: 9px;
+}
+
+.footer__representative{
+  display: block;
+  margin-right: 9px;
+}
+
+.footer__contactAddress{
+  margin-left: 9px;
+}
+
+.footer__contactAddress > span{
+  margin-right: 9px;
+}
+
+.copyright{
+  display: block;
+}
+
+.footer__logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* 1200px */
+@media screen and (max-width: 1024px) {
+  /* common */
+  .inner{
+    width: auto;
+  }
+
+  /* header */
+  .logo{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo > a{
+    display: block;
+    width: 144px;
+    height: 37px;
+    background: url('http://www.inplanners.com/images/main/tab_logo.jpg') center top no-repeat;
+    background-size: cover;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .nav > li > a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .nav__second{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    padding-top: 30px;
+    display: none;
+  }
+
+  .social_btn{
+    position: absolute;
+    top: -11px;
+    right: 0;
+    height: 47px;
+    width: 47px;
+    background: url('http://www.inplanners.com/images/main/blog.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .mobile_navBtn{
+    position: absolute;
+    left: 10px;
+    top:0;
+    display: block;
+    width: 30px;
+    height: 23px;
+  }
+
+  .mobile_navBtn > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* visual */
+  .visual > ul > li{
+    height: auto;
+    padding-top: 54.78%;
+  }
+
+  .visual > ul > li:nth-child(1){
+    background: url('http://www.inplanners.com/images/main/visual.jpg') no-repeat center top;
+    background-size: cover;
+  }
+
+  .visual__text{
+    position: absolute;
+    top:50%;
+    left: 6%;
+    margin-top: -140px;
+    margin-left: 0;
+  }
+
+  .visual__text > span{
+    color: black;
+    font-size: 22px;
+  }
+
+  .visual__text > span > img{
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .visual__text > h2{
+    color: black;
+    font-size: 30px;
+    margin-top: 35px;
+  }
+
+  .visual__text > h2 > span{
+    font-weight: normal;
+  }
 
 
 
+  /* info */
+  .info{
+    height: auto;
+    padding: 40px 10px 35px 10px;
+  }
+
+  .info__cont > li{
+    float: left;
+    width: 32%
+  }
+
+  .info__cont > li + li{
+    margin-left: 2%;
+  }
+
+  .info__cont > li > span > img{
+    width: 100%;
+  }
+
+  .info__cont > li > dl{
+    padding-top: 19px;
+  }
+
+  .info__cont > li > dl > dt{
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+  }
+
+  .info__cont > li > dl > dd{
+    font-size: 13px;
+    color: black;
+    margin-top: 4px;
+    line-height: 22px;
+  }
 
 
+  /* planning */
+  .planning{
+    height: 290px;
+    background-color: #eee;
+  }
+
+  .planning__title{
+    text-align: center;
+    padding-top: 32px;
+    height: 111px;
+    position: relative;
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+  }
+
+  .planning__title::before{
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    margin-left: -118px;
+    content: '';
+    height: 35px;
+    width: 51px;
+    background: url('http://www.inplanners.com/images/main/sec2_tit.png') no-repeat;
+    background-size: cover;
+  }
+
+  .planning__process > li{
+    float: left;
+    width: 18.8%;
+    height: 139px;
+    position: relative;
+    padding-top: 84px;
+    text-align: center;
+  }
+
+  .planning__process > li + li{
+    margin-left: 1.5%;
+  }
+
+  .planning__process > li:nth-child(1){
+    background: white url('http://www.inplanners.com/images/main/sec2_01_tab.jpg') center top no-repeat;
+    background-size: 116px 139px;
+  }
+
+  .planning__process > li:nth-child(2){
+    background: white url('http://www.inplanners.com/images/main/sec2_02_tab.jpg') center top no-repeat;
+    background-size: 116px 139px;
+
+  }
+
+  .planning__process > li:nth-child(3){
+    background: white url('http://www.inplanners.com/images/main/sec2_03_tab.jpg') center top no-repeat;
+    background-size: 116px 139px;
+  }
+
+  .planning__process > li:nth-child(4){
+    background: white url('http://www.inplanners.com/images/main/sec2_04_tab.jpg') center top no-repeat;
+    background-size: 116px 139px;
+  }
+
+  .planning__process > li:nth-child(5){
+    background: white url('http://www.inplanners.com/images/main/sec2_05_tab.jpg') center top no-repeat;
+    background-size: 116px 139px;
+  }
+
+  .planning__process > li > span{
+    font-size: 12px;
+    color: #999;
+  }
+
+  .planning__process > li > h3{
+    font-size: 14px;
+    color: black;
+    margin-top: -3px;
+  }
+
+  /* article */
+  .article{
+    height: auto;
+    padding: 40px 10px;
+    overflow: hidden;
+  }
+
+  .article__cont{
+    float: left;
+    width: 49%;
+    height: 215px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .margin_{
+    margin-left: 2%;
+  }
+
+  .article__cont > h2{
+    padding-top: 17px;
+    height: 51px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: black;
+  }
+
+  .article__cont > a.more_btn{
+    position: absolute;
+    top: 33px;
+    right: 30px;
+  }
+
+  .article__cont__sideService{
+    position: relative;
+    padding-top: 14px;
+  }
+
+  .article__cont__sideService > dt{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .article__cont__sideService > dd{
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .article__cont__sideService > a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .article__cont__notice{
+    padding-top: 15px;
+    display: none;
+  }
 
 
+  .article__cont__media{
+    padding-top: 20px;
+    overflow: hidden;
+  }
+
+  .article__cont__media > li{
+    float: left;
+    position: relative;
+    width: 48.5%;
+  }
+
+  .article__cont__media > li + li{
+    margin-left: 3%;
+  }
+
+  .article__cont__media__img{
+    display: block;
+    height: 75px;
+  }
+
+  .article__cont__media__img > img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .article__cont__media > li > h3{
+    padding-top: 11px;
+    font-size: 13px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .article__cont__media__writer{
+    display: block;
+    font-size: 13px;
+    color: #999;
+    margin-top: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .article__cont__media > li > a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .article__sideMenu{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .article__sideMenu__menu{
+    padding: 9px 19px;
+    position: relative;
+    height: 87px;
+    float: left;
+    width: 32%;
+    margin-left: 2%;
+  }
+
+  .article__sideMenu__menu > h3{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .article__sideMenu__menu > strong{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+
+  .article__sideMenu__menu > p{
+    font-size: 12px;
+    color: white;
+    margin-top: 2px;
+  }
+
+  .sideMenu__menu1{
+    background: #b23b40 url('http://www.inplanners.com/images/main/sec3_box01_tab.png') no-repeat right top;
+    margin-top: 0;
+    margin-left: 0;
+    background-size: 196px 87px;
+  }
+
+  .sideMenu__menu2{
+    background: #a97173 url('http://www.inplanners.com/images/main/sec3_box02.png') no-repeat center top;
+    margin-top: 0;
+    background-size: 196px 87px;
+  }
+
+  .sideMenu__menu3{
+    background: #a29595 url('http://www.inplanners.com/images/main/sec3_box03.png') no-repeat center top;
+    margin-top: 0;
+    background-size: 196px 87px;
+  }
 
 
+  /* footer */
+  footer{
+    background-color: #373737;
+    padding-top: 41px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  address{
+    font-size: 13px;
+    color: white;
+    line-height: 24px;
+    font-weight: 300;
+    padding-top: 24px;
+  }
+
+  address > strong{
+    display: inline-block;
+    margin-right: 9px;
+  }
+
+  .footer__address{
+    display: inline-block;
+  }
+
+  .footer__businessNumber{
+    display: block;
+    margin-right: 0;
+  }
+
+  .footer__representative{
+    display: inline-block;
+    margin-right: 9px;
+  }
+
+  .footer__contactAddress{
+    margin-left: 9px;
+  }
+
+  .footer__contactAddress > span{
+    margin-right: 9px;
+  }
+
+  .copyright{
+    display: block;
+  }
+
+  .footer__logo{
+    position: static;
+  }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+  /* header */
+
+  .mobile_navBtn{
+    position: absolute;
+    left: 10px;
+    top:0;
+    display: block;
+    width: 20px;
+    height: 16px;
+  }
+
+  .mobile_navBtn > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* visual */
+  .visual__text{
+    position: absolute;
+    top:50%;
+    left: 6%;
+    margin-top: -77px;
+    margin-left: 0;
+  }
+
+  .visual__text > span{
+    color: black;
+    font-size: 13px;
+  }
+
+  .visual__text > span > img{
+    margin-right: 5px;
+    height: 17px;
+    vertical-align: -4px;
+  }
+
+  .visual__text > h2{
+    color: black;
+    font-size: 16px;
+    margin-top: 13px;
+  }
+
+
+  /* info */
+  .info{
+    height: auto;
+    padding: 20px 10px 0px;
+  }
+
+  .info__cont > li{
+    float: none;
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .info__cont > li + li{
+    margin-left: 0;
+  }
+
+  .info__cont > li > span > img{
+    width: 100%;
+    height: 201px;
+  }
+
+  .info__cont > li > dl{
+    padding-top: 10px;
+  }
+
+  .info__cont > li > dl > dt{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+  }
+
+  .info__cont > li > dl > dd{
+    font-size: 12px;
+    color: black;
+    margin-top: 1px;
+    line-height: 20px;
+  }
+
+
+  /* planning */
+  .planning{
+    height: 473px;
+    background-color: #eee;
+    padding: 0 10px;
+  }
+
+  .planning__title{
+    text-align: center;
+    padding-top: 25px;
+    height: 78px;
+    position: relative;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+  }
+
+  .planning__title::before{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -85px;
+    content: '';
+    height: 23px;
+    width: 33px;
+    background: url('http://www.inplanners.com/images/main/sec2_tit.png') no-repeat;
+    background-size: cover;
+  }
+
+  .planning__process > li{
+    float: none;
+    width: 100%;
+    height: 67px;
+    position: relative;
+    padding: 12px 20px;
+    text-align: left;
+  }
+
+  .planning__process > li + li{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .planning__process > li:nth-child(1){
+    background: white url('http://www.inplanners.com/images/main/sec2_01_mob.jpg') center right no-repeat;
+    background-size: 300px 67px;
+  }
+
+  .planning__process > li:nth-child(2){
+    background: white url('http://www.inplanners.com/images/main/sec2_02_mob.jpg') center right no-repeat;
+    background-size: 300px 67px;
+  }
+
+  .planning__process > li:nth-child(3){
+    background: white url('http://www.inplanners.com/images/main/sec2_03_mob.jpg') center right no-repeat;
+    background-size: 300px 67px;
+  }
+
+  .planning__process > li:nth-child(4){
+    background: white url('http://www.inplanners.com/images/main/sec2_04_mob.jpg') center right no-repeat;
+    background-size: 300px 67px;
+  }
+
+  .planning__process > li:nth-child(5){
+    background: white url('http://www.inplanners.com/images/main/sec2_05_mob.jpg') center right no-repeat;
+    background-size: 300px 67px;
+  }
+
+  .planning__process > li > span{
+    display: block;
+    font-size: 12px;
+    color: #999;
+  }
+
+  .planning__process > li > h3{
+    font-size: 14px;
+    color: black;
+    margin-top: 0;
+  }
+
+  /* article */
+  .article{
+    height: auto;
+    padding: 20px 10px;
+    overflow: hidden;
+  }
+
+  .article__cont{
+    float: none;
+    width: 100%;
+    height: 155px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .margin_{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .article__cont > h2{
+    padding-top: 16px;
+    height: 46px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: black;
+  }
+
+  .article__cont > a.more_btn{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+
+  .article__cont__sideService{
+    position: relative;
+    padding-top: 14px;
+  }
+
+  .article__cont__sideService > dt{
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 9px;
+    position: relative;
+  }
+
+  .article__cont__sideService > dt::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #c4141b;
+  }
+
+  .article__cont__sideService > dd{
+    display: none;
+  }
+
+  .article__cont__notice{
+    padding-top: 0;
+    display: block;
+  }
+
+  .article__cont__notice > li > a{
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    color: black;
+  }
+
+  .article__cont__media > li{
+    float: none;
+    position: relative;
+    width: 100%;
+  }
+
+  .article__cont__media > li:last-child{
+    display: none;
+  }
+
+  .article__cont__media > li + li{
+    margin-left: 0;
+  }
+
+  .article__cont__media__img{
+    float: left;
+    width: 110px;
+    height: 68px;
+  }
+
+  .article__cont__media__img > img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .article__cont__media > li > h3{
+    padding-top: 0;
+    font-size: 13px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .article__cont__media__writer{
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-top: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .article__sideMenu{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .article__sideMenu__menu{
+    padding: 0px 19px;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    width: 48.5%;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+
+  .article__sideMenu__menu > h3{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  .article__sideMenu__menu > strong{
+    font-size: 13px;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .article__sideMenu__menu > p{
+    display: none;
+  }
+
+  .sideMenu__menu1{
+    background: #b23b40 url('http://www.inplanners.com/images/main/sec3_box01_mob.png') no-repeat right top;
+    margin-top: 0;
+    margin-left: 0;
+    background-size: 300px 45px;
+    float: none;
+    width: 100%;
+  }
+
+  .sideMenu__menu2{
+    background: #a97173 url('http://www.inplanners.com/images/main/sec3_box02_mob.png') no-repeat right top;
+    margin-left: 0;
+    background-size: 144px 45px;
+  }
+
+  .sideMenu__menu3{
+    background: #a29595 url('http://www.inplanners.com/images/main/sec3_box03_mob.png') no-repeat right top;
+    background-size: 144px 45px;
+  }
+
+
+  /* footer */
+  footer{
+    background-color: #373737;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  address{
+    font-size: 11px;
+    color: white;
+    line-height: 19px;
+    font-weight: 300;
+    padding-top: 5px;
+  }
+
+  address > strong{
+    display: block;
+    margin-right: 0px;
+  }
+
+  .footer__address{
+    display: block;
+  }
+
+  .footer__businessNumber{
+    display: block;
+    margin-right: 0;
+  }
+
+  .footer__representative{
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .footer__contactAddress{
+    display: block;
+    margin-left: 0px;
+  }
+
+  .footer__contactAddress > span{
+    margin-right: 5px;
+  }
+
+  .copyright{
+    display: block;
+  }
+
+  .footer__logo{
+    position: static;
+  }
+
+  .footer__logo > a > img{
+    height: 28px;
+  }
+
+}
 
 /*  */
