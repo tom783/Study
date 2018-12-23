@@ -1,0 +1,677 @@
+/* common */
+
+/* header */
+header{
+  height: 70px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-top: 24px;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo > a{
+  display: inline-block;
+  width: 128px;
+  height: 25px;
+  background: url('http://daerimworld.com/images/tablet/logo_1200.jpg') no-repeat center top;
+  background-size: 128px 23px;
+}
+
+.lang_box{
+  display: none;
+}
+
+nav{
+  display: none;
+}
+
+.nav > li{
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.nav > li > a{
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  line-height: 2.6;
+}
+
+.side_nav{
+  display: none;
+  padding: 10px 0 5px 0;
+}
+
+.side_nav > li{
+  margin-bottom: 5px;
+}
+
+.side_nav > li > a{
+  font-size: 14px;
+  color: black;
+}
+
+.nav__bottom{
+  display: none;
+}
+
+.navBtn{
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.navBtn > img{
+  height: 17px;
+}
+
+.langBtn{
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.langBtn > img{
+  height: 22px;
+}
+
+
+/* visual */
+.visual{
+  position: relative;
+}
+.visual ul{
+  overflow: hidden;
+}
+
+.visual ul li{
+  float: left;
+  height: 300px;
+  width: 100%;
+}
+
+.visual ul li:nth-child(1){
+  background: url('http://daerimworld.com/images/mobile/visual4.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.visual__text{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+.visual__text img{
+  width: 90%;
+}
+
+.visual__text2{
+  display: none;
+}
+
+
+/* main */
+main{
+  overflow: hidden;
+}
+
+main > div{
+  float: left;
+  position: relative;
+}
+
+.main__infoCompany{
+  width: 100%;
+  background: url('http://daerimworld.com/images/mobile/bg02.jpg') no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.main__infoCompany > a{
+  height: 270px;
+  display: block;
+  padding: 25px 25px 0;
+}
+
+.main__infoCompany h2{
+  font-size: 22px;
+  color: black;
+}
+
+.main__infoCompany p{
+  font-size: 13px;
+  color: black;
+  margin-top: 6%;
+}
+
+.main__infoCompany__btn{
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  width: 71px;
+  height: 30px;
+  background: url('http://daerimworld.com/images/main/btn_more01.png') no-repeat;
+}
+
+
+.main__infoWorkspace{
+  height: 300px;
+  width: 100%;
+  background-color: #73add6;
+}
+
+.main__infoWorkspace > h2{
+  font-size: 22px;
+  color: white;
+  padding: 25px 0 0 25px;
+}
+
+.main__infoWorkspaceAddress{
+  padding: 0 25px;
+}
+
+.main__infoWorkspaceAddress > *{
+  margin-top: 5px;
+}
+
+.main__infoWorkspaceAddress > dt > a{
+  font-size: 23px;
+  color: white;
+  position: relative;
+  padding-left: 35px;
+}
+
+.main__infoWorkspaceAddress > dt > a::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 28px;
+  background: url('http://daerimworld.com/images/main/tel.png') no-repeat center top;
+}
+
+.main__infoWorkspaceAddress > dd{
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main__infoWorkspacePlace{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main__infoWorkspacePlace > dt{
+  float: left;
+  width: 49.8%;
+  height: 48px;
+  line-height: 48px;
+  border-top: 1px solid #3b85ca;
+}
+
+.main__infoWorkspacePlace > dt:nth-child(2n-1){
+  border-right: 1px solid #3b85ca;
+}
+
+.main__infoWorkspacePlace > dt:last-child{
+  border-right: 0;
+  width: 100%;
+  background: #317cc1 url('http://daerimworld.com/images/main/bg03.jpg') no-repeat 100% 0;
+}
+
+.main__infoWorkspacePlace > dt > a{
+  font-size: 14px;
+  display: block;
+  color: white;
+  line-height: 3.2;
+  text-align: center;
+}
+
+.main__infoProduct{
+  background: #545870 url('http://daerimworld.com/images/main/bg02.png') 95% 80% no-repeat;
+  width: 100%;
+}
+
+.main__infoProduct > a{
+  display: block;
+  height: 300px;
+  padding: 25px 25px 0;
+}
+
+.main__infoProduct > a > h2{
+  font-size: 22px;
+  color: white;
+}
+
+.main__infoProduct > a > strong{
+  margin-top: 4%;
+  font-size: 18px;
+  color: white;
+
+}
+
+.main__infoProduct > a > p{
+  margin-top: 2%;
+  font-size: 14px;
+  color: white;
+}
+
+.main__infoProduct__btn{
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  width: 71px;
+  height: 30px;
+  background: url('http://daerimworld.com/images/main/btn_more02.png') no-repeat center top;
+}
+
+.main__infoContact{
+  background-color: #1f54a4;
+  height: 270px;
+  width: 100%;
+  display: table;
+}
+
+.main__info__Cont{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main__info__Cont > h2{
+  font-size: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+.main__info__Cont > p{
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+
+.main__infoProcess{
+  background-color: #313131;
+  height: 270px;
+  width: 100%;
+  display: table;
+}
+
+
+/* footer */
+footer{
+  text-align: center;
+}
+
+footer > p{
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  color: black;
+}
+
+
+/* tablet */
+@media all and (min-width: 480px) {
+
+  /* visual */
+  .visual{
+    position: relative;
+  }
+  .visual ul{
+    overflow: hidden;
+  }
+
+  .visual ul li{
+    float: left;
+    height: 450px;
+    width: 100%;
+  }
+
+  /* main */
+
+  .main__infoCompany{
+    width: 100%;
+    background: url('http://daerimworld.com/images/mobile/bg01.jpg') no-repeat 100% 100%;
+    background-size: cover;
+  }
+
+  .main__infoCompany > a{
+    height: 270px;
+    display: block;
+    padding: 25px 25px 0;
+  }
+
+  .main__infoCompany h2{
+    font-size: 22px;
+    color: black;
+  }
+
+  .main__infoCompany p{
+    font-size: 13px;
+    color: black;
+    margin-top: 6%;
+    width: 30%;
+  }
+
+
+  .main__infoWorkspace{
+    height: 300px;
+    width: 50%;
+    background-color: #73add6;
+  }
+
+  .main__infoProduct{
+    background: #545870 url('http://daerimworld.com/images/main/bg02.png') 95% 80% no-repeat;
+    width: 50%;
+  }
+
+  .main__infoContact{
+    background-color: #1f54a4;
+    height: 270px;
+    width: 50%;
+    display: table;
+  }
+
+  .main__infoProcess{
+    background-color: #313131;
+    height: 270px;
+    width: 50%;
+    display: table;
+  }
+
+
+  /* footer */
+  footer{
+    text-align: center;
+    height: 170px;
+    width: 100%;
+  }
+
+}
+
+/* pc */
+@media all and (min-width: 1200px) {
+  /* header */
+  header{
+    width: 200px;
+    height: 950px;
+    border: 1px solid #ddd;
+    float: left;
+    padding: 0;
+  }
+
+  .logo{
+    text-align: center;
+    margin-top: 33px;
+    overflow: hidden;
+    line-height: 1;
+  }
+
+  .logo > a{
+    display: inline-block;
+    width: 114px;
+    height: 75px;
+    background: url('http://daerimworld.com/e_images/main/logo.jpg') no-repeat center top;
+    background-size: 114px 75px;
+  }
+
+  .lang_box{
+    display: block;
+    margin-top: 25px;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .lang_box > span{
+    display: inline-block;
+    width: 68px;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+  }
+
+  .lang_box > span + span{
+    border-left: none;
+  }
+
+  .lang_box > span > a{
+    font-size: 10px;
+    color: #777;
+  }
+
+  nav{
+    display: block;
+    margin-top: 22px;
+  }
+
+  .nav > li{
+    position: relative;
+    border-bottom: none;
+    border-top: 1px solid #ddd;
+    text-align: justify;
+  }
+
+  .nav > li:last-child{
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav > li > a{
+    display: block;
+    height: 59px;
+    border-bottom: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    line-height: 61px;
+    text-indent: 22px;
+  }
+
+  .nav__bottom{
+    display: block;
+    margin: 230px auto 0;
+    padding-top: 10px;
+    width: 160px;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav__bottom > h2{
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  .nav__bottomAddress{
+    font-size: 13px;
+    color: black;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav__bottom > p{
+    font-size: 11px;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+
+  .navBtn{
+    display: none;
+  }
+
+  .langBtn{
+    display: none;
+  }
+
+
+  /* visual */
+  .visual{
+    width: calc(100% - 200px);
+    height: 950px;
+    position: absolute;
+    left: 200px;
+    top: 0;
+  }
+
+
+  .visual > ul > li{
+    height: 950px;
+  }
+
+  .visual > ul > li:nth-child(1){
+    background: url('http://daerimworld.com/e_images/main/visual6.jpg') no-repeat;
+  }
+
+  .visual__text{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  .visual__text img{
+    width: 75%;
+  }
+
+  .visual__text2{
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 160px;
+  }
+
+
+
+  /* main */
+  main{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 950px;
+  }
+
+
+  .main__infoCompany{
+    width: 50%;
+    background: url('http://daerimworld.com/e_images/main/bg01.jpg') no-repeat 100% 100%;
+  }
+
+  .main__infoCompany > a{
+    height: 350px;
+    display: block;
+    padding: 25px 25px 0;
+  }
+
+  .main__infoCompany h2{
+    font-size: 22px;
+    color: black;
+  }
+
+  .main__infoCompany p{
+    font-size: 13px;
+    color: black;
+    margin-top: 6%;
+    width: 100%;
+  }
+
+  .main__infoCompany__btn{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    width: 71px;
+    height: 30px;
+    background: url('http://daerimworld.com/images/main/btn_more01.png') no-repeat;
+  }
+
+
+  .main__infoWorkspace{
+    height: 350px;
+    width: 50%;
+    background-color: #73add6;
+  }
+
+  .main__infoProduct{
+    width: 100%;
+    height: 330px;
+  }
+
+
+  .main__infoContact{
+    background-color: #1f54a4;
+    height: 270px;
+    width: 50%;
+    display: table;
+  }
+
+  .main__info__Cont{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .main__info__Cont > h2{
+    font-size: 25px;
+    margin-top: 20px;
+    color: white;
+  }
+
+  .main__info__Cont > p{
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .main__infoProcess{
+    background-color: #313131;
+    height: 270px;
+    width: 50%;
+    display: table;
+  }
+
+  /* footer */
+  footer{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
