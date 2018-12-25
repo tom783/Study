@@ -5,7 +5,6 @@ header{
   height: 110px;
   width: 1100px;
   margin: 0 auto;
-  border-bottom: 1px solid #ddd;
 }
 
 .logo{
@@ -46,7 +45,7 @@ nav{
   overflow: hidden;
 }
 
-.header__gnbNav:hover + .header__sideNav{
+nav:hover > .header__sideNav{
   display: block;
 }
 
@@ -86,6 +85,13 @@ nav{
   left: 0;
   right: 0;
   height: 200px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 999;
+  border-top: 1px solid #ddd;
+}
+
+.header__sideNavCont{
   width: 1100px;
   margin: 0 auto;
   background: url('http://www.kotica.or.kr/images/main/img_navi_2017.jpg') no-repeat 1px 30px;
@@ -128,6 +134,10 @@ nav{
   color: white;
   padding: 2px 5px;
   font-weight: bold;
+}
+
+.header__navBtn{
+  display: none;
 }
 
 
@@ -415,13 +425,549 @@ nav{
 }
 
 
+/* footer */
+footer{
+  height: 135px;
+  background: url('http://www.kotica.or.kr/images/main/bg_footer.jpg') 0 0 repeat-x;
+}
+
+.footer{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer__top{
+  overflow: hidden;
+}
+
+.footer__top > li{
+  float: left;
+}
+
+.footer__top > li + li{
+  margin-left: 15px;
+  padding-left: 18px;
+  background: url('http://www.kotica.or.kr/images/main/bar_footmenu.jpg') 0 50% no-repeat;
+}
+
+.footer__top > li > a{
+  font-size: 14px;
+  color: white;
+  line-height: 45px;
+}
+
+.footer__topBtn{
+  width: 200px;
+  height: 29px;
+  background: url('http://www.kotica.or.kr/images/main/bg_familysite.jpg') 0 0 no-repeat;
+}
+
+span.topBtn1{
+  position: absolute;
+  right: 207px;
+  top: 8px;
+}
+
+span.topBtn2{
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.footer__topBtn > a{
+  display: block;
+  font-size: 13px;
+  color: white;
+  line-height: 29px;
+  text-indent: 15px;
+}
+
+.footer__topBtn__moreNav{
+  position: absolute;
+  bottom: 28px;
+  width: 200px;
+  border: 1px solid #aaa;
+  background-color: #4f5156;
+  display: none;
+}
+
+.footer__topBtn__moreNav > li > a{
+  color: white;
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  text-indent: 22px;
+}
+
+footer > span.topBtn__On > .footer__topBtn__moreNav{
+  display: block;
+}
+
+address{
+  margin-top: 15px;
+}
+
+address > span{
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+address > span + span{
+  margin-left: 5px;
+}
+
+.Copyright{
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.br{
+  display: none;
+}
 
 
 
 
+/* width 1000px */
+@media all and (max-width: 1000px) {
+
+  /* header */
+  header{
+    height: 91px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo{
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    transform: none;
+  }
+
+  .logo > a{
+    display: block;
+    width: 120px;
+    height: 45px;
+    background: url('http://www.kotica.or.kr/images/main/logo.png') no-repeat;
+    background-size: cover;
+  }
+
+  .header__topMenu{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .header__navBtn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 23px;
+  }
+
+
+  /* visual */
+  .visual{
+    display: none;
+  }
+
+  /* visual 여기 이미지와 백그라운드 위치, 크기 조절 질문 */
+
+
+
+  .content{
+    padding: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .content > div{
+    float: left;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .content > .cont6{
+    margin-left: 2%;
+  }
+
+  /* content__top */
+  .content__top{
+    width: 33.333%;
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+  }
+
+  .content__top > h2{
+    font-size: 15px;
+    color: white;
+    text-indent: 10%;
+  }
+
+  .content__top > p{
+    display: none;
+  }
+
+  .content__top__btn{
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    width: 28px;
+    height: 28px;
+  }
+
+
+  /* content__bottom */
+  .content__bottom{
+    width: 96%;
+    height: 210px;
+    border: 1px solid #ccc;
+    padding: 20px 25px 0;
+  }
+
+  .cont4{
+    padding: 0;
+  }
+
+  .cont5, .cont6{
+    width: 47%;
+    margin-top: 10px;
+  }
+
+  .content__bottom__certification{
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .content__bottom__certification > li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 1;
+  }
+
+
+  .content__bottom__phoneN{
+    position: relative;
+    height: 73px;
+    width: 85%;
+    padding-left: 55px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin: 15px auto 10px;
+  }
+
+
+  /* footer */
+  footer{
+    height: 195px;
+    background: url('http://www.kotica.or.kr/images/tablet/bg_footer.jpg') 0 0 repeat-x;
+    position: relative;
+  }
+
+  .footer{
+    width: 96%;
+    margin: 0 auto;
+    position: static;
+  }
+
+
+  .footer__topBtn{
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    background: #2e2e2e;
+    text-align: center;
+  }
+
+
+  span.topBtn1{
+    position: absolute;
+    left: 0;
+    top: 150px;
+  }
+
+
+  span.topBtn2{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    border-left: 1px solid #414246;
+  }
+
+  .footer__topBtn > a{
+    position: relative;
+  }
+
+  .footer__topBtn > a::after{
+    position: absolute;
+    top: 14px;
+    margin-left: 10px;
+    content: '';
+    width: 11px;
+    height: 6px;
+    background: url('http://www.kotica.or.kr/images/tablet/familysite_arrow.png') no-repeat;
+  }
+
+  .footer__topBtn > a{
+    display: inline-block;
+    font-size: 13px;
+    color: white;
+    line-height: 29px;
+    text-indent: 15px;
+  }
+
+  .footer__topBtn__moreNav{
+    position: absolute;
+    bottom: 28px;
+    width: 200px;
+    border: 1px solid #aaa;
+    background-color: #4f5156;
+    display: none;
+  }
+
+  .footer__topBtn__moreNav > li > a{
+    color: white;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 22px;
+  }
+
+  footer > span.topBtn__On > .footer__topBtn__moreNav{
+    display: block;
+  }
+
+  address{
+    margin-top: 15px;
+  }
+
+  address > span{
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  address > span + span{
+    margin-left: 5px;
+  }
+
+  .Copyright{
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .br{
+    display: none;
+  }
+
+}
+
+/* width 640*/
+@media all and (max-width: 640px) {
+
+  /* header */
+  .logo{
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    transform: none;
+  }
+
+
+
+  /* visual */
+
+
+  /* visual 여기 이미지와 백그라운드 위치, 크기 조절 질문 */
+
+
+
+  .content{
+    padding: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .content > div{
+    float: none;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .content > .cont6{
+    margin-left: 0;
+  }
+
+  /* content__top */
+  .content__top{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+  }
+
+  .content__top > h2{
+    font-size: 17px;
+    color: white;
+    text-indent: 20px;
+  }
 
 
 
 
+  /* content__bottom */
+  .content__bottom{
+    width: 100%;
+    height: 210px;
+    border: 1px solid #ccc;
+    padding: 20px 25px 0;
+  }
 
+  .cont4{
+    padding: 0;
+  }
+
+  .cont5, .cont6{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .content__bottom__phoneN{
+    position: relative;
+    height: 73px;
+    width: 85%;
+    padding-left: 55px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin: 15px auto 10px;
+  }
+
+  .address{
+    width: 85%;
+    font-size: 13px;
+  }
+
+
+  /* footer */
+  footer{
+    height: 195px;
+    background: url('http://www.kotica.or.kr/images/tablet/bg_footer.jpg') 0 0 repeat-x;
+    position: relative;
+  }
+
+  .footer{
+    width: 96%;
+    margin: 0 auto;
+    position: static;
+  }
+
+  .footer__top > li > a{
+    font-size: 12px;
+  }
+
+  .footer__topBtn{
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    background: #2e2e2e;
+    text-align: center;
+  }
+
+
+  span.topBtn1{
+    position: absolute;
+    left: 0;
+    top: 150px;
+  }
+
+
+  span.topBtn2{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    border-left: 1px solid #414246;
+  }
+
+  .footer__topBtn > a{
+    position: relative;
+  }
+
+  .footer__topBtn > a::after{
+    position: absolute;
+    top: 14px;
+    margin-left: 10px;
+    content: '';
+    width: 11px;
+    height: 6px;
+    background: url('http://www.kotica.or.kr/images/tablet/familysite_arrow.png') no-repeat;
+  }
+
+  .footer__topBtn > a{
+    display: inline-block;
+    font-size: 13px;
+    color: white;
+    line-height: 29px;
+    text-indent: 0;
+  }
+
+  .footer__topBtn__moreNav{
+    position: absolute;
+    bottom: 28px;
+    width: 200px;
+    border: 1px solid #aaa;
+    background-color: #4f5156;
+    display: none;
+  }
+
+  .footer__topBtn__moreNav > li > a{
+    color: white;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 22px;
+  }
+
+  footer > span.topBtn__On > .footer__topBtn__moreNav{
+    display: block;
+  }
+
+  address{
+    margin-top: 0;
+  }
+
+  address > span{
+    color: white;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  address > span + span{
+    margin-left: 5px;
+  }
+
+  .Copyright{
+    color: white;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .br{
+    display: none;
+  }
+
+}
 /*  */
