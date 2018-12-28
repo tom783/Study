@@ -1,0 +1,473 @@
+/* common */
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* header */
+header{
+  background: url('http://www.hopeinfo.or.kr/images_new/main/header_bg.jpg') repeat-x top;
+  height: 130px;
+}
+
+.header__topbar{
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+.header__topbar > strong{
+  margin-right: 12px;
+  font-size: 13px;
+  color: #80b028;
+  font-weight: 600;
+}
+
+.topbar__menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.topbar__menu > li{
+  float: left;
+  margin-right: 17px;
+}
+
+.topbar__menu > li >a{
+  font-size: 13px;
+  color: black;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  padding-top: 20px;
+}
+
+.logo > a{
+  display: block;
+  width: 248px;
+  height: 58px;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/logo.jpg') no-repeat center top;
+}
+
+nav{
+  float: right;
+}
+
+nav > ul > li{
+  float: left;
+  height: 90px;
+  line-height: 90px;
+  margin-left: 57px;
+}
+
+nav > ul > li > a{
+  display: block;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+
+
+/* visual */
+.visual{
+  height: 350px;
+  position: relative;
+}
+
+.visual > ul{
+  overflow: hidden;
+}
+
+.visual > ul > li{
+  float: left;
+  width: 100%;
+}
+
+.visual > ul > li > span{
+  display: block;
+  height: 350px;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/visual.jpg') center top no-repeat;
+}
+
+
+.visual__toggle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  padding-right: 25px;
+}
+
+.visual__toggle > span{
+  display: inline-block;
+}
+
+.visual__toggle > span > a{
+  display: block;
+  margin: 0 5px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #80b028;
+  border-radius: 50%;
+}
+
+.visual__toggle > span > a.on{
+  background-color: #80b028;
+}
+
+
+/* menu */
+.menu{
+  width: 1200px;
+  margin: 30px auto 0;
+}
+
+.menu > ul{
+  overflow: hidden;
+}
+
+.menu > ul > li{
+  float: left;
+  display: table;
+  width: 240px;
+  height: 170px;
+}
+
+.menu > ul > li:nth-child(1){
+  background-color: #80b028;
+}
+
+.menu > ul > li:nth-child(2){
+  background-color: #fb7c1d;
+}
+
+.menu > ul > li:nth-child(3){
+  background-color: #018dce;
+}
+
+.menu > ul > li:nth-child(4){
+  background-color: #f9b72d;
+}
+
+.menu > ul > li > a{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu > ul > li > a > h3{
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.menu__last > div{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu__last > div > h3{
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.menu__last > div > strong{
+  font-size: 24px;
+  display: block;
+  margin-top: 14px;
+  color: #018dce;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.menu__last > div > p{
+  position: relative;
+  color: black;
+  font-size: 15px;
+  padding-left: 104px;
+  margin-top: 20px;
+  line-height: 1;
+  text-align: left;
+}
+
+.menu__kakaoPlus{
+  position: absolute;
+  left: 19px;
+  width: 76px;
+  height: 38px;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/kakao.png') no-repeat;
+}
+
+
+
+/* board */
+.board{
+  overflow: hidden;
+  width: 1200px;
+  margin: 30px auto 0;
+}
+
+.notice{
+  width: 580px;
+  position: relative;
+  float: left;
+}
+
+.board__title{
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  height: 50px;
+  line-height: 1;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/main_tit.jpg') no-repeat left bottom;
+}
+
+.board_cont{
+  padding-top: 14px;
+  height: 177px;
+  overflow: hidden;
+}
+
+.notice_board > li{
+  position: relative;
+  padding-left: 17px;
+  line-height: 34px;
+}
+
+.notice_board > li::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #80b028;
+  content: '';
+
+}
+
+.notice_board > li > a{
+  font-size: 15px;
+  max-width: 460px;
+  color: black;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notice_board > li > span{
+  font-size: 15px;
+  color: #aaa;
+  float: right;
+}
+
+a.board__btn{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/more.jpg') no-repeat;
+}
+
+
+.reference{
+  width: 580px;
+  position: relative;
+  float: right;
+}
+
+.photo_board{
+  overflow: hidden;
+  padding-top: 24px;
+}
+
+.photo_board > li{
+  float: left;
+  position: relative;
+}
+
+.photo_board > li + li{
+  margin-left: 14px;
+}
+
+.photo_board > li > span{
+  display: block;
+  width: 184px;
+  height: 125px;
+}
+
+.photo_board > li > span > img{
+  width: 100%;
+  height: 100%;
+}
+
+.photo_board > li > h3{
+  font-size: 15px;
+  margin-top: 13px;
+  color: #555;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+  text-align: center;
+}
+
+.photo_board > li > a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+/* banner */
+.banner{
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  width: 1200px;
+  margin: 30px auto 0;
+  background-color: #f4f7f9;
+}
+
+.banner > h2{
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.banner > ul{
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner > ul > li{
+  float: left;
+  width: 185px;
+  margin-right: 10px;
+  height: 50px;
+  border: 1px solid #ddd;
+}
+
+
+.banner > ul > li > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+.prev_btn{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/prev.jpg') no-repeat;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.next_btn{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: url('http://www.hopeinfo.or.kr/images_new/main/next.jpg') no-repeat;
+  left: 127px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+/* footer */
+footer{
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  height: 166px;
+}
+
+.footer__top{
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+.footer__top > li{
+  float: left;
+}
+
+.footer__top > li > a{
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer address{
+  font-size: 14px;
+  color: black;
+  padding-top: 14px;
+}
+
+address > em{
+  color: #018dce;
+}
+
+address > span.time{
+  margin-left: 32px;
+}
+
+address > span{
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.footer__sns{
+  position: absolute;
+  right: 0;
+  top: 29px;
+  overflow: hidden;
+}
+
+.footer__sns > li{
+  float: left;
+}
+
+.footer__sns > li + li{
+  margin-left: 10px;
+}
+
+.footer__sns > li > a{
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+#naver > a{
+  background: url('http://www.hopeinfo.or.kr/images_new/main/blog.jpg') no-repeat;
+}
+
+#twitter > a{
+  background: url('http://www.hopeinfo.or.kr/images_new/main/twitter.jpg') no-repeat;
+}
+
+#facebook > a{
+  background: url('http://www.hopeinfo.or.kr/images_new/main/facebook.jpg') no-repeat;
+}
+
+/*  */
