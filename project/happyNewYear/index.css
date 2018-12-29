@@ -1,0 +1,71 @@
+
+/* card */
+.card{
+  position: relative;
+  height: 100vh;
+  background: url('./newYearIMG/sunset.jpg') center top no-repeat;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* card2 */
+.card2{
+  position: relative;
+  height: 100vh;
+  background: url('./newYearIMG/sunset2.jpg') center top no-repeat;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* card3 */
+.card3{
+  position: relative;
+  height: 100vh;
+  background: url('./newYearIMG/firework.jpg') center top no-repeat;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
