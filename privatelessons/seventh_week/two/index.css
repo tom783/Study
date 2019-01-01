@@ -1,0 +1,1000 @@
+/* common */
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+/* header */
+header{
+  background: url('http://www.timepieceasia.com/images/main/header_bg.jpg') 0 0 repeat-x;
+}
+
+.header__top{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 140px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.logo > a{
+  display: inline-block;
+  width: 367px;
+  height: 72px;
+  background: url('http://www.timepieceasia.com/images/main/logo.png') no-repeat;
+}
+
+
+/* .sub_menu */
+.sub_menu{
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.sub_menu > li{
+  float: left;
+  position: relative;
+  padding-left: 18px;
+}
+
+.sub_menu > li + li{
+  margin-left: 12px;
+}
+
+.sub_menu > li > a{
+  font-size: 12px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.sub_menu > li::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  content: '';
+}
+
+.sub_menu > li:nth-child(1)::before{
+  background: url('http://www.timepieceasia.com/images/main/top_link01.png') no-repeat;
+}
+
+.sub_menu > li:nth-child(2)::before{
+  background: url('http://www.timepieceasia.com/images/main/top_link02.png') no-repeat;
+}
+
+.sub_menu > li:nth-child(3)::before{
+  background: url('http://www.timepieceasia.com/images/main/top_link03.png') no-repeat;
+}
+
+.sub_menu > li:nth-child(4)::before{
+  background: url('http://www.timepieceasia.com/images/main/top_link04.png') no-repeat;
+}
+
+.sub_menu > li:nth-child(5)::before{
+  background: url('http://www.timepieceasia.com/images/main/top_link05.png') no-repeat;
+}
+
+/* sns_logo */
+.sns_logo{
+  position: absolute;
+  top: 20px;
+}
+
+.sns_logo > li{
+  float: left;
+}
+
+.sns_logo > li + li{
+  margin-left: 5px;
+}
+
+.sns_logo > li > a{
+  display: inline-block;
+}
+
+
+.search_bar{
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font-size: 0;
+}
+
+.search_bar  input{
+  height: 30px;
+  width: 210px;
+  font-size: 13px;
+  text-indent: 10px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+
+#input_btn{
+  width: 50px;
+  background: url('http://www.timepieceasia.com/images/main/btn_search.jpg') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* nav */
+nav{
+  height: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_list {
+  overflow: hidden;
+}
+
+.nav_list > li{
+  float: left;
+  text-align: center;
+  width: calc(1200px / 6);
+}
+
+.nav_list > li > a{
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  line-height: 50px;
+}
+
+.nav_list > li:hover > a{
+  color: #e4b761;
+}
+
+.mobile_menubar{
+  display: none;
+}
+
+
+/* visual */
+.visual > .inner >  a > img{
+  width: 100%;
+}
+
+/* latest_article */
+.latest_article{
+  margin-top: 35px;
+}
+
+.latest_article h2{
+  background: url('http://www.timepieceasia.com/images/main/title_bg.jpg') 0 50% repeat-x;
+  text-align: center;
+}
+
+.latest_article h2 > img{
+  vertical-align: middle;
+}
+
+.latest_article__cont{
+  margin-top: 40px;
+}
+
+.cont__1{
+  float: left;
+  width: 790px;
+  position: relative;
+}
+
+.cont1_img{
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.cont1_img > img{
+  width: 100%;
+}
+
+.cont{
+  padding: 20px;
+  height: 152px;
+  background-color: #333333;
+}
+
+.cont > dt > a{
+  font-size: 20px;
+  color: #e7bb2b;
+  font-weight: bold;
+}
+
+.middle{
+  color: white;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.middle > span > em{
+  font-weight: bold;
+}
+
+.middle > span:nth-child(1){
+  background: url('http://www.timepieceasia.com/images/main/bar.jpg') 100% 50% no-repeat;
+  margin-right: 10px;
+  padding-right: 15px;
+}
+
+.bottom{
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+
+.cont__2{
+  float: right;
+  width: 380px;
+  position: relative;
+}
+
+
+.cont2_img > li{
+  float: left;
+  height: 680px;
+}
+
+.cont2_img > li > a{
+  display: block;
+}
+
+.cont2_img > li > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+.toggleBtn{
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.toggleBtn > li{
+  float: left;
+  margin: 0 4px;
+}
+
+.toggleBtn > li > a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.toggleBtn > li > a.on{
+  background-color: red;
+}
+
+
+
+/* watch_list */
+.watch_list{
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.watch_list__cont{
+  overflow: hidden;
+}
+
+.watch_list__cont > li{
+  float: left;
+  padding: 40px 10px 30px;
+  padding-top: 40px;
+  width: calc(100% / 3);
+  border-bottom: 1px solid #ccc;
+}
+
+.breaking, a.btn{
+  color: white;
+  padding: 0 10px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.breaking{
+  background-color: #ae5c51;
+}
+
+a.btn{
+  background-color: black;
+}
+
+.watch_list__cont > li > h2{
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.watch_list__cont > li > h2 > a{
+  color: black;
+}
+
+.watch_list__cont > li > span > img{
+  width: 100%;
+}
+
+.watch_list__cont > li > dl{
+  margin-top: 10px;
+}
+
+.watch_list__cont > li > dl > dt{
+  position: relative;
+  font-size: 15px;
+}
+
+.watch_list__cont > li > dl > dt::before{
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 15px;
+  background: url('http://www.timepieceasia.com/images/main/icon01.png') no-repeat;
+  vertical-align: middle;
+}
+
+.date{
+  margin-left: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+.watch_list__cont > li > dl > dd{
+  margin-top: 12px;
+}
+
+.watch_list__cont > li > dl > dd > a{
+  font-size: 14px;
+
+}
+
+
+/* visual2 */
+.visual2{
+  margin-top: 30px;
+}
+
+.visual2  a > img{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* article */
+.article{
+  margin-top: 35px;
+}
+
+.article__cont1{
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.article__title{
+  background: url('http://www.timepieceasia.com/images/main/title_bg.jpg') 0 50% repeat-x;
+  text-align: center;
+}
+
+.article__title > img{
+  vertical-align: middle;
+}
+
+.article__body{
+  margin-top: 20px;
+}
+
+.article__body > li{
+  float: left;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.article__body > li:nth-child(2n-1){
+  padding-right: 10px;
+}
+
+.article__body > li:nth-child(2n){
+  padding-left: 10px;
+}
+
+.article__body > li > a > img{
+  width: 100%;
+}
+
+.article__cont2{
+  float: right;
+  width: 48%;
+}
+
+.article__body2{
+  margin-top: 30px;
+}
+
+.article__body2 > li{
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.article__body2 > li > a{
+  display: inline-block;
+  width: 26.5%;
+  float: left;
+}
+
+.article__body2 > li > a > img{
+  width: 100%;
+}
+
+.body2__leftCont{
+  float: right;
+  width: 70%;
+}
+
+.magazine, a.btn2{
+  display: inline-block;
+  padding: 0 6px;
+  color: white;
+  font-size: 11px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.magazine{
+  background-color: #ae5c51;
+}
+
+a.btn2{
+  background-color: black;
+}
+
+.body2__leftCont > a{
+  display: block;
+  margin-top: 10px;
+}
+
+.body2__leftCont > a > h2{
+  font-size: 18px;
+  color: black;
+}
+
+.body2__leftCont > a > p{
+  margin-top: 7px;
+  font-size: 13px;
+}
+
+/* wotw */
+.wotw{
+}
+
+.wotw__cont{
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  position: relative;
+  min-height: 300px;
+}
+
+.wotw__cont > h3{
+  font-size: 22px;
+  color: black;
+  padding: 15px 20px 10px;
+}
+
+.wotw__date{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* visual3 */
+.visual3{
+  margin-top: 50px;
+}
+
+.visual3 a > img{
+  width: 100%;
+}
+
+/* sns_mobileBar */
+.sns_mobileBar{
+  display: none;
+}
+
+
+/* footer */
+footer{
+  margin-top: 30px;
+  padding: 25px 0;
+  text-align: center;
+  background-color: #21201c;
+}
+
+.footer_menu{
+  overflow: hidden;
+  display: inline-block;
+}
+
+.footer_menu > li{
+  float: left;
+  padding: 0 15px;
+  line-height: 1;
+}
+
+.footer_menu > li + li{
+  border-left: 1px solid #ccc;
+}
+
+.footer_menu > li > a{
+  font-size: 14px;
+  color: white;
+  line-height: 1;
+}
+
+footer > address{
+  color: #ddd;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+span.br{
+  display: block;
+}
+
+
+
+@media all and (max-width: 1024px) {
+
+  .inner{
+    width: 96%;
+  }
+  /* header */
+  header{
+    background: url('http://www.timepieceasia.com/images/main/header_bg.jpg') 0 0 repeat-x;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .header__top{
+    width: 96%;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .logo > a{
+    display: inline-block;
+    width: 231px;
+    height: 46px;
+    background: url('http://www.timepieceasia.com/images/main_1200/logo.png') no-repeat;
+  }
+
+
+  /* .sub_menu */
+  .sub_menu{
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+
+  .sub_menu > li > a{
+    font-size: 0;
+  }
+
+  .sub_menu > li::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    content: '';
+  }
+
+  /* sns_logo */
+  .sns_logo{
+    display: none;
+  }
+
+  .search_bar{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font-size: 0;
+  }
+
+  .search_bar input{
+    display: none;
+  }
+
+  #input_btn{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url('http://www.timepieceasia.com/images/main_1200/btn_search.jpg') no-repeat;
+    background-size: 70px 35px;
+    cursor: pointer;
+  }
+
+  /* nav */
+  nav{
+    display: none;
+  }
+
+  .mobile_menubar{
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 2%;
+    width: 35px;
+    height: 35px;
+    background: url('http://www.timepieceasia.com/images/main_1200/btn_menu.jpg') no-repeat;
+    background-size: 70px 35px;
+  }
+
+  /* visual */
+  .visual{
+    padding-top: 100px;
+  }
+
+  /* latest_article */
+
+  .cont__1{
+    float: left;
+    width: 66%;
+    position: relative;
+  }
+
+  .cont{
+    padding: 10px;
+    height: 130px;
+    background-color: #333333;
+  }
+
+  .cont > dt{
+    line-height: 1;
+  }
+
+  .cont > dt > a{
+    font-size: 16px;
+    color: #e7bb2b;
+    font-weight: bold;
+  }
+
+  .middle{
+    color: white;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  .bottom{
+    margin-top: 5px;
+    color: white;
+    font-size: 13px;
+  }
+
+
+  .cont__2{
+    float: right;
+    width: 33%;
+    position: relative;
+  }
+
+
+  .cont2_img > li{
+    float: left;
+    height: auto;
+  }
+
+
+  /* watch_list */
+  .watch_list{
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+  }
+
+  .watch_list__cont{
+    overflow: hidden;
+  }
+
+  .watch_list__cont > li{
+    float: left;
+    padding: 20px 10px 30px;
+    padding-top: 40px;
+    width: calc(100% / 2);
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* article */
+  .article__body2 > li > a{
+    display: inline-block;
+    width: 40%;
+    float: left;
+  }
+
+  .body2__leftCont{
+    float: right;
+    width: 56%;
+  }
+
+  .body2__leftCont > a > h2{
+    font-size: 15px;
+    color: black;
+  }
+
+  .body2__leftCont > a > p{
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+  /* wotw */
+  .wotw{
+  }
+
+  .wotw__cont > h3{
+    font-size: 18px;
+    color: black;
+    padding: 15px 20px 10px;
+  }
+
+  /* sns_mobileBar */
+  .sns_mobileBar{
+    display: block;
+    height: 127px;
+    margin-top: 25px;
+  }
+
+  .sns_mobileBar > ul > li{
+    float: left;
+    width: 32.3%;
+    text-align: center;
+  }
+
+  .sns_mobileBar > ul > li > a{
+    display: inline-block;
+    width: 103px;
+    height: 102px;
+  }
+
+  .sns_mobileBar > ul > li:nth-child(1) > a{
+    background: url('http://www.timepieceasia.com/images/main_1200/sns01.png') no-repeat;
+  }
+
+  .sns_mobileBar > ul > li:nth-child(2) > a{
+    background: url('http://www.timepieceasia.com/images/main_1200/sns02.png') no-repeat;
+  }
+
+  .sns_mobileBar > ul > li:nth-child(3) > a{
+    background: url('http://www.timepieceasia.com/images/main_1200/sns03.png') no-repeat;
+  }
+
+}
+
+
+@media all and (max-width: 720px) {
+    /* header */
+    header{
+      background: url('http://www.timepieceasia.com/images/main/header_bg.jpg') 0 0 repeat-x;
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .header__top{
+      width: 96%;
+      height: 100px;
+      margin: 0 auto;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .logo{
+      padding-top: 15px;
+    }
+
+    .logo > a{
+      display: inline-block;
+      width: 157px;
+      height: 30px;
+      background: url('http://www.timepieceasia.com/images/main_480/logo.png') no-repeat;
+      background-size: cover;
+    }
+
+
+    /* latest_article */
+
+    .cont__1{
+      float: left;
+      width: 100%;
+      position: relative;
+    }
+
+    .cont{
+      padding: 10px;
+      height: 146px;
+      background-color: #333333;
+    }
+
+    .cont > dt > a{
+      font-size: 14px;
+      color: #e7bb2b;
+      font-weight: bold;
+    }
+
+    .cont__2{
+      float: right;
+      width: 100%;
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .cont2_img{
+      overflow: hidden;
+      max-width: 608px;
+      margin: 0 auto;
+    }
+
+
+    .cont2_img > li{
+      float: left;
+      height: auto;
+      width: 46px;
+    }
+
+    .cont2_img > li + li{
+      margin-left: 8px;
+    }
+
+    .toggleBtn{
+      display: none;
+    }
+
+
+    /* watch_list */
+    .watch_list{
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+    }
+
+    .watch_list__cont{
+      overflow: hidden;
+    }
+
+    .watch_list__cont > li{
+      float: left;
+      padding: 20px 10px 30px;
+      padding-top: 40px;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .watch_list__cont > li > h2 > a{
+      font-size: 16px;
+    }
+    .watch_list__cont > li > dl > dd > a{
+      font-size: 12px;
+    }
+
+    /* article */
+    .article__cont1{
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .article__title > img{
+      width: 110px;
+    }
+
+    .article__cont2{
+      width: 100%;
+    }
+
+    .body2__leftCont{
+      float: right;
+      width: 56%;
+    }
+
+    .body2__leftCont > a > h2{
+      font-size: 15px;
+      color: black;
+    }
+
+    .body2__leftCont > a > p{
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    /* sns_mobileBar */
+    .sns_mobileBar{
+      display: block;
+      height: auto;
+      margin-top: 25px;
+    }
+
+    .sns_mobileBar > ul{
+      overflow: hidden;
+    }
+
+    .sns_mobileBar > ul > li{
+      float: left;
+      width: 32.3%;
+      text-align: center;
+    }
+
+    .sns_mobileBar > ul > li > a{
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+    }
+
+    .sns_mobileBar > ul > li:nth-child(1) > a{
+      background: url('http://www.timepieceasia.com/images/main_1200/sns01.png') no-repeat;
+      background-size: cover;
+    }
+
+    .sns_mobileBar > ul > li:nth-child(2) > a{
+      background: url('http://www.timepieceasia.com/images/main_1200/sns02.png') no-repeat;
+      background-size: cover;
+    }
+
+    .sns_mobileBar > ul > li:nth-child(3) > a{
+      background: url('http://www.timepieceasia.com/images/main_1200/sns03.png') no-repeat;
+      background-size: cover;
+    }
+
+    /* footer */
+    footer{
+      margin-top: 0;
+    }
+
+    .footer_menu > li{
+
+    }
+
+    .footer_menu > li > a{
+      font-size: 11px;
+    }
+
+    footer > address{
+      font-size: 11px;
+    }
+
+    span.br{
+      display: inline-block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
