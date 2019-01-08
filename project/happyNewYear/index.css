@@ -3,9 +3,8 @@
 .card{
   position: relative;
   height: 100vh;
-  width: 630px;
-  margin: 0 auto;
-
+  background: url('./newYearIMG/newyear.jpg') no-repeat;
+  background-size: cover;
 }
 
 .position{
@@ -19,58 +18,87 @@
   right: 0;
   margin: 0 auto;
   width: 570px;
+  height: 580px;
   padding: 20px;
+  background-color: rgba(2555,255,255, 0.5);
+}
+
+.from{
+  font-weight: 600;
+}
+
+.from > strong{
+  font-size: 1.315vw;
+  color: blue;
+}
+
+.img{
+  position: absolute;
+  right: 50%;
+  margin-right: -120px;
+  bottom: 10px;
+  display: inline-block;
+  width: 125px;
+  height: 160px;
+}
+
+.img > img{
+  width: 100%;
+  height: 100%;
 }
 
 
 
+@media all and (max-width: 750px) {
 
+  .card{
+    position: relative;
+    height: 100vh;
+    background: url('./newYearIMG/newyear.jpg') center center no-repeat;
+    background-size: cover;
+  }
 
+  .position{
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 2.533vw;
+    color: black;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 570px;
+    height: 580px;
+    padding: 20px;
+    background-color: rgba(2555,255,255, 0.5);
+  }
 
+  .from{
+    font-weight: 600;
+  }
 
-/* card2 */
-.card2{
-  position: relative;
-  height: 100vh;
-  background: url('./newYearIMG/sunset2.jpg') center top no-repeat;
-  font-family: 'Nanum Pen Script', cursive;
+  .from > strong{
+    font-size: 2.666vw;
+    color: blue;
+  }
+
+  .img{
+    position: absolute;
+    right: 50%;
+    margin-right: -120px;
+    bottom: 10px;
+    display: inline-block;
+    width: 125px;
+    height: 160px;
+  }
+
+  .img > img{
+    width: 100%;
+    height: 100%;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* card3 */
-.card3{
-  position: relative;
-  height: 100vh;
-  background: url('./newYearIMG/firework.jpg') center top no-repeat;
-  font-family: 'Nanum Pen Script', cursive;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
