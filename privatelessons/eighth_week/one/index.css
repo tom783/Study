@@ -1,0 +1,900 @@
+/* common */
+.inner{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.cont_cover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/* header */
+header{
+  padding-top: 30px;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+.logo > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  float: right;
+  margin-right: 230px;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+  width: 105px;
+  height: 50px;
+  text-align: center;
+}
+
+nav > ul > li:hover > .nav__subNav{
+  display: block;
+}
+
+nav > ul > li + li{
+  margin-left: 100px;
+}
+
+nav > ul > li > a{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  display: block;
+  height: 100%;
+}
+
+.nav__subNav{
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: 1px solid black;
+  z-index: 100;
+}
+
+.nav__subNav > li{
+  width: 150px;
+  height: 45px;
+  line-height: 43px;
+  text-align: center;
+  background-color: white;
+}
+
+.nav__subNav > li:hover{
+  background-color: rgb(61, 58, 42);
+}
+
+.nav__subNav > li + li{
+  border-top: 1px solid black;
+}
+
+.nav__subNav > li > a{
+  font-size: 13px;
+  color: black;
+  display: block;
+}
+
+.nav__subNav > li:hover > a{
+  color: white;
+  font-weight: 600;
+}
+
+.shortCut{
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
+.shortCut > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* main */
+
+.visual{
+  height: 100vh;
+  position: relative;
+}
+
+
+
+.visual1{
+  width: 100%;
+  height: 100vh;
+  background: url('http://www.latiare.kr/images/main/visual1.jpg') center top no-repeat;
+}
+
+.visual2{
+  width: 100%;
+  height: 100vh;
+ background: url('http://www.latiare.kr/images/main/visual2.jpg') center top no-repeat;
+}
+
+.visual3{
+  width: 100%;
+  height: 100vh;
+  background: url('http://www.latiare.kr/images/main/visual3.jpg') center top no-repeat;
+}
+
+/* visual .bx-wrapper */
+.visual .bx-wrapper{
+  border: 0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.visual .bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -670px;
+  background: url('http://www.latiare.kr/images/main/bx_prev.png') 0 0 no-repeat;
+}
+.visual .bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -670px;
+  background: url('http://www.latiare.kr/images/main/bx_next.png') 0 0 no-repeat;
+}
+.visual .bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 38px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+  display: none;
+}
+
+
+/* about */
+.about{
+  height: 100vh;
+  background: url('http://www.latiare.kr/images/main/sec1_bg.jpg') no-repeat;
+}
+
+.about__cont{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: right;
+}
+
+.about__cont > h2{
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.about__cont > h3{
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.about__cont > p{
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a.about__cont__btn{
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  height: 45px;
+  line-height: 43px;
+  padding: 0 70px;
+  margin-top: 66px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+a.about__cont__btn:hover{
+  color: black;
+  background-color: white;
+}
+
+
+/* history */
+.history{
+  height: 100vh;
+  background: url('http://www.latiare.kr/images/main/sec2_bg.jpg') no-repeat;
+  text-align: center;
+  padding-top: 95px;
+  position: relative;
+}
+
+.history > h2{
+  font-size: 50px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.history > p{
+  color: black;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.history .slider > li{
+  text-align: center;
+}
+
+.history .slider > li + li{
+  margin-left: 10px;
+}
+
+
+.history .slider > li > h3{
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 29px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+
+.history .slider > li > h3::after{
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.history .slider > li > dl > dt{
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.history .slider > li > dl > dd{
+  font-size: 14px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+/* history .bx-wrapper */
+.history .bx-wrapper{
+  border: 0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.history .bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -40px;
+  background: url('http://www.latiare.kr/images/main/his_prev.png') 0 0 no-repeat;
+}
+
+.history .bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+
+.history .bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -40px;
+  background: url('http://www.latiare.kr/images/main/his_next.png') 0 0 no-repeat;
+}
+
+.history .bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+
+.history .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  bottom: 95px;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+
+/* business */
+.business{
+  height: 100vh;
+  padding-top: 180px;
+  position: relative;
+  background: url('http://www.latiare.kr/images/main/sec3_bg.jpg') no-repeat;
+}
+
+.business_title{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 40px;
+}
+
+.business_subTitle{
+  font-size: 17px;
+  color: white;
+  margin-bottom: 73px;
+  text-align: center;
+}
+
+
+.business_list > li{
+  display: table-cell;
+  width: 300px;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+  background: url('http://www.latiare.kr/images/main/business_bar.png') right 40px no-repeat;
+  word-break: keep-all;
+}
+
+.business_list > li:hover > .business_list__img{
+  transform: translateY(-5px);
+}
+
+.business_list__img{
+  display: inline-block;
+  height: 62px;
+  margin-bottom: 32px;
+  transition: all 0.3s;
+}
+
+.business_list__img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.business_list > li > h3{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.business_list > li > p{
+  font-size: 14px;
+  color: white;
+  line-height: 22px;
+}
+
+a.business_btn{
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  height: 45px;
+  line-height: 43px;
+  border: 1px solid white;
+  padding: 0 70px;
+  text-align: center;
+  margin-top: 66px;
+
+}
+
+a.business_btn:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/* product */
+.product{
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.product_text{
+  position: absolute;
+}
+
+.product_text > h2{
+  font-size: 50px;
+  line-height: 40px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.product_text > ul{
+  overflow: hidden;
+}
+
+.product_text > ul > li{
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.product_text > ul > li.on{
+  padding-left: 20px;
+}
+
+.product_text > ul > li.on::before{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: #030504;
+  content: '';
+}
+
+.product_text > ul > li > a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.product_cont{
+  position: relative;
+}
+
+.img_side{
+  padding-left: 340px;
+  margin-bottom: 100px;
+  height: 315px;
+}
+
+.product_slideList{
+  height: 285px;
+}
+
+.product_slideItem{
+  position: relative;
+  overflow: hidden;
+}
+
+.product_slideItem:hover > .product_slider{
+  display: block;
+}
+
+.product_img{
+  width: 100%;
+  height: 100%;
+}
+
+.product_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.cont_cover:hover + .product_img > img{
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+
+.product_slider{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 59px 0;
+  display: none;
+}
+
+.product_slider > dl > dt{
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.product_slider > dl > dd{
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.product_slider > dl > .price{
+  font-size: 25px;
+  color: white;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.price::before{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 1px;
+  background-color: white;
+  content: '';
+}
+
+.product_slider > .product_btn{
+  display: inline-block;
+  height: 45px;
+  line-height: 43px;
+  border: 1px solid white;
+  padding: 0 40px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  margin-top: 30px;
+}
+
+
+/* bx-slider */
+.bx-controls-direction{
+  display: none;
+}
+
+
+/* menuGroup */
+.menuGroup{
+  height: 100vh;
+  background: url('http://www.latiare.kr/images/main/sec5_bg.jpg') no-repeat;
+  padding-top: 100px;
+}
+
+.menuGroup_list{
+  overflow: hidden;
+}
+
+.menuGroup_list > li{
+  float: left;
+  position: relative;
+  width: 380px;
+  height: 335px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-right: 30px;
+  display: table;
+  overflow: hidden;
+}
+
+
+.menuGroup_list > li:nth-child(-n+3){
+  margin-top: 0;
+}
+
+.menuGroup_list > li:nth-child(3n){
+  margin-right: 0;
+}
+/*
+.menuGroup_list_img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menuGroup_list_img > img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+} */
+
+.menuGroup_list > li:nth-child(1){
+  background: url('http://www.latiare.kr/images/main/sec5_img01.jpg') no-repeat;
+}
+
+.menuGroup_list > li:nth-child(2){
+  background: url('http://www.latiare.kr/images/main/sec5_img02.jpg') no-repeat;
+}
+
+.menuGroup_list > li:nth-child(3){
+  background: url('http://www.latiare.kr/images/main/sec5_img03.jpg') no-repeat;
+}
+
+.menuGroup_list > li:nth-child(4){
+  background: url('http://www.latiare.kr/images/main/sec5_img04.jpg') no-repeat;
+}
+
+.menuGroup_list > li:nth-child(5){
+  background: url('http://www.latiare.kr/images/main/sec5_img05.jpg') no-repeat;
+}
+
+.menuGroup_list > li:nth-child(6){
+  background: url('http://www.latiare.kr/images/main/sec5_img06.jpg') no-repeat;
+}
+
+.menuGroup_list > li > dl{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menuGroup_list > li > dl > dt{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.menuGroup_list > li > dl > dd{
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+
+/* shopInfo */
+.shopInfo{
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.shopInfo_list{
+  overflow: hidden;
+}
+
+.shopInfo_list > li{
+  float: left;
+  width: 585px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shopInfo_list > li + li{
+  margin-left: 30px;
+}
+
+
+.shopInfo_list > li:hover > .shopInfo_img > img{
+  transform: scale(1.2);
+}
+
+.shopInfo_img > img{
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.shopInfo_cont{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 485px;
+  height: 600px;
+  background: url('http://www.latiare.kr/images/main/shop_box.jpg');
+  display: table;
+}
+
+.shopInfo_cont_main{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopInfo_cont_main > dt{
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.shopInfo_cont_main > dd{
+  font-size: 17px;
+  color: black;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.shopInfo_btnG{
+  margin-top: 50px;
+}
+
+.shopInfo_btnG > a + a{
+  margin-left: 4px;
+}
+
+a.shopInfo_cont_btn{
+  display: inline-block;
+  font-size: 13px;
+  color: black;
+  font-weight: 400;
+  line-height: 43px;
+  height: 45px;
+  border: 1px solid black;
+  padding: 0 62px;
+  text-align: center;
+}
+
+a.shopInfo_cont_btn:hover{
+  color: white;
+  background-color: #333;
+}
+
+
+/* address */
+.address{
+  height: 100vh;
+  padding-top: 150px;
+  background: url('http://www.latiare.kr/images/main/sec7_bg.jpg') no-repeat;
+}
+
+.address_left{
+  float: left;
+  width: 600px;
+  padding: 73px 0;
+}
+
+.address_left > h2{
+  font-size: 50px;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.address_left > ul > li{
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.address_left > ul > li > strong{
+  float: left;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  width: 25%;
+}
+
+.address_left > ul > li > span{
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  width: 75%;
+}
+
+a.address_btn{
+  display: inline-block;
+  margin-top: 44px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  height: 45px;
+  line-height: 43px;
+  border: 1px solid white;
+  padding: 0 70px;
+}
+
+a.address_btn:hover{
+  color: black;
+  background-color: white;
+}
+
+
+.address_right{
+  float: right;
+  width: 600px;
+  height: 600px;
+}
+
+
+
+
+/* footer */
+footer{
+  padding-top: 45px;
+}
+
+.footer_logo{
+  position: absolute;
+  right: 0;
+}
+
+.footer_logo > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer_nav{
+  overflow: hidden;
+}
+
+.footer_nav > dl{
+  float: left;
+}
+
+.footer_nav > dl + dl{
+  margin-left: 133px;
+}
+
+.footer_nav > dl > dt{
+  font-size: 16px;
+  margin-bottom: 13px;
+  color: black;
+}
+
+.footer_nav > dl > dd{
+  line-height: 30px;
+}
+
+.footer_nav > dl > dd > a{
+  color: #a4a4a4;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.copyright{
+  position: absolute;
+  top: 65px;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+/*  */

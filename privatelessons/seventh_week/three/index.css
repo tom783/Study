@@ -1,0 +1,312 @@
+/* common */
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* header */
+header{
+  height: 60px;
+  padding-top: 15px;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+}
+
+.logo > a{
+  display: block;
+  width: 235px;
+  height: 28px;
+  background: url('https://governor.gg.go.kr/wp-content/uploads/2018/12/logo.png') no-repeat;
+  background-size: cover;
+}
+
+nav{
+  float: right;
+}
+
+.nav{
+  overflow: hidden;
+}
+
+.nav > li{
+  float: left;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.nav > li > a{
+  color: black;
+  font-size: 19px;
+}
+
+.sub_navCont{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: #ddd url('https://governor.gg.go.kr/wp-content/themes/governor/images/bg-gnb.png') no-repeat;
+  font-size: 0;
+  text-align: justify;
+  display: none;
+}
+
+.nav > li:hover > .sub_navCont{
+  display: block;
+  z-index: 999;
+}
+
+.sub_navLeft{
+  display: inline-block;
+  width: 28%;
+  height: 100%;
+  background: url('https://governor.gg.go.kr/wp-content/themes/governor/images/bg-snb.png') no-repeat;
+  padding: 46px 0 0 56px;
+  vertical-align: middle;
+}
+
+.sub_navLeft > h2{
+  font-size: 30px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  display: inline-block;
+}
+
+.sub_navLeft > p{
+  font-size: 15px;
+  color: white;
+}
+
+.sub_nav{
+  display: inline-block;
+  width: calc(100% - 28%);
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 40px 0 0 55px;
+}
+
+.sub_nav > li{
+  float: left;
+}
+
+.sub_nav > li + li{
+  margin-left: 50px;
+}
+
+.sub_nav__deep{
+  overflow: hidden;
+}
+
+.sub_nav__deep > li{
+  position: relative;
+  padding-left: 5px;
+}
+
+.sub_nav__deep > li > a{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.sub_nav__deep > li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgb(21, 63, 143);
+}
+
+
+.nav_btn{
+  display: none;
+}
+
+
+/* main */
+main > .inner > div + div{
+  margin-top: 10px;
+}
+
+.main__cont{
+  overflow: hidden;
+}
+
+.main__cont > li{
+  position: relative;
+  padding: 30px 30px;
+  height: 195px;
+  border: 1px solid #ddd;
+  float: left;
+  text-align: right;
+}
+
+.main__cont > li + li{
+  margin-left: 10px;
+}
+
+.big_cont{
+  width: calc(40% - 7.5px);
+}
+
+.big_cont > h3{
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+
+.big_cont > p{
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+
+.first_btn{
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+
+.first_btn > a{
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  height: 25px;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+.first_btn > a:hover{
+  border-radius: 5px;
+}
+
+.firstLine > ul > li:nth-child(1){
+  background: #e0e4e7 url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-bg-governor.png') 15%  bottom no-repeat
+}
+
+.firstLine > ul > li:nth-child(2){
+  background: #32ba94 url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-bg-item04.png') 11% 86% no-repeat;
+}
+
+.firstLine > ul > li:nth-child(2):hover{
+  background: #289576 url('https://governor.gg.go.kr/wp-content/themes/governor/images/bg-item-over.png') 29px 82% no-repeat;
+}
+
+.firstLine > ul > li:nth-child(3){
+  background: #268ad8 url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-bg-item05.png') 10%  86% no-repeat;
+}
+
+.firstLine > ul > li:nth-child(3):hover{
+  background: #1e6ead url('https://governor.gg.go.kr/wp-content/themes/governor/images/bg-item-over.png') 29px 82% no-repeat;
+}
+
+.firstLine > ul > li:nth-child(4){
+  background: #285ea3 url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-bg-item03.png') 10%  86% no-repeat;
+}
+
+.firstLine > ul > li:nth-child(4):hover{
+  background: #204b82 url('https://governor.gg.go.kr/wp-content/themes/governor/images/bg-item-over.png') 29px 82% no-repeat;
+}
+
+
+.small_cont{
+  width: calc(20% - 7.5px);
+}
+
+.small_cont > h3{
+  color: white;
+  font-size: 20px;
+}
+
+.small_cont > p{
+  color: white;
+  font-size: 14px;
+}
+
+a.cover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.secondLine > ul > li > h3{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.secondLine > ul > li:nth-child(1){
+  background: url("https://governor.gg.go.kr/wp-content/themes/governor/images/bg-item02-vog.png") center center no-repeat, linear-gradient( to right, #2761a7 0%, #1282c8 40%, #0a9ed4 100%);
+  background-size: cover;
+}
+
+.second_cont{
+  overflow: hidden;
+  display: table;
+  margin: 15px auto 0;
+}
+
+.second_cont > li{
+  float: left;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+}
+
+.second_cont > li > span{
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.second_cont > li:nth-child(1) > span{
+  background:rgba(255,255,255,0.5) url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-item02-vog1.png') no-repeat;
+}
+
+.second_cont > li:nth-child(2) > span{
+  background:rgba(255,255,255,0.5) url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-item02-vog2.png') no-repeat;
+}
+
+.second_cont > li:nth-child(3) > span{
+  background:rgba(255,255,255,0.5) url('https://governor.gg.go.kr/wp-content/themes/governor/images/ico-item02-vog3.png') no-repeat;
+}
+
+.second_cont > li > p{
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.second_cont > li + li{
+  margin-left: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
