@@ -22,21 +22,44 @@
     <!-- css link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-    <!--bxslider css 링크 https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css -->
+    <!--bxslider css 링크 https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css -->
 
 
     <link rel="stylesheet" href="../../common.css">
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
 
     <title>아리아팀스 클론사이트</title>
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.slider').bxSlider({
-          mode: 'fade'
-        });
+        $('.visual .slider').bxSlider(
+          {
+            mode: 'fade'
+          }
+        );
+
+        $('.product .slider').bxSlider(
+          {
+            mode: 'horizontal',
+            slideWidth: 380,
+            moveSlides: 1,
+            maxSlides: 3
+          }
+        );
+
+        $('.product .slider').bxSlider(
+          {
+            mode: 'horizontal',
+            slideWidth: 380,
+            moveSlides: 1,
+            maxSlides: 3
+          }
+        );
+
       });
+
+
     </script>
   </head>
   <body>
@@ -204,13 +227,488 @@
         </ul>
       </section>
 
+      <section class="product">
+        <div class="inner">
+          <a href="#">
+            <h2 class="product_title">기구</h2>
+            <p class="product_subtitle">ARIA TEAMS 기구</p>
+          </a>
+
+          <div class="product_slide">
+            <ul class="slider">
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1516001724/1516001724_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515751741/1515751741_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515747181/1515747181_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1516001724/1516001724_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515746388/1515746388_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1516001724/1516001724_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+  									동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="inner">
+          <a href="#">
+            <h2 class="product_title">제품</h2>
+            <p class="product_subtitle">ARIA TEAMS PRODUCT</p>
+          </a>
+
+          <div class="product_slide">
+            <ul class="slider">
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501610/1515501610_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501563/1515501563_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501535/1515501535_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501610/1515501610_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501563/1515501563_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+              <li>
+                <span class="slider_img">
+                  <img src="http://www.ariateams.com/product/data/item/1515501535/1515501535_l1.jpg" alt="">
+                </span>
+
+                <dl class="slider_cont">
+                  <dt>스타일북</dt>
+                  <dd>
+                    동영상 시청이 가능한 스타일북 펌50작품/드라이50작품 아리아 ...
+                  </dd>
+                </dl>
+
+                <a href="#" class="cont_cover"></a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <h2>동영상 강의</h2>
+        <ul class="video_list">
+          <li>
+            <a href="#">팀스</a>
+          </li>
+
+          <li>
+            <a href="#">미니&컬링</a>
+          </li>
+
+          <li>
+            <a href="#">오리지널 아리아</a>
+          </li>
+
+          <li>
+            <a href="#">뿌리볼륨</a>
+          </li>
+
+          <li>
+            <a href="#">제품사용법</a>
+          </li>
+
+          <li>
+            <a href="#">동영상모음</a>
+          </li>
+        </ul>
+
+        <ul class="video_view">
+          <li class="on">
+            <iframe width="900" height="460" src="https://www.youtube.com/embed/j3vI1oOx8w4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+          </li>
+
+          <li>
+            <iframe width="900" height="460" src="https://www.youtube.com/embed/H5D3vP8raeI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+          </li>
+
+          <li>
+            <iframe width="900" height="460" src="https://www.youtube.com/embed/GnP95K0KUjM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+          </li>
+        </ul>
+
+
+      </section>
+
+      <section class="subInfo">
+        <div class="inner">
+          <div class="subInfo_left">
+            <a href="#">
+              <dl class="subInfo_cont">
+                <dt>제품 사용방법</dt>
+                <dd>아리아 써포터제를 활용한 전문 크리닉방법. 복구 컬러와 모발학 이론등<br>
+						  	비교 설명하여 이해를 도와드리겠습니다</dd>
+              </dl>
+              <a href="#" class="subInfo_btn">MORE+</a>
+            </a>
+          </div>
+
+          <div class="subInfo_right">
+            <a href="#">
+              <dl class="subInfo_cont">
+                <dt>교육 프로그램</dt>
+                <dd>ARIA TEAMS MEMBER SALON만의 차별화된<br>
+						  	교육 프로그램을 소개합니다.<br>
+                ARIA TEAMS 에서는 본사 아카데미와 전국 지사에서 다양한<br>
+                교육과정을 진행하고 있습니다.
+                </dd>
+              </dl>
+              <a href="#" class="subInfo_btn">MORE+</a>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="board">
+        <div class="inner">
+          <div class="notice">
+            <h2>NOTICE</h2>
+
+            <ul class="notice_cont">
+              <li>
+                <span class="date">
+                  <strong>07-16</strong>
+                  <span>2018</span>
+                </span>
+
+                <dl class="text">
+                  <dt>
+                    <a href="#">(주)아리아를 해외에서궁금한다면----> 전자카드로 설명드립니다</a>
+                  </dt>
+                  <dd>
+                    <a href="#">http://www.ariateams.com/aria/inc_html/index.html회사 영문설명</a>
+                  </dd>
+                </dl>
+              </li>
+
+              <li>
+                <span class="date">
+                  <strong>07-16</strong>
+                  <span>2018</span>
+                </span>
+
+                <dl class="text">
+                  <dt>
+                    <a href="#">(주)아리아를 해외에서궁금한다면----> 전자카드로 설명드립니다</a>
+                  </dt>
+                  <dd>
+                    <a href="#">http://www.ariateams.com/aria/inc_html/index.html회사 영문설명</a>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+
+          <div class="qa">
+            <h2>Q&A</h2>
+
+            <ul class="qa_cont">
+              <li>
+                <a href="#">
+                  <dl class="qa_text">
+                    <dt>SOD -소비자가 선택해야 하는 이유</dt>
+                    <dd>이제까지 크리닉이란 모발속으로 세라마이드형 단백질을 채워주는 역할이라면 SOD는 모발속 화학물질을 제거하여 본연의 머리결로 되찿는 역할입...</dd>
+                  </dl>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <dl class="qa_text">
+                    <dt>SOD -소비자가 선택해야 하는 이유</dt>
+                    <dd>이제까지 크리닉이란 모발속으로 세라마이드형 단백질을 채워주는 역할이라면 SOD는 모발속 화학물질을 제거하여 본연의 머리결로 되찿는 역할입...</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="inner">
+          <h2>ARIA TEAMS GALLERY</h2>
+          <h3>ARIA TEAMS GALLERY</h3>
+
+          <ul class="gallery_list">
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/rolling_banner/item/3c5d000f1a.PNG" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/insta.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/rolling_banner/item/6ccc019484.jpg" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/band.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/rolling_banner/item/f27a1b00c3.PNG" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/blog.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/rolling_banner/item/550c2823f5.PNG" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/blog.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/editor/upload/img/1521704247.jpg" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/insta.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/editor/upload/img/1520858287.jpg" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/insta.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/editor/upload/img/1520574648.JPG" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/insta.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+
+            <li>
+              <span class="gallery_img">
+                <img src="http://www.ariateams.com/editor/upload/img/1519980203.png" alt="">
+              </span>
+
+              <span class="sns_img">
+                <img src="http://www.ariateams.com/images/main/insta.jpg" alt="">
+              </span>
+
+              <a href="#" class="cont_cover"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
 
     </main>
 
 
     <footer>
+      <div class="inner">
+        <h1 class="footer_logo">
+          <a href="#">
+            <img src="http://www.ariateams.com/images/main/footer_logo.jpg" alt="">
+          </a>
+        </h1>
 
+        <div class="footer_top">
+          <span>
+            <a href="#">개인정보취급방침</a>
+          </span>
+          <span>
+            <a href="#">이용약관</a>
+          </span>
+        </div>
 
+        <address>
+					<p>경기도 광주시 초월읍 경충대로  1225-23 <span></span>TEL : 031.764.8822<span></span>FAX : 031.765.2137<span></span></p>
+					<p>COPYRIGHT © 2017 ARIA TEAMS MEMBER SALON. ALL RIGHTS RESERVED.</p>
+				</address>
+      </div>
     </footer>
 
   </body>
