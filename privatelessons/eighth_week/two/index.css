@@ -1,0 +1,267 @@
+/* common */
+.inner{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+/* header */
+header{
+  padding-top: 40px;
+  background: url('http://www.ariateams.com/images/main/header_bg.jpg') repeat-x;
+  height: 125px;
+}
+
+.top_menu{
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -600px;
+  overflow: hidden;
+}
+
+.top_menu > li{
+  float: left;
+  line-height: 34px;
+  margin-left: 20px;
+}
+
+.top_menu > li > a{
+  color: white;
+}
+
+.country{
+  display: block;
+  margin-left: -10px;
+}
+
+.country img{
+  vertical-align: middle;
+}
+
+.logo{
+  position: absolute;
+  top: 53px;
+}
+
+nav{
+  float: right;
+}
+
+.main_nav > li{
+  float: left;
+  height: 90px;
+  line-height: 90px;
+}
+
+.main_nav:hover + .sub_navbar{
+  display: block;
+}
+
+.main_nav > li + li{
+  margin-left: 72px;
+}
+
+.main_nav > li > a{
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+}
+
+
+.sub_navbar{
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ddd;
+  background: url('http://www.ariateams.com/images/main/navi_bg.jpg') center top no-repeat;
+  display: none;
+}
+
+.sub_nav_inner{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sub_nav{
+  float: right;
+}
+
+.sub_nav > ul{
+  overflow: hidden;
+  padding-top: 14px;
+  float: left;
+  margin-left: 72px;
+}
+
+.sub_nav > ul:nth-child(2){
+  margin-left: 95px;
+}
+
+.sub_nav > ul:nth-child(3){
+  margin-left: 78px;
+}
+
+.sub_nav > ul > li{
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sub_nav > ul > li > a{
+  font-size: 14px;
+  color: black;
+}
+
+
+
+/* main */
+
+
+/* visual */
+.visual{
+  position: relative;
+  height: 670px;
+}
+
+.visual .visual1{
+  background: url('http://www.ariateams.com/rolling_banner/item/1e25ddacc7.jpg') top center no-repeat;
+  height: 670px;
+}
+
+.visual .visual2{
+  background: url('http://www.ariateams.com/rolling_banner/item/e4f650c65e.jpg') top center no-repeat;
+  height: 670px;
+}
+
+.visual .visual3{
+  background: url('http://www.ariateams.com/rolling_banner/item/56d21bbb22.jpg') top center no-repeat;
+  height: 670px;
+}
+
+.visual .visual4{
+  background: url('http://www.ariateams.com/rolling_banner/item/98b76dc815.jpg') top center no-repeat;
+  height: 670px;
+}
+
+.visual .visual5{
+  background: url('http://www.ariateams.com/rolling_banner/item/57d7e634ad.jpg') top center no-repeat;
+  height: 670px;
+}
+
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7.5px;
+  outline: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #332b50;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #332b50;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -668px;
+  background: url('http://www.ariateams.com/images/main/visual_prev.png') no-repeat 0 0;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -668px;
+  background: url('http://www.ariateams.com/images/main/visual_next.png') no-repeat 0 0;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -37px;
+  outline: 0;
+  width: 39px;
+  height: 74px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
