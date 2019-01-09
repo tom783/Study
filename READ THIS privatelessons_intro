@@ -2,14 +2,41 @@
 
 Clone target site
 {
+#first_week#
 http://www.baduksin.com/
 http://www.gmcc.or.kr/
+
+#second_week#
 http://kiup.gamgakdesign.com/main.php
 http://www.cpch.or.kr/
 http://www.alices-garden.co.kr/
+
+#third_week#
 http://www.glovane.com/
 http://www.capstoneam.co.kr/
 http://www.evertrust.co.kr/
+
+#fourth_week#
+http://ktmarket.co.kr/
+
+#fifth_week#
+http://barunhae.com/mobile/main.php
+http://www.gigdc.or.kr/
+
+#sixth_week#
+http://www.inplanners.com/
+http://daerimworld.com/
+http://www.kotica.or.kr/
+
+#seventh_week#
+http://www.timepieceasia.com/
+http://www.hopeinfo.or.kr/main_new.php
+
+#eighth_week#
+http://www.latiare.kr/
+http://www.ariateams.com/
+
+#ninth_week#
 
 }
 
@@ -30,6 +57,22 @@ http://www.evertrust.co.kr/
                               ->three
                               
                 ->fourth_week ->one
+                
+                              
+                ->fifth_week  ->one
+                              ->two
+                
+                ->sixth_week ->one
                               ->two
                               ->three
+                              
+                ->seventh_week ->one
+                               ->two
+                              
+                ->eighth_week ->one
+                              ->two
+                              
+                ->ninth_week  ->one
+                              ->two
+                              
                               
