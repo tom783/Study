@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- script link -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <!--bxslider css 링크 https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css -->
+
+
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>포스텍 평화연구소 클론 사이트</title>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#visual .slider').bxSlider(
+          {
+            mode: 'fade',
+            auto: true
+          }
+        );
+
+        $('.report_right .slider').bxSlider(
+          {
+            mode: 'horizontal',
+            slideWidth: 177,
+            moveSlides: 1,
+            maxSlides: 4,
+            slideMargin: 20,
+            auto: true
+          }
+        );
+
+      });
+
+
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="#">
+            <img id="logo_pc" src="http://postpgamgak.gamgakdesign.com/images/main/logo.jpg" alt="">
+            <img id="logo_tab" src="http://postpgamgak.gamgakdesign.com/images/main/tab_logo.jpg" alt="">
+            <img id="logo_mob" src="http://postpgamgak.gamgakdesign.com/images/main/mob_logo.jpg" alt="">
+          </a>
+        </h1>
+
+        <div class="nav_top">
+          <span><a href="#">postech</a></span>
+          <span><a href="#">home</a></span>
+          <span><a href="#">location</a></span>
+          <span><a href="#">sitemap</a></span>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#">연구소 소개</a>
+              <ul class="nav_sub">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">비전 & 연혁</a></li>
+                <li><a href="#">조직 & 사람들</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">브로셔</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">학술활동</a>
+              <ul class="nav_sub">
+                <li><a href="#">평화포럼</a></li>
+                <li><a href="#">학술행사</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">출판</a>
+              <ul class="nav_sub">
+                <li><a href="#">코리아 리포트</a></li>
+                <li><a href="#">Daily PPI Briefing</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">알림</a>
+              <ul class="nav_sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">갤러리</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+
+        <span id="nav_btn">
+          <img class="nav_btn" src="http://postpgamgak.gamgakdesign.com/images/main/btn_navi.png" alt="">
+        </span>
+
+      </div>
+    </header>
+
+    <main>
+      <section id="visual">
+        <div class="inner">
+          <ul class="slider">
+            <li id="visual1"></li>
+            <li id="visual2"></li>
+            <li id="visual3"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="report">
+        <div class="inner">
+          <div class="report_left">
+            <h3 class="cont_title">포스텍 평화연구소</h3>
+            <h2 class="cont_title2">출판</h2>
+            <ul>
+              <li class="on">Daily PPI Briefing</li>
+              <li>코리아 리포트</li>
+            </ul>
+
+            <a href="#" id="report_moreBtn">READ MORE</a>
+          </div>
+
+          <div class="report_right">
+            <div id="slider_1">
+              <ul class="slider">
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img03.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img04.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img01.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img02.jpg" alt=""></li>
+              </ul>
+            </div>
+
+            <div id="slider_2">
+              <ul class="slider">
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img03.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img04.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img01.jpg" alt=""></li>
+                <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img02.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="article">
+        <div class="inner">
+          <div class="content" id="notice">
+            <h3 class="cont_title">포스텍 평화연구소</h3>
+            <h2 class="cont_title2">NOTICE</h2>
+
+            <ul>
+              <li>
+                <h3>“재난과 자본주의” : 2019년 기획연구 및 ...</h3>
+                <p><소통과 공론 연구소>의 2019년 기획연구 및 심포지엄의 주제는 “재난과 자본주의”이다. 2017년 포항을 강타...</p>
+
+                <img src="http://postpgamgak.gamgakdesign.com/images/main/n_more.jpg" alt="">
+                <a href="#" class="link_cover"></a>
+              </li>
+
+              <li>
+                <h3>“재난과 자본주의” : 2019년 기획연구 및 ...</h3>
+                <p><소통과 공론 연구소>의 2019년 기획연구 및 심포지엄의 주제는 “재난과 자본주의”이다. 2017년 포항을 강타...</p>
+
+                <img src="http://postpgamgak.gamgakdesign.com/images/main/n_more.jpg" alt="">
+                <a href="#" class="link_cover"></a>
+              </li>
+
+            </ul>
+
+            <a href="#" id="report_moreBtn">READ MORE</a>
+          </div>
+
+          <div class="content" id="gallery">
+            <h3 class="cont_title">포스텍 평화연구소</h3>
+            <h2 class="cont_title2">GALLERY</h2>
+
+            <ul>
+              <li>
+                <span class="gallery_img"><img src="http://postpgamgak.gamgakdesign.com/images/main/gallery01.jpg" alt=""></span>
+                <dl class="gallery_cont">
+                  <dt>갤러리 제목</dt>
+                  <dd>갤러리에 대한 설명이 나타나는 부분 입니다. 갤러리에 관한 글을 입력해 주세요.</dd>
+                </dl>
+
+                <a href="#" class="link_cover"></a>
+              </li>
+
+              <li>
+                <span class="gallery_img"><img src="http://postpgamgak.gamgakdesign.com/images/main/gallery02.jpg" alt=""></span>
+                <dl class="gallery_cont">
+                  <dt>갤러리 제목</dt>
+                  <dd>갤러리에 대한 설명이 나타나는 부분 입니다. 갤러리에 관한 글을 입력해 주세요.</dd>
+                </dl>
+
+                <a href="#" class="link_cover"></a>
+              </li>
+
+              <li>
+                <span class="gallery_img"><img src="http://postpgamgak.gamgakdesign.com/images/main/gallery03.jpg" alt=""></span>
+                <dl class="gallery_cont">
+                  <dt>갤러리 제목</dt>
+                  <dd>갤러리에 대한 설명이 나타나는 부분 입니다. 갤러리에 관한 글을 입력해 주세요.</dd>
+                </dl>
+
+                <a href="#" class="link_cover"></a>
+              </li>
+            </ul>
+
+            <a href="#" id="report_moreBtn">READ MORE</a>
+          </div>
+
+          <div id="article_btnG">
+            <ul>
+              <li id="article_btnG_1">
+                <a href="#">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick01.jpg" alt="">
+                  <a href="#" id="article_btnG_btn">READ MORE</a>
+                </a>
+              </li>
+
+              <li id="article_btnG_2">
+                <a href="#">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick02.jpg" alt="">
+                  <h2>브로셔</h2>
+                  <a href="#" id="article_btnG_btn">READ MORE</a>
+                </a>
+              </li>
+
+              <li id="article_btnG_3">
+                <a href="#">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick03.jpg" alt="">
+                  <h2>학술행사</h2>
+                  <a href="#" id="article_btnG_btn">READ MORE</a>
+                </a>
+              </li>
+
+              <li id="article_btnG_4">
+                <a href="#">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick04.jpg" alt="">
+                  <h2>오시는길</h2>
+                  <a href="#" id="article_btnG_btn">READ MORE</a>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="inner">
+        <h1 class="footer_logo">
+          <a href="#">
+            <img class="footer_pc" src="http://postpgamgak.gamgakdesign.com/images/main/footer_logo.jpg" alt="">
+            <img class="footer_tab" src="http://postpgamgak.gamgakdesign.com/images/main/footer_logo.jpg" alt="">
+            <img class="footer_mob" src="http://postpgamgak.gamgakdesign.com/images/main/footer_logo.jpg" alt="">
+          </a>
+        </h1>
+
+        <div class="footer_menu">
+          <span class="menu"><a href="#">이메일 무단수집거부</a></span>
+          <span class="menu"><a href="#">개인정보처리방침</a></span>
+          <span class="menu"><a href="#">POSTECH</a></span>
+        </div>
+
+        <div class="family_site">
+          <span>FAMILY SITE</span>
+          <ul>
+            <li><a href="#">POSTECH</a></li>
+            <li><a href="#">소통과 공론 연구소</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_nav">
+          <dl class="footer_nav_cont">
+            <dt>연구소 소개</dt>
+            <dd><a href="#">인사말</a></dd>
+            <dd><a href="#">비전&연혁</a></dd>
+            <dd><a href="#">조직&사람들</a></dd>
+            <dd><a href="#">오시는길</a></dd>
+            <dd><a href="#">브로셔</a></dd>
+          </dl>
+
+          <dl class="footer_nav_cont">
+            <dt>학술활동</dt>
+            <dd><a href="#">평화포럼</a></dd>
+            <dd><a href="#">학술행사</a></dd>
+          </dl>
+
+          <dl class="footer_nav_cont">
+            <dt>출판</dt>
+            <dd><a href="#">코리아 리포트</a></dd>
+            <dd><a href="#">Daily PPI Briefing</a></dd>
+          </dl>
+
+          <dl class="footer_nav_cont">
+            <dt>알림</dt>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">갤러리</a></dd>
+          </dl>
+
+        </div>
+
+        <address>
+          포스텍평화연구소
+          <span class="enter"></span>
+          주소. (37673) 경상북도 포항시 남구 청암로 77(효자동 산31)<br>
+          TEL. 054-279-0114
+          <span class="space"></span>
+          E-Mail.webmaster@postech.ac.kr
+          <p class="copyright">
+            COPYRIGHT 2018 포스텍평화연구소. ALL RIGHTS RESERVED.
+          </p>
+        </address>
+
+
+      </div>
+    </footer>
+
+
+  </body>
+</html>
