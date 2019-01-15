@@ -1,0 +1,375 @@
+/* common */
+.inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a.link_cover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+/* header */
+header{
+  position: absolute;
+  height: 110px;
+  width: 100%;
+  padding-top: 45px;
+  z-index: 999;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+
+.logo > img{
+  width: 100%;
+  height: 100%;
+}
+
+.tab_logo , .mob_logo{
+  display: none;
+}
+
+.lang{
+  background: url('http://test15.gamgakdesign.com/images/main/lang_arrow.png') no-repeat 67px 9px;
+  width: 80px;
+  height: 24px;
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
+.lang > img{
+  margin-right: 10px;
+  vertical-align: -3px;
+}
+
+.lang > ul{
+  display: inline-block;
+}
+
+.lang > ul > li > a{
+  font-size: 15px;
+  color: black;
+}
+
+.lang > ul > li:not(.on){
+  display: none;
+}
+
+.lang > ul:hover > li{
+  display: block;
+}
+
+.nav_btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.nav_btn > img{
+  width: 100%;
+  height: 100%;
+}
+
+/* open nav when clicked nav_btn */
+.nav_cont{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  z-index: 1000;
+  display: none;
+}
+
+nav{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 0;
+  background-color: white;
+}
+
+.nav_item{
+  display: inline-block;
+  padding: 100px 60px;
+  height: 490px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.nav_item:hover{
+  background-color: #f9f9f9;
+}
+
+.nav_item > dt{
+  position: relative;
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  line-height: 32px;
+  padding-bottom: 18px;
+}
+
+.nav_item > dt::before{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #e60012;
+  content: '';
+}
+
+.nav_item > dd{
+  margin-top: 20px;
+  line-height: 1;
+}
+
+
+.nav_item > dd > a{
+  font-size: 16px;
+  color: black;
+}
+
+span.close_btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 29px;
+  background: url('http://test15.gamgakdesign.com/images/main/gnb_btn_close.png') no-repeat;
+  cursor: pointer;
+}
+
+a.siteMap_btn{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 35px;
+  line-height: 33px;
+  padding: 0 25px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  color: black;
+}
+
+
+/* visual */
+.visual{
+  position: relative;
+  height: 940px;
+}
+
+.visual #slider1{
+  height: 940px;
+  background: url('http://test15.gamgakdesign.com/images/main/visual03.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.visual #slider2{
+  height: 940px;
+  background: url('http://test15.gamgakdesign.com/images/main/visual02.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.visual #slider3{
+  height: 940px;
+  background: url('http://test15.gamgakdesign.com/images/main/visual.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+
+/* bx-controls */
+.visual .bx-controls{
+  position: absolute;
+  bottom: 320px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* PAGER */
+.visual .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #ddd;
+  display: inline-block;
+}
+.visual .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 2.5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.visual .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.visual .bx-wrapper .bx-pager.bx-default-pager a.active,
+.visual .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: white;
+  width: 30px;
+  border-radius: 30px;
+}
+.visual .bx-wrapper .bx-pager-item,
+.visual .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.visual .bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.visual .bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -692px;
+  background: url('http://test15.gamgakdesign.com/images/main/prev.png') no-repeat 0 0;
+}
+.visual .bx-wrapper .bx-prev:hover,
+.visual .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -692px;
+  background: url('http://test15.gamgakdesign.com/images/main/next.png') no-repeat 0 0;
+}
+.visual .bx-wrapper .bx-next:hover,
+.visual .bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: -209px;
+  outline: 0;
+  width: 24px;
+  height: 47px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.visual .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+  display: inline-block;
+
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 14px;
+  outline: 0;
+  background: url('http://test15.gamgakdesign.com/images/main/play.png') 0 0 no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+  display: none;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 14px;
+  outline: 0;
+  background: url('http://test15.gamgakdesign.com/images/main/stop.png') 0 0 no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+  display: none;
+}
+
+.visual_nav{
+  position: absolute;
+  bottom: 380px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.visual_navCont{
+  display: inline-block;
+}
+
+.visual_navCont > dl{
+  display: table-cell;
+  width: 66px;
+  height: 64px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 12px 10px;
+  border-bottom: 1px solid white;
+}
+
+.visual_navCont > dl:hover{
+  border-bottom: 1px solid red;
+}
+
+.visual_navCont > dl + dl{
+  margin-left: 24px;
+}
+
+.visual_navCont > dl > dd{
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+
+
+
+
+/* product_list */
+.product_list{
+  padding-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+
+}
+
+
+
+
+
+/*  */
