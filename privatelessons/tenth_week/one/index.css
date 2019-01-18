@@ -1,0 +1,246 @@
+/* common */
+.inner{
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+/* header */
+header{
+  height: 101px;
+  background: url("http://lotos.gamgakdesign.com/images/main/header_bg.png") repeat-x center top;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.header_inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo{
+  position: absolute;
+  top: 30px;
+  height: 40px;
+}
+
+.logo img{
+  height: 100%;
+}
+
+/* nav */
+nav{
+  float: right;
+  margin-right: 75px;
+}
+
+nav:hover > .nav_bottom{
+  display: block;
+}
+
+.nav_top{
+  overflow: hidden;
+}
+
+.nav_top > li{
+  float: left;
+  height: 101px;
+  line-height: 101px;
+  text-align: center;
+}
+
+.nav_top > li + li{
+  margin-left: 70px;
+}
+
+
+.nav_top > li > a{
+  font-size: 20px;
+  color: white;
+}
+
+
+.nav_bottom{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: white url('http://lotos.gamgakdesign.com/images/main/gnb_bg.jpg') no-repeat center bottom;
+  background-position: fixed;
+}
+
+.nav_bottomText{
+  padding-top: 63px;
+  width: 400px;
+  float: left;
+}
+
+#nav_bottomTitle{
+  font-size: 30px;
+  color: black;
+  font-size: bold;
+}
+
+.nav_bottomText > p{
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 13px;
+}
+
+.nav_bottomNav{
+  padding-top: 36px;
+  padding-left: 50px;
+  width: 539px;
+  float: left;
+}
+
+.nav_bottomNav > ul{
+  display: none;
+}
+
+.nav_bottomNav > ul.on{
+  display: block;
+}
+
+.nav_bottomNav > ul > li > a{
+  color: black;
+  font-size: 16px;
+}
+
+.nav_bottomNav > ul > li:hover > a{
+  color: #ed7100;
+}
+
+.nav_bottomGnb{
+  padding-top: 50px;
+  padding-left: 47px;
+  width: 260px;
+  float: left;
+}
+
+.nav_bottomGnb > li{
+  width: 182px;
+  height: 42px;
+  line-height: 40px;
+  background: url('http://lotos.gamgakdesign.com/images/main/gnb_2depth_Shortcuts.png') no-repeat;
+}
+
+.nav_bottomGnb > li:hover{
+  background: url('http://lotos.gamgakdesign.com/images/main/gnb_2depth_Shortcuts_on.png') no-repeat;
+}
+
+.nav_bottomGnb > li + li{
+  margin-top: 7px;
+}
+
+.nav_bottomGnb > li > a{
+  display: block;
+  font-size: 16px;
+  color: black;
+  padding-left: 20px;
+}
+
+.nav_bottomGnb > li:hover > a{
+  color: white;
+}
+
+
+.header_gnb{
+  float: right;
+  padding-top: 30px;
+}
+
+a.header_btn{
+  color: white;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+a.header_btn:hover{
+  border: none;
+  background-color: orange;
+}
+
+span#lang{
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  background: url('http://lotos.gamgakdesign.com/images/main/lang_bg.png') no-repeat 0 15px;
+  width: 84px;
+  height: 37px;
+  line-height: 37px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.header_lang{
+  overflow: hidden;
+  display: none;
+}
+
+.header_gnb > span.on > .header_lang{
+  display: block;
+}
+
+.header_lang > li{
+  line-height: 22px;
+}
+
+.header_lang > li > a{
+  font-size: 12px;
+  color: white;
+}
+
+
+
+
+
+
+/* main */
+main{
+
+}
+
+
+
+
+/* footer */
+footer{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
