@@ -46,11 +46,15 @@ header{
   position: absolute;
   right: 60px;
   top: 0;
+  padding-left: 30px;
 }
 
 .lang > img{
   margin-right: 10px;
-  vertical-align: -3px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
 }
 
 .lang > ul{
@@ -59,7 +63,7 @@ header{
 
 .lang > ul > li > a{
   font-size: 15px;
-  color: black;
+  color: white;
 }
 
 .lang > ul > li:not(.on){
@@ -346,30 +350,210 @@ a.siteMap_btn{
 }
 
 
+.visual_nav2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  padding-top: 33px;
+}
+
+.visual_nav2:hover{
+  background: url('http://test15.gamgakdesign.com/images/main/visual_btm_bg.png') repeat-x;
+}
+
+.visual_nav2_cont{
+  overflow: hidden;
+}
+
+.visual_nav2_cont > li{
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+.visual_nav2_cont > li > a{
+  display: block;
+}
+
+.visual_nav2_cont span.circle{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url('http://test15.gamgakdesign.com/images/main/off.png') no-repeat;
+  margin: 14px auto 0;
+}
+
+.visual_nav2_cont > li:hover span.circle{
+  background: url('http://test15.gamgakdesign.com/images/main/on.png') no-repeat;
+}
+
+.visual_nav2_cont span.title{
+  display: inline-block;
+  margin-top: 7px;
+  color: white;
+  font-size: 14px;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
 
 
 /* product_list */
 .product_list{
   padding-top: 70px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
+.product_list .slider > li{
+  position: relative;
+}
 
+.product_list span.slider_img{
+  display: block;
+  padding-top: 78.94%;
+  position: relative;
+}
 
+.product_list .slider_img > img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
+.product_list .slider_text{
+  height: 80px;
+  background: white;
+  padding: 0 20px;
+  position: relative;
+}
 
+.product_list .slider_text::before{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+}
 
+.slider_text > h3{
+  font-size: 22px;
+  color: black;
+  margin-top: 21px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
 
+a.coverBg:hover{
+  background: url('http://test15.gamgakdesign.com/images/main/slider_hover.png') no-repeat;
+  background-size: cover;
+}
 
+/* PAGER */
+.product_list .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+  display: none;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.product_list .bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -710px;
+  background: url('http://test15.gamgakdesign.com/images/main/m_prev.png') no-repeat 0 0;
+}
+.product_list .bx-wrapper .bx-prev:hover,
+.product_list .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.product_list .bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -710px;
+  background: url('http://test15.gamgakdesign.com/images/main/m_next.png') no-repeat 0 0;
+}
+.product_list .bx-wrapper .bx-next:hover,
+.product_list .bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.product_list .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.product_list .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
 
 
 
 /* footer */
 footer{
-
+  background: url('http://test15.gamgakdesign.com/images/main/footer_bg.jpg') repeat-x;
+  padding-bottom: 20px;
 }
 
+.footer_top{
+  font-size: 0;
+}
 
+.footer_top > span{
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  border-left: 1px solid #ddd;
+  text-align: center;
+}
 
+.footer_top > span:last-child{
+  border-right: 1px solid #ddd;
+}
 
+.footer_top > span > a{
+  font-size: 13px;
+  color: black;
+  display: block;
+}
+
+span.space{
+  display: inline-block;
+  margin-right: 14px;
+}
+
+address{
+  padding-top: 25px;
+  font-size: 13px;
+  color: black;
+}
+
+.copyright{
+  line-height: 20px;
+}
+
+.footer_logo{
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.footer_logo > a > img{
+  width: 100%;
+  height: 100%;
+}
 
 /*  */

@@ -1,6 +1,6 @@
 /* common */
 .inner{
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -135,6 +135,8 @@ nav > ul > li:hover > .nav_sub{
   overflow: hidden;
   padding: 18px 0;
   display: none;
+  z-index: 9999;
+  background-color: white;
 }
 
 .nav_sub > li{
@@ -143,6 +145,7 @@ nav > ul > li:hover > .nav_sub{
 }
 
 .nav_sub > li > a{
+  display: block;
   font-size: 14px;
   color: black;
   padding-left: 20px;
@@ -153,7 +156,7 @@ nav > ul > li:hover > .nav_sub{
   display: none;
 }
 
-#nav_btn.nav_btn{
+#nav_btn .nav_btn{
   width: 100%;
   height: 100%;
 }
@@ -559,6 +562,7 @@ footer{
   bottom: 40px;
   left: 0;
   padding: 13px 0;
+  width: 100%;
   display: none;
 }
 
@@ -628,9 +632,489 @@ footer address{
 }
 
 
+@media all and (max-width: 1024px) {
+  /* common */
+  .inner{
+    max-width: 100%;
+    margin: 0 auto;
+    position: static;
+  }
+
+  main > section{
+    position: relative;
+  }
+
+  footer{
+    position: relative;
+  }
+
+  /* header */
+
+  .logo{
+    position: absolute;
+    left: 3%;
+    top: 95.5px;
+    transform: translateY(-50%);
+  }
+
+
+  #logo_pc{
+    display: none;
+  }
+
+  #logo_tab{
+    display: block;
+    height: 45px;
+  }
+
+  .nav_top{
+    display: none;
+  }
+
+  nav{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    height: 100%;
+    padding-left: 40%;
+    padding-top: 0;
+    z-index: 10000;
+    display: none;
+  }
+
+  nav.on{
+    display: block;
+  }
+
+  nav > ul {
+    border-top: 1px solid #ddd;
+    background-color: white;
+  }
+
+  nav > ul > li{
+    float: none;
+    display: block;
+    height: 100%;
+    line-height: 70px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-left: 3%;
+  }
+
+  nav > ul > li + li{
+    margin-left: 0;
+  }
+
+  nav > ul > li > a{
+    display: block;
+    padding-left: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+  }
+
+  nav > ul > li:hover::before{
+    content: none;
+  }
+
+  nav > ul > li.nav_on::before{
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    left: 40px;
+    margin-left: -5px;
+    width: 10px;
+    height: 9px;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/navi_dot.jpg') no-repeat;
+    background-size: 100% 100%;
+    content: '';
+  }
+
+  nav > ul > li:hover > .nav_sub{
+    display: none;
+  }
+
+  nav > ul > li.nav_on > .nav_sub{
+    display: block;
+  }
+
+  .nav_sub{
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 17px 3%;
+    display: none;
+    z-index: 9999;
+    background-color: white;
+  }
+
+  .nav_sub > li{
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .nav_sub > li > a{
+    display: block;
+    font-size: 12px;
+    color: black;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+
+  #nav_btn{
+    display: block;
+    position: absolute;
+    top: 95.5px;
+    transform: translateY(-50%);
+    right: 3%;
+    width: 31px;
+    height: 21px;
+  }
+
+  #nav_btn .nav_btn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  #nav_btn #close{
+    display: none;
+  }
+
+  /* visual */
+  #visual{
+    height: 100%;
+  }
+
+  #visual .slider > li{
+    padding-top: 48.43%;
+  }
+
+
+  /* report */
+  #report{
+    margin-top: 50px;
+    height: 294px;
+    padding: 0 3%;
+  }
+
+
+  .report_left{
+    float: left;
+    position: relative;
+    width: 180px;
+  }
+
+  .report_left > ul{
+    margin-top: 29px;
+    overflow: hidden;
+  }
+
+  .report_left > ul > li{
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .report_left > ul > li:first-child{
+    margin-top: 0;
+  }
+
+  .report_left > ul > li.on{
+    font-weight: 600;
+    color: white;
+    background-color: #0066b2;
+  }
 
 
 
+  .report_right{
+    float: right;
+    position: relative;
+    width: calc(100% - 180px);
+    padding: 0 30px;
+  }
+
+  #slider_2{
+    display: none;
+  }
+
+  .report_right .bx-wrapper .bx-prev {
+    left: 8px;
+    margin-left: 0;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/prev.jpg') no-repeat 0 0;
+  }
+
+  .report_right .bx-wrapper .bx-next {
+    right: 8px;
+    margin-right: 0;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/next.jpg') no-repeat 0 0;
+  }
+
+  /* article */
+  #article{
+    padding: 0 3%;
+  }
+  /* article_btnG */
+  #article_btnG{
+    margin-left: 0;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #article_btnG > ul > li{
+    position: relative;
+    padding-top: 15px;
+    height: 60px;
+    float: left;
+    width: 50%;
+  }
+
+  #article_btnG > ul > li h2{
+    font-size: 18px;
+    color: white;
+    padding-left: 79px;
+  }
+
+  #article_btnG_1{
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/quick01_tab.jpg') no-repeat;
+  }
+
+  #article_btnG_2{
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/quick02_tab.jpg') no-repeat;
+  }
+
+  #article_btnG_3{
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/quick03_tab.jpg') no-repeat;
+  }
+
+  #article_btnG_4{
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/quick04_tab.jpg') no-repeat;
+  }
+
+  .mob_img{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    height: 20px;
+  }
+
+  a#article_btnG_btn{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 84px;
+    height: 30px;
+    line-height: 30px;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/more02.png') no-repeat right 10px;
+    font-size: 13px;
+    color: white;
+  }
+
+
+
+  /* footer */
+  footer{
+    margin-top: 50px;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/footer_bg.jpg') repeat-x;
+    padding: 0 3%;
+  }
+
+  .menu > a{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+
+  .family_site{
+    position: absolute;
+    right: 3%;
+    top: 0;
+  }
+
+  .family_site > span{
+    font-size: 14px;
+    color: #ddd;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    width: 143px;
+    background: url('http://postpgamgak.gamgakdesign.com/images/main/f_arrow.jpg') no-repeat;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+
+
+  .footer_nav{
+    display: none;
+  }
+
+  span.enter{
+    margin-right: 25px;
+    display: inline-block;
+  }
+
+  span.space{
+    margin-right: 25px;
+    display: inline-block;
+  }
+
+  .copyright{
+    display: none;
+  }
+
+  .footer_logo{
+    position: static;
+    display: block;
+    padding-top: 29px;
+    text-align: center;
+  }
+
+  .footer_mob, .footer_pc{
+    display: none;
+  }
+
+  .footer_tab{
+    display: inline-block;
+    height: 38px;
+  }
+
+
+  footer address{
+    position: static;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 14px;
+  }
+
+
+}
+
+
+@media all and (max-width: 768px) {
+  #report{
+    height: auto;
+  }
+
+  .report_left{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .report_left > ul{
+    margin-top: 20px;
+  }
+
+  .report_left > ul > li{
+    float: left;
+    width: 50%;
+  }
+
+  .report_right{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .report_right .slider > li{
+    height: 161px;
+  }
+
+
+  /* article */
+  .content{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  #gallery{
+    margin-top: 23px;
+    margin-left: 0;
+  }
+
+  /* article_btnG */
+  .mob_img{
+    height: 19px;
+    top: 11px;
+    left: 16px;
+  }
+
+  #article_btnG > ul > li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0
+  }
+
+  #article_btnG_1 .mob_img{
+    top: 15px;
+    left: 50%;
+    margin-left: -37px;
+    height: 11px;
+  }
+
+  #article_btnG > ul > li h2{
+    font-size: 14px;
+    padding-left: 50px;
+  }
+
+  a#article_btnG_btn{
+    display: none;
+  }
+
+  /* footer */
+  .footer_menu > span:last-child{
+    display: none;
+  }
+
+  .footer_menu > span + span{
+    margin-left: 20px;
+  }
+
+  .footer_menu > span::before{
+    left: -10px;
+  }
+
+  .menu{
+    line-height: 35px;
+    height: 35px;
+  }
+
+  .menu > a{
+    font-size: 11px;
+  }
+
+  footer address{
+    font-size: 11px;
+    line-height: 18px;
+    margin-top: 17px;
+  }
+
+  span.enter{
+    display: block;
+    margin: 0;
+  }
+
+  .copyright{
+    display: block;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+
+}
 
 
 

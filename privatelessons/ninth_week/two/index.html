@@ -25,31 +25,10 @@
     <link rel="stylesheet" href="./index.css">
 
     <title>포스텍 평화연구소 클론 사이트</title>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#visual .slider').bxSlider(
-          {
-            mode: 'fade',
-            auto: true
-          }
-        );
-
-        $('.report_right .slider').bxSlider(
-          {
-            mode: 'horizontal',
-            slideWidth: 177,
-            moveSlides: 1,
-            maxSlides: 4,
-            slideMargin: 20,
-            auto: true
-          }
-        );
-
-      });
+    <script type="text/javascript" src="./index.js"></script>
 
 
-    </script>
+
   </head>
   <body>
 
@@ -111,7 +90,8 @@
         </nav>
 
         <span id="nav_btn">
-          <img class="nav_btn" src="http://postpgamgak.gamgakdesign.com/images/main/btn_navi.png" alt="">
+          <img id="open" class="nav_btn" src="http://postpgamgak.gamgakdesign.com/images/main/btn_navi.png" alt="">
+          <img id="close" class="nav_btn" src="http://postpgamgak.gamgakdesign.com/images/main/btn_navi_close.png" alt="">
         </span>
 
       </div>
@@ -134,8 +114,8 @@
             <h3 class="cont_title">포스텍 평화연구소</h3>
             <h2 class="cont_title2">출판</h2>
             <ul>
-              <li class="on">Daily PPI Briefing</li>
-              <li>코리아 리포트</li>
+              <li class="on" rel="slider_1">Daily PPI Briefing</li>
+              <li rel="slider_2">코리아 리포트</li>
             </ul>
 
             <a href="#" id="report_moreBtn">READ MORE</a>
@@ -159,6 +139,7 @@
                 <li><img src="http://postpgamgak.gamgakdesign.com/images/main/img02.jpg" alt=""></li>
               </ul>
             </div>
+
           </div>
         </div>
       </section>
@@ -234,14 +215,14 @@
             <ul>
               <li id="article_btnG_1">
                 <a href="#">
-                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick01.jpg" alt="">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick_icon01.png" alt="">
                   <a href="#" id="article_btnG_btn">READ MORE</a>
                 </a>
               </li>
 
               <li id="article_btnG_2">
                 <a href="#">
-                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick02.jpg" alt="">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick_icon02.png" alt="">
                   <h2>브로셔</h2>
                   <a href="#" id="article_btnG_btn">READ MORE</a>
                 </a>
@@ -249,7 +230,7 @@
 
               <li id="article_btnG_3">
                 <a href="#">
-                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick03.jpg" alt="">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick_icon03.png" alt="">
                   <h2>학술행사</h2>
                   <a href="#" id="article_btnG_btn">READ MORE</a>
                 </a>
@@ -257,7 +238,7 @@
 
               <li id="article_btnG_4">
                 <a href="#">
-                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick04.jpg" alt="">
+                  <img class="mob_img" src="http://postpgamgak.gamgakdesign.com/images/main/quick_icon04.png" alt="">
                   <h2>오시는길</h2>
                   <a href="#" id="article_btnG_btn">READ MORE</a>
                 </a>
@@ -271,6 +252,13 @@
 
     <footer>
       <div class="inner">
+
+        <div class="footer_menu">
+          <span class="menu"><a href="#">이메일 무단수집거부</a></span>
+          <span class="menu"><a href="#">개인정보처리방침</a></span>
+          <span class="menu"><a href="#">POSTECH</a></span>
+        </div>
+
         <h1 class="footer_logo">
           <a href="#">
             <img class="footer_pc" src="http://postpgamgak.gamgakdesign.com/images/main/footer_logo.jpg" alt="">
@@ -279,11 +267,6 @@
           </a>
         </h1>
 
-        <div class="footer_menu">
-          <span class="menu"><a href="#">이메일 무단수집거부</a></span>
-          <span class="menu"><a href="#">개인정보처리방침</a></span>
-          <span class="menu"><a href="#">POSTECH</a></span>
-        </div>
 
         <div class="family_site">
           <span>FAMILY SITE</span>
