@@ -180,11 +180,9 @@ nav .main_nav #weekend.on > a::before{
 
 nav .side_menu_box{
   position: absolute;
-  left: 0;
-  right: 0;
+  right: 50%;
   bottom: 0;
-  max-width: 1300px;
-  margin: 0 auto;
+  margin-right: -650px;
 }
 
 nav .side_menu_box .side_menu{
