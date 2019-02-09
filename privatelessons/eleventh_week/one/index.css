@@ -1,6 +1,6 @@
 /* common */
 .inner{
-  max-width: 1300px;
+  width: 1300px;
   margin: 0 auto;
   position: relative;
 }
@@ -51,6 +51,50 @@ a.main_title_more::after{
   transform: rotate(45deg);
 }
 
+.cover_link{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+/* main common*/
+dl > dd.price > span.base{
+  color: #acabab;
+  text-decoration: line-through;
+}
+
+dl > dd.price > span.discount{
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+
+dl > dd.price > span.percent{
+  color: #ee6650;
+  float: right;
+}
+
+dl > dd.price > span + span{
+  margin-left: 10px;
+}
+
+dl > dd.event_info{
+  margin-top: 8px;
+}
+
+dl > dd.event_info > img{
+
+}
+
+dl > dd.review{
+  margin-top: 16px;
+  background: url('https://www.travelmate.co.kr/images/template/ico_review.png') left center no-repeat;
+  padding-left: 21px;
+  font-size: 12px;
+}
 
 
 
@@ -61,7 +105,7 @@ header{
 }
 
 .header_inner{
-  max-width: 1300px;
+  width: 1300px;
   margin: 0 auto;
   padding-top: 5px;
 }
@@ -179,10 +223,11 @@ nav .main_nav #weekend.on > a::before{
 }
 
 nav .side_menu_box{
-  position: absolute;
+  /* position: absolute;
   right: 50%;
   bottom: 0;
-  margin-right: -650px;
+  margin-right: -650px; */
+  float: right;
 }
 
 nav .side_menu_box .side_menu{
@@ -206,6 +251,16 @@ nav .side_menu > li > a{
   position: relative;
 }
 
+span.search{
+  position: absolute;
+}
+
+span.search > a{
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background: url('https://www.travelmate.co.kr/images/layout/btn_search.png') no-repeat;
+}
 
 /* header기준으로 잡힌다 */
 .sub_nav{
@@ -238,7 +293,7 @@ nav > ul > li.on .sub_nav{
 }
 
 .sub_nav > ul{
-  max-width: 1300px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -295,6 +350,7 @@ nav > ul #weekend > .sub_nav li.logo > a{
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  z-index: 9999;
   display: none;
 }
 
@@ -305,7 +361,7 @@ nav > ul #weekend > .sub_nav li.logo > a{
 .depth_nav_box > .inner{
   display: table;
   table-layout: fixed;
-  width: 100%;
+  width: 1300px;
   min-height: 311px;
 }
 
@@ -359,14 +415,640 @@ nav > ul #weekend > .sub_nav li.logo > a{
 
 /* main */
 
+/* visual */
+.visual{
+  position: relative;
+}
+
+.visual .slider > li{
+  height: 630px;
+}
+
+.visual .slider > li > a{
+  display: block;
+  height: 630px;
+}
+
+.visual .slider > li > a > img{
+  height: 100%;
+}
+
+/* PAGER */
+.visual .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.visual .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #bababa;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.visual .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.visual .bx-wrapper .bx-pager.bx-default-pager a.active,
+.visual .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #0076be;
+}
+.visual .bx-wrapper .bx-pager-item,
+.visual .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.visual .bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.visual .bx-wrapper .bx-prev {
+  left: 0;
+}
+.visual .bx-wrapper .bx-prev:hover,
+.visual .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-next {
+  right: 0;
+}
+
+.visual .bx-wrapper .bx-next::after{
+  transform: rotate(180deg);
+}
+
+.visual .bx-wrapper .bx-next:hover,
+.visual .bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.visual .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 0;
+  outline: 0;
+  width: 150px;
+  height: 100%;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.visual .bx-wrapper .bx-controls-direction a::before{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  background-color: rgba(255,255,255,0.5);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  content: '';
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+.visual .bx-wrapper .bx-controls-direction a::after{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  background: url('https://www.travelmate.co.kr/images/main/ico_banner_arrow.png') center no-repeat;
+  content: '';
+  overflow: hidden;
+}
+
+.visual .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
 
 
+/* slae */
+.sale{
+  margin-top: 140px;
+}
+
+.sale  .main_title{
+  float: left;
+}
+
+.best_item{
+  float: right;
+  position: relative;
+  margin-right: 100px;
+}
+
+.content_box{
+  display: table;
+  table-layout: fixed;
+  width: 660px;
+}
+
+.item_img{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 360px;
+  max-height: 360px;
+}
+
+.item_img > img{
+  width: 100%;
+}
+
+.best_item .content_box > dl{
+  display: table-cell;
+  padding-left: 25px;
+  vertical-align: middle;
+}
+
+.best_item .content_box > dl > dt{
+  color: black;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.best_item dl > dd.info{
+  margin-top: 17px;
+  font-size: 14px;
+  line-height: 25px;
+  color: black;
+}
+
+.best_item dl > dd.price{
+  margin-top: 51px;
+}
+
+.best_item dl > dd.price > span.base{
+  font-size: 18px;
+}
+
+.best_item dl > dd.price > span.percent{
+  font-size: 18px;
+}
+
+.sale_list{
+  overflow: hidden;
+}
+
+.sale_list > li{
+  float: left;
+  position: relative;
+  width: 228px;
+}
+
+.sale_list > li + li{
+  margin-left: 40px;
+}
+
+.sale_list_img{
+  display: inline-block;
+  width: 228px;
+}
+
+.sale_list_img > img{
+  width: 100%;
+}
+
+.sale_list dl > dt{
+  margin-top: 17px;
+  color: black;
+}
+
+.sale_list dl > dd.list_item_name{
+  height: 38px;
+  margin-top: 9px;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.sale_list dl > dd.price > span.base,
+.sale_list dl > dd.price > span.discount,
+.sale_list dl > dd.price > span.percent
+{
+  font-size: 15px;
+}
 
 
+/* mate_tv */
+.mate_tv{
+  margin-top: 150px;
+  padding: 80px 0;
+}
+
+.mate_tv .main_title{
+  float: left;
+}
+
+.mate_tv .main_title > a.main_title_more{
+  margin-top: 44px;
+}
+
+.mate_tv .video{
+  float: right;
+  width: 965px;
+  position: relative;
+}
+
+.mate_tv .slider > li{
+}
+
+.mate_tv .slider > li > iframe{
+  width: 100%;
+  height: 543px;
+}
+
+.mate_tv .slider > li > p{
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  color: #666;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.mate_tv .bx-wrapper .bx-prev {
+  left: 0px;
+  padding-left: 30px;
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.mate_tv .bx-wrapper .bx-prev::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 25px;
+  height: 1px;
+  background-color: #666;
+}
+
+.mate_tv .bx-wrapper .bx-prev::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background-color: #666;
+  width: 10px;
+  height: 1px;
+  transform: rotate(-45deg);
+}
+
+.mate_tv .bx-wrapper .bx-prev:hover,
+.mate_tv .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.mate_tv .bx-wrapper .bx-next {
+  right: 0px;
+  padding-right: 30px;
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.mate_tv .bx-wrapper .bx-next::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  width: 25px;
+  height: 1px;
+  background-color: #666;
+}
+
+.mate_tv .bx-wrapper .bx-next::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  background-color: #666;
+  width: 10px;
+  height: 1px;
+  transform: rotate(45deg);
+}
+
+.mate_tv .bx-wrapper .bx-next:hover,
+.mate_tv .bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.mate_tv .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  bottom: 0;
+  outline: 0;
+  z-index: 9999;
+  line-height: 1;
+  margin-top: 7px;
+}
+.mate_tv .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* PAGER */
+.mate_tv .bx-wrapper .bx-pager {
+  display: none;
+}
 
 
+/* tip */
+.tip{
+  margin-top: 150px;
+  padding-bottom: 80px;
+}
+
+.tip_list{
+  position: relative;
+  margin-top: 35px;
+}
+
+.tip_list .slider > li{
+  border: 1px solid #ddd;
+}
+
+.tip_list .tip_img{
+  width: 293px;
+}
+
+.tip_list .tip_img > img{
+  width: 100%;
+}
+
+.tip_list .slider > li > dl{
+  padding: 20px;
+}
+
+.tip_list .slider > li > dl > dt{
+  font-size: 18px;
+  color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.tip_list .slider > li > dl > dd{
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+/* PAGER */
+.tip_list .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+  display: none;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.tip_list .bx-wrapper .bx-prev {
+  left: 50%;
+  margin-left: -700px;
+  background: url('https://www.travelmate.co.kr/images/template/btn_slider_prev.png') no-repeat left center;
+}
+.tip_list .bx-wrapper .bx-next {
+  right: 50%;
+  margin-right: -700px;
+  background: url('https://www.travelmate.co.kr/images/template/btn_slider_next.png') no-repeat right center;
+}
+.tip_list .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -19.5px;
+  outline: 0;
+  width: 40px;
+  height: 39px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.tip_list .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+.tip a.main_title_more{
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+/* pick */
+.pick{
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+.pick_menu{
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.pick_menu > li{
+  position: relative;
+  float: left;
+}
+
+.pick_menu > li + li{
+  margin-left: 20px;
+}
+
+.pick_menu > li.on::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  background-color: #0076be;
+  height: 2px;
+  width: 100%;
+}
+
+.pick_menu > li > a{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pick_menu > li.on > a{
+  color: #0076be;
+}
+
+.pick_list{
+  margin-top: 50px;
+}
+
+.pick_list ul{
+  display: none;
+  overflow: hidden;
+}
+
+.pick_list ul.on{
+  display: block;
+}
+
+.pick_list ul > li{
+  position: relative;
+  float: left;
+  width: 295px;
+}
+
+.pick_list ul > li + li{
+  margin-left: 40px;
+}
+
+.pick_list .pick_img{
+  display: inline-block;
+  width: 295px;
+}
+
+.pick_list .pick_img > img{
+  width: 100%;
+}
+
+.pick_list dl > dt{
+  margin-top: 17px;
+  color: black;
+}
+
+.pick_list dl > dd.list_item_name{
+  height: 38px;
+  margin-top: 9px;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.sale_list dl > dd.price > span.base,
+.sale_list dl > dd.price > span.discount,
+.sale_list dl > dd.price > span.percent
+{
+  font-size: 15px;
+}
 
 
+/* need_anythings */
+.need_anythings{
+  margin-top: 80px;
+  padding-bottom: 40px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.need_anythings .inner{
+  display: table;
+}
+
+.need_anythings .need_left{
+  display: table-cell;
+  width: 650px;
+  background:url('https://www.travelmate.co.kr/web_files/contentsCuration/2018/11/1f56b868-1903-428d-ac72-e575679f6806.jpg') no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.need_anythings .need_left > p{
+  display: inline-block;
+  color: white;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.need_anythings .need_left > a.cover_link{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.need_anythings .need_left:hover > a.cover_link{
+  background-color: transparent;
+}
+
+.need_anythings .need_right{
+  display: table-cell;
+  width: 650px;
+  background-color: black;
+}
+
+.need_anythings .need_right > img{
+  width: 100%;
+}
+
+
+/* moomin */
+.moomin{
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+.moomin > ul{
+  overflow: hidden;
+}
+
+.moomin > ul > li{
+  float: left;
+}
+
+.moomin_left{
+  max-width: 310px;
+}
+
+.moomin_center{
+  max-width: 650px;
+}
+
+.moomin_right{
+  max-width: calc(100% - 960px);
+}
+
+.moomin_center .moomin_text_box{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 650px;
+  height: 275px;
+}
+
+.moomin_center .moomin_center_img{
+  display: block;
+  height: 50%;
+}
+
+.moomin_center_img > img{
+  width: 100%;
+}
+
+.moomin_text_box > p{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: black;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.moomin_text_box > a.main_title_more{
+  text-align: left;
+}
 
 
 /* footer */

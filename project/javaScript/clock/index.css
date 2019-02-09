@@ -1,0 +1,92 @@
+/* common */
+
+
+
+
+/* header */
+header{
+  width: 94%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo > a > img{
+  width: 200px;
+  height: 150px;
+}
+
+nav{
+  margin-left: 220px;
+}
+
+nav > ul{
+  overflow: hidden;
+}
+
+nav > ul > li{
+  float: left;
+}
+
+nav > ul > li + li{
+  margin-left: 25px;
+}
+
+nav .navbar > li > a{
+  color: #2c3e50;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+/* main */
+main{
+  background: url('./img/bg.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+main .clockContainer{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+main .clockContainer .clock{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: fantasy;
+  color: white;
+}
+
+main .clockContainer .clock span{
+
+}
+
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+/*  */
