@@ -41,19 +41,23 @@ header{
 }
 
 nav{
-  margin-left: 100px;
+  padding-left: 100px;
+  overflow: hidden;
 }
 
 nav .navbar{
   float: left;
+  width: 60%;
 }
+
 
 nav .navbar > li{
   position: relative;
   float: left;
-  height: 100px;
+  /* height: 100px; */
   line-height: 100px;
-  padding: 0 43px;
+  padding: 0 7%;
+  min-width: 33.333%;
 }
 
 nav .navbar > li + li::before{
@@ -71,9 +75,35 @@ nav .navbar > li > a{
 
 }
 
+nav .navbar > li .sub_nav{
+  display: none;
+}
+
+nav .navbar:hover > li .sub_nav{
+  display: block;
+}
+
+nav .navbar > li .sub_nav > li{
+  line-height: 50px;
+}
+
+nav .navbar > li .sub_nav > li > a{
+
+}
+
+
+
+
+
+
+
 nav .menu{
   float: right;
   overflow: hidden;
+}
+
+nav .menu:hover ~ .navbar > li .sub_nav{
+  display: block;
 }
 
 nav .menu > li{
