@@ -1,0 +1,198 @@
+/* common */
+.inner{
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+header{
+  position: relative;
+}
+
+.header_inner{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.logo{
+  position: absolute;
+  top: 0;
+  height: 100px;
+}
+
+.logo > a{
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  background: url('http://www.hls.co.kr/assets/user/assets/images/common/logo_w.png') no-repeat center center;
+  width: 100px;
+  height: 70px;
+}
+
+nav{
+  padding-left: 100px;
+  overflow: hidden;
+}
+
+nav .navbar{
+  float: left;
+  width: 60%;
+}
+
+
+nav .navbar > li{
+  position: relative;
+  float: left;
+  /* height: 100px; */
+  line-height: 100px;
+  padding: 0 7%;
+  min-width: 33.333%;
+}
+
+nav .navbar > li + li::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+}
+
+nav .navbar > li > a{
+
+}
+
+nav .navbar > li .sub_nav{
+  display: none;
+}
+
+nav .navbar:hover > li .sub_nav{
+  display: block;
+}
+
+nav .navbar > li .sub_nav > li{
+  line-height: 50px;
+}
+
+nav .navbar > li .sub_nav > li > a{
+
+}
+
+
+
+
+
+
+
+nav .menu{
+  float: right;
+  overflow: hidden;
+}
+
+nav .menu:hover ~ .navbar > li .sub_nav{
+  display: block;
+}
+
+nav .menu > li{
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 15px;
+}
+
+nav .menu > li > a{
+
+}
+
+nav .menu > li.global{
+
+}
+
+nav .menu > li.global .lang{
+  display: inline-block;
+  position: relative;
+  margin-left: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav .menu > li.global .lang::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 11px;
+  margin-top: -6px;
+  background-color: white;
+}
+
+nav .menu > li.global .lang > li{
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+}
+
+nav .menu > li.global .lang > li > a{
+
+}
+
+
+
+nav .menu .global > a{
+  display: inline-block;
+  background: url('http://www.hls.co.kr/assets/user/assets/images/icons/icon_earth_h.png') no-repeat center center;
+  width: 19px;
+  height: 19px;
+  margin-bottom: -5px;
+}
+
+
+
+
+/* main */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
