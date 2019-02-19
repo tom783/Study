@@ -1,0 +1,412 @@
+/* common */
+.inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+span.enter{
+  display: block;
+}
+
+span.space{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+
+/* header */
+header{}
+header .logo{
+  display: inline-block;
+  line-height: 100px;
+}
+header .logo a{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+header .logo a img{
+  width: 100%;
+}
+header nav{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header nav > ul{
+  float: left;
+}
+header nav .navbar{
+
+}
+header nav .menu{
+  margin-left: 225px;
+}
+header nav > ul > li{
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+header nav .navbar > li{
+
+}
+header nav .navbar > li + li{
+  margin-left: 58px;
+}
+header nav .navbar > li > a{
+  font-size: 18px;
+  color: black;
+  position: relative;
+}
+header nav .navbar > li:hover > a,
+header nav .navbar > li.active > a
+{
+  color: rgb(104, 27, 166);
+}
+header nav .menu > li{
+
+}
+header nav .navbar > li:hover > a::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+header nav .navbar > li.active > a::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+header nav .menu > li + li{
+  margin-left: 26px;
+}
+header nav .menu > li > a{
+  font-size: 13px;
+  color: black;
+  padding-left: 19px;
+  position: relative;
+}
+header nav .menu > li:nth-child(1) > a::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  content: '';
+  width: 13px;
+  height: 17px;
+  background: url('http://kslca.gamgakdesign.com/images/main/h-icon01.jpg') no-repeat;
+}
+header nav .menu > li:nth-child(2) > a::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  content: '';
+  width: 13px;
+  height: 17px;
+  background: url('http://kslca.gamgakdesign.com/images/main/h-icon02.jpg') no-repeat;
+}
+
+/* subnav */
+.subnav{
+  display: none;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  background: url('http://kslca.gamgakdesign.com/images/main/navi_bg.jpg') center top no-repeat;
+}
+.subnav .inner > dl{
+  float: left;
+  width: calc(100% / 5);
+  padding: 26px 28px;
+}
+.subnav .inner > dl > dt{
+  font-size: 21px;
+  color: black;
+  line-height: 28px;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+.subnav .inner > dl > dd{
+  line-height: 28px;
+}
+.subnav .inner > dl > dd:hover > a{
+  color: rgb(104, 27, 166);
+}
+.subnav .inner > dl > dd > a{
+  font-size: 15px;
+  color: black;
+}
+.subnav .inner > dl > dd .deep_nav{
+
+}
+.subnav .inner > dl > dd .deep_nav > li{
+  line-height: 22px;
+}
+.subnav .inner > dl > dd .deep_nav > li > a{
+  font-size: 14px;
+  color: #999;
+}
+
+
+/* main */
+main{
+
+}
+
+/* main banner */
+main .banner{
+  height: 271px;
+  background: url('http://kslca.gamgakdesign.com/images/sub/sub_visual.jpg') center top no-repeat;
+}
+main .banner > div{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+main .banner > div > span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+main .banner > div > span > p{
+  font-size: 18px;
+  color: white;
+}
+main .banner > div > span > h2{
+  font-size: 45px;
+  color: white;
+  line-height: 66px;
+  font-weight: bold;
+}
+
+/* main cont */
+main .main_box{
+  padding: 50px 0 100px;
+}
+main .main_box .inner > div{
+  float: left;
+}
+main .main_box .inner .main_menu{
+  width: 250px;
+}
+main .main_box .inner .main_menu > dl{
+
+}
+main .main_box .inner .main_menu > dl > dt{
+  height: 130px;
+  line-height: 128px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+  background: url('http://kslca.gamgakdesign.com/images/sub/page_tit.jpg') no-repeat;
+}
+main .main_box .inner .main_menu > dl > dd{
+  height: 50px;
+  line-height: 50px;
+  background: url('http://kslca.gamgakdesign.com/images/sub/lnb_off.jpg') no-repeat;
+}
+main .main_box .inner .main_menu > dl > dd.active,
+main .main_box .inner .main_menu > dl > dd:hover
+{
+  background: url('http://kslca.gamgakdesign.com/images/sub/lnb_on.jpg') no-repeat;
+}
+main .main_box .inner .main_menu > dl > dd + dd{
+  margin-top: 5px;
+}
+main .main_box .inner .main_menu > dl > dd > a{
+  display: block;
+  color: black;
+  font-size: 15px;
+  padding-left: 21px;
+}
+
+main .main_box .inner .main_cont{
+  margin-left: 60px;
+  width: calc(100% - 250px - 60px);
+  position: relative;
+}
+main .main_box .inner .main_cont .main_contTitle{
+  font-size: 30px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  line-height: 28px;
+}
+main .main_box .inner .main_cont > section{
+
+}
+main .main_box .inner .main_cont > section > article{
+  padding-top: 50px;
+}
+main .main_box .inner .main_cont > section > article .subTitle{
+  font-size: 22px;
+  color: black;
+  line-height: 26px;
+  padding-left: 29px;
+  background: url('http://kslca.gamgakdesign.com/images/sub/sub_tit.jpg') 0 3px no-repeat;
+  margin-bottom: 30px;
+}
+main .main_box .inner .main_cont > section > article .article_cont{
+  display: table;
+  width: 100%;
+}
+main .main_box .inner .main_cont > section > article .article_cont .leftCont{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 26.26%;;
+}
+main .main_box .inner .main_cont > section > article .article_cont .leftCont > img,
+main .main_box .inner .main_cont > section > article .article_cont .topCont > img{
+  width: 100%;
+  height: 100%;
+}
+main .main_box .inner .main_cont > section > article .article_cont .rightCont{
+  display: table-cell;
+  width: 73.74%;
+  padding-left: 30px;
+}
+main .main_box .inner .main_cont > section > article .article_cont .rightCont > p,
+main .main_box .inner .main_cont > section > article .article_cont .bottomCont > p{
+  font-size: 15px;
+  color: black;
+  line-height: 26px;
+}
+main .main_box .inner .main_cont > section > article .article_cont .rightCont > p + p,
+main .main_box .inner .main_cont > section > article .article_cont .bottomCont > p{
+  margin-top: 13px;
+}
+main .main_box .inner .main_cont > section > article .article_cont .rightCont > p span.highlight{
+  color: #2676d5;
+}
+main .main_box .inner .main_cont > section > article .end_cont{
+  text-align: right;
+}
+main .main_box .inner .main_cont > section > article .end_cont span.sign{
+  margin-top: 10px;
+  display: block;
+}
+main .main_box .inner .main_cont > section > article .end_cont span.sign > img{
+  margin-right: 6px;
+}
+main .main_box .inner .main_cont > section > article .end_cont span.date{
+  display: block;
+  font-size: 15px;
+  color: #999;
+  line-height: 26px;
+  margin-top: 17px;
+}
+main .main_box .inner .main_cont > section > article .end_cont span.who{
+  display: block;
+  font-size: 15px;
+  color: #555;
+  line-height: 28px;
+  margin-top: 1px;
+}
+main .main_box .inner .main_cont .pageNav{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .main_box .inner .main_cont .pageNav > li{
+  display: inline-block;
+  font-size: 13px;
+  color: #999;
+}
+main .main_box .inner .main_cont .pageNav > li.first{
+
+}
+main .main_box .inner .main_cont .pageNav > li.second{
+
+}
+main .main_box .inner .main_cont .pageNav > li.third{
+
+}
+main .main_box .inner .main_cont .pageNav > li.arrow{
+
+}
+main .main_box .inner .main_cont .pageNav > li.arrow > img{
+  width: 100%;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+
+/* footer */
+footer{
+  background: url('http://kslca.gamgakdesign.com/images/main/footer_bg.jpg') repeat-x;
+  padding-bottom: 30px;
+}
+footer .inner .footer_nav{
+
+}
+footer .inner .footer_nav > li{
+  display: inline-block;
+  line-height: 56px;
+}
+footer .inner .footer_nav > li + li{
+  margin-left: 25px;
+}
+footer .inner .footer_nav > li:first-child > a{
+  color: #aecaec;
+}
+footer .inner .footer_nav > li > a{
+  color: white;
+  font-size: 14px;
+}
+footer .inner address{
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+  padding-top: 18px;
+}
+footer .inner address span.space{
+  display: inline-block;
+  margin-left: 10px;
+}
+footer .inner address span.copyright{
+  display: block;
+}
+footer .inner .sns{
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+footer .inner .sns > li{
+  display: inline-block;
+}
+footer .inner .sns > li > a{
+
+}
+footer .inner .sns > li > a >img{
+
+}
+footer .inner .footer_logo{
+  position: absolute;
+  right: 0;
+  top: 85px;
+}
+footer .inner .footer_logo > a{
+
+}
+footer .inner .footer_logo > a > img{
+
+}
+
+
+
+
+
+
+
+/*  */
