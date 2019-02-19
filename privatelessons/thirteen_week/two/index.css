@@ -1,0 +1,310 @@
+/* common */
+.inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* header */
+header{
+  height: 144px;
+  background: url('http://www.asotakamori.com/images/main/header_bg.jpg') repeat-x;
+}
+header .inner .top_nav{
+  height: 100px;
+}
+header .inner .top_nav .logo{
+  text-align: center;
+  padding-top: 8px;
+}
+header .inner .top_nav .logo > a > .pc{}
+header .inner .top_nav .logo > a > .tab{
+  display: none;
+}
+header .inner .top_nav .logo > a > .mob{
+  display: none;
+}
+header .inner .top_nav .question{
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+header .inner .top_nav .question > a > img{}
+header .inner .top_nav .menu{
+  position: absolute;
+  top: 38px;
+  right: 0;
+  font-size: 0;
+}
+header .inner .top_nav .menu > li{
+  display: inline-block;
+}
+header .inner .top_nav .menu > li + li{
+  margin-left: 19px;
+}
+header .inner .top_nav .menu > li > a{
+  display: block;
+  font-size: 13px;
+  color: #999;
+  padding-left: 30px;
+  position: relative;
+}
+header .inner .top_nav .menu > li:nth-child(1) > a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  background: url('http://www.asotakamori.com/images/main/h_icon01.jpg') no-repeat;
+}
+header .inner .top_nav .menu > li:nth-child(2) > a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  background: url('http://www.asotakamori.com/images/main/h_icon02.jpg') no-repeat;
+}
+header .inner .top_nav .menu > li:nth-child(3) > a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  background: url('http://www.asotakamori.com/images/main/h_icon03.jpg') no-repeat;
+}
+header .inner .top_nav .mobileBtn{
+  display: none;
+}
+header .inner .top_nav .mobileBtn > a{
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url('http://www.asotakamori.com/images/main/btn_navi.png') no-repeat;
+}
+header .inner nav{}
+header .inner nav > ul{}
+header .inner nav > ul > li{
+  float: left;
+  width: calc(100% / 7);
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+}
+header .inner nav > ul > li > a{
+  display: block;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+header .inner nav > ul > li .subNav{
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: -1px;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.85);
+}
+header .inner nav > ul > li .subNav > li{
+  height: 35px;
+  line-height: 35px;
+}
+header .inner nav > ul > li .subNav > li > a{
+  font-size: 15px;
+  color: #555;
+}
+header .inner nav > ul > li .subNav > li:hover > a{
+  font-weight: bold;
+}
+
+
+/* main */
+main{}
+main .banner{
+  height: 280px;
+  background: url('http://www.asotakamori.com/images/sub/sub_visual02.jpg') center top no-repeat;
+}
+main .inner .main_cont{
+  padding: 40px 0 90px;
+}
+main .inner .main_cont{
+  overflow: hidden;
+}
+main .inner .main_cont .leftMenu{
+  float: left;
+  width: 240px;
+}
+main .inner .main_cont .leftMenu > dl{}
+main .inner .main_cont .leftMenu > dl > dt{
+  display: table-cell;
+  width: 240px;
+  height: 140px;
+  background: url('http://www.asotakamori.com/images/sub/page_tit.jpg') no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 15px;
+}
+main .inner .main_cont .leftMenu > dl > dt > span{
+  font-size: 24px;
+  margin-top: 1px;
+  font-weight: bold;
+}
+main .inner .main_cont .leftMenu > dl > dd{
+  height: 50px;
+  line-height: 48px;
+  border: 1px solid #eaeaea;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+main .inner .main_cont .leftMenu > dl > dd.active,
+main .inner .main_cont .leftMenu > dl > dd:hover
+{
+  background: url('http://www.asotakamori.com/images/sub/left_menu.jpg') no-repeat;
+}
+main .inner .main_cont .leftMenu > dl > dd > a{
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+main .inner .main_cont .leftMenu > dl > dd.active > a,
+main .inner .main_cont .leftMenu > dl > dd:hover > a
+{
+  color: white;
+}
+main .inner .main_cont .rightCont{
+  float: left;
+  margin-left: 40px;
+  width: calc(100% - 280px);
+  position: relative;
+}
+main .inner .main_cont .rightCont > h2{
+  height: 57px;
+  border-bottom: 1px solid #eaeaea;
+  color: black;
+  font-size: 28px;
+  line-height: 28px;
+}
+main .inner .main_cont .rightCont > article{
+  padding-top: 35px;
+}
+main .inner .main_cont .rightCont > article .cont_1{
+  position: relative;
+}
+main .inner .main_cont .rightCont > article .cont_1 > img{
+  width: 100%;
+}
+main .inner .main_cont .rightCont > article .cont_1 .intro_1{
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 303px;
+  height: 340px;
+  padding: 21px 30px;
+  background: url('http://www.asotakamori.com/images/sub/sub0101_text.jpg') no-repeat;
+}
+main .inner .main_cont .rightCont > article .cont_1 .intro_1 > strong{
+  display: block;
+  font-size: 24px;
+  color: #c6ca71;
+}
+main .inner .main_cont .rightCont > article .cont_1 .intro_1 > span.subStrong{
+  display: block;
+  font-size: 20px;
+  color: white;
+  line-height: 25px;
+  margin-top: 9px;
+  letter-spacing: 0.3px;
+}
+main .inner .main_cont .rightCont > article .cont_1 .intro_1 > p{
+  font-size: 15px;
+  color: white;
+  margin-top: 18px;
+  line-height: 26px;
+}
+main .inner .main_cont .rightCont > article .cont_1 > p{
+  font-size: 15px;
+  line-height: 26px;
+  color: black;
+  padding-left: 363px;
+  padding-top: 24px;
+}
+main .inner .main_cont .rightCont > article .cont_1 > p > span{
+  display: block;
+}
+main .inner .main_cont .rightCont > article .cont_2{
+  margin-top: 62px;
+}
+main .inner .main_cont .rightCont > article .cont_2 > h3{
+  font-size: 24px;
+  color: black;
+  padding-left: 16px;
+  background: url('http://www.asotakamori.com/images/sub/h4_dot.jpg') 0 10px no-repeat;
+}
+main .inner .main_cont .rightCont > article .cont_2 .photo{
+  padding-top: 33px;
+}
+main .inner .main_cont .rightCont > article .cont_2 .photo > img{
+  width: 100%;
+}
+main .inner .main_cont .rightCont > article .cont_2 .photo .tab,
+main .inner .main_cont .rightCont > article .cont_2 .photo .mob
+{
+  display: none;
+}
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo{
+  margin-top: 20px;
+}
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo > li{
+  height: 60px;
+  line-height: 58px;
+  border: 1px solid #eaeaea;
+  padding-left: 66px;
+  overflow: hidden;
+  position: relative;
+}
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo > li + li{
+  margin-top: 10px;
+}
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo > li > span.num{
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #c6ca71;
+  font-size: 15px;
+  border-radius: 50%;
+}
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo > li > span.korInfo,
+main .inner .main_cont .rightCont > article .cont_2 .detailInfo > li > span.jpInfo{
+  float: left;
+  width: 50%;
+  font-size: 15px;
+  color: black;
+}
+
+/* footer */
+footer{
+
+}
+
+
+
+
+
+
+/*  */
