@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<!-- script link -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+
+
+<!-- css link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+<!--bxslider css 링크 https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css -->
+
+<link rel="stylesheet" href="/css/style.css" type="text/css">			<!-- 디자인 CSS -->
+<link rel="stylesheet" href="/css/style_ex1.css" type="text/css">		<!-- 추가 CSS -->
+<link rel="stylesheet" href="/css/font.css" type="text/css">		<!-- 추가 CSS -->
+
+
+<link rel="stylesheet" href="../../common.css">
+<link rel="stylesheet" href="/css/index.css">
+<script src="/js/index.js"></script>
+
+<title>한국전가정평가학회 클론</title>
+
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+    	function insertCount(slide_curr,slide_count){
+    					$('#slide-counter').html('<strong>'+ (slide_curr + 1) +'</strong>/'+ slide_count);
+    				};
+
+  		$('.box .slider').bxSlider({
+  			auto: true,
+  			pagerCustom : '.pagerCustom',
+  			onSliderLoad: function ($slideElement, oldIndex, newIndex){
+  				var slide_count = this.getSlideCount();
+  				var slide_curr = this.getCurrentSlide();
+  				insertCount(slide_curr,slide_count);
+  			},
+  			onSlideAfter: function ($slideElement, oldIndex, newIndex){
+  				var slide_count = this.getSlideCount();
+  				var slide_curr = this.getCurrentSlide();
+  				insertCount(slide_curr,slide_count);
+  			}
+  		});
+
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+
+
+
+
+ <div class="box">
+	<ul class="slider">
+		<li><img src="https://www.sambamall.com/cdn/product/20181218/QB20181218052528147_org.jpg" alt=""></li>
+		<li><img src="https://www.sambamall.com/cdn/product/20180410/IT20180410065649200_org.jpg" alt=""></li>
+		<li><img src="https://www.sambamall.com/cdn/product/20181218/QB20181218052528147_org.jpg" alt=""></li>
+		<li><img src="https://www.sambamall.com/cdn/product/20180410/IT20180410065649200_org.jpg" alt=""></li>
+	</ul>
+	<div id="slide-counter"></div>
+
+
+
+
+	<div class="pagerCustom">
+		<a href="#" data-slide-index="0"><img src="https://www.sambamall.com/cdn/product/20181218/QB20181218052528147_org.jpg" alt=""></a>
+		<a href="#"  data-slide-index="1"><img src="https://www.sambamall.com/cdn/product/20180410/IT20180410065649200_org.jpg" alt=""></a>
+		<a href="#"  data-slide-index="2"><img src="https://www.sambamall.com/cdn/product/20181218/QB20181218052528147_org.jpg" alt=""></a>
+		<a href="#"  data-slide-index="3"><img src="https://www.sambamall.com/cdn/product/20180410/IT20180410065649200_org.jpg" alt=""></a>
+	</div>
+
+
+
+
+</div>
+
+<style>
+
+	.box{
+		position: relative;
+		width: 728px;
+		height: 728px;
+
+	}
+	.slider > li > img{ height:728px; width:728px;}
+	.box .pagerCustom{position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);font-size: 0;}
+	.box .pagerCustom > a {display: inline-block; width: 80px; height: 80px;}
+  .box .pagerCustom > a > img{width: 100%; height: 100%;}
+	#slide-counter{position: absolute; bottom: 130px; width: 50px; left: 50%; margin-left: -25px; height: 30px; background-color: white; border-radius: 30px; text-align: center;}
+
+</style>
+
+</body>

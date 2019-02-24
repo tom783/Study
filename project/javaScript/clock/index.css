@@ -75,6 +75,68 @@ main .clockContainer .clock span{
 
 }
 
+main .clockContainer .js-form{
+  text-align: center;
+  margin-top: 20px;
+}
+
+main .clockContainer .js-form > input{
+  color: black;
+  font-size: 17px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding-left: 10px;
+  width: 200px;
+}
+
+main .clockContainer .js-form > input:focus{
+  border: 1px solid black;
+}
+
+main .clockContainer .js-form.active_form{
+  display: none;
+}
+
+main .clockContainer .text{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+main .clockContainer .text.active_form{
+  display: none;
+}
+
+main .clockContainer .text .UserName{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .clockContainer .clear{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(118, 124, 187);
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+main .clockContainer .clear:hover{
+  background-color: rgb(110, 182, 218);
+}
+
+main .clockContainer .clear.active_form{
+  display: none;
+}
 
 
 /* footer */
