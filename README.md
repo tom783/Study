@@ -61,16 +61,12 @@ Here are some ideas to get you started:
 
 -->
 
---- 
-
 <!-- Title -->
 ### 👋 HellGround 👋 = Hello Ground
 # ![header](https://capsule-render.vercel.app/api?type=Waving&color=2D2B55&section=header&fontSize=60&fontColor=3178C6&stroke=F9CF00&animation=fadeIn&text=Hello%20Ground)
 
----
-
-## [ 📢Introducing repository ]
-### Repository skill set
+## [ 📢Repository information ]
+### Skill set
 
 1. graphQL_nomad_Tweet   
 [Front-end]   
